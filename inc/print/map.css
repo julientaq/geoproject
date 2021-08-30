@@ -1,0 +1,60 @@
+/* Leaflet Clusters */
+.marker-cluster-small  {background-color:rgba(134, 162, 194, 0.6) !important}
+.marker-cluster-small div  {background-color:rgba(44, 58, 78, 0.6) !important}
+.marker-cluster-medium {background-color:rgba(134, 162, 194, 0.7) !important}
+.marker-cluster-medium div {background-color:rgba(44, 58, 78, 0.7) !important}
+.marker-cluster-large  {background-color:rgba(134, 162, 194, 0.8) !important}
+.marker-cluster-large div  {background-color:rgba(44, 58, 78, 0.8) !important}
+.marker-cluster-small div,
+.marker-cluster-medium div,
+.marker-cluster-large div  {color:#fff}
+.marker-cluster-medium {margin-top:-25px !important; margin-left:-25px !important; width:50px !important; height:50px !important; border-radius:25px !important}
+.marker-cluster-medium div {width:60px !important; height:50px !important; border-radius:20px !important}
+.marker-cluster-medium span{line-height:40px !important}
+.marker-cluster-large  {margin-top:-30px !important; margin-left:-30px !important; width:60px !important; height:60px !important; border-radius:30px !important}
+.marker-cluster-large div  {width:60px !important; height:50px !important; border-radius:25px !important}
+.marker-cluster-large span {line-height:50px !important}
+
+ /* IE 6-8 fallback colors */
+.leaflet-oldie .marker-cluster-small {background-color:rgb(134, 162, 194) !important}
+.leaflet-oldie .marker-cluster-small div {background-color:rgb(44, 58, 78) !important}
+.leaflet-oldie .marker-cluster-medium{background-color:rgb(134<, 162, 194) !important}
+.leaflet-oldie .marker-cluster-medium div {background-color:rgb(44, 58, 78) !important}
+.leaflet-oldie .marker-cluster-large {background-color:rgb(134, 162, 194) !important}
+.leaflet-oldie .marker-cluster-large div {background-color:rgb(44, 58, 78) !important}
+.side-last-map .leaflet-marker-pane img, .search-results .leaflet-marker-pane img{height:24px!important;width:auto!important;}
+
+/**Maps**/
+.gp-leaflet-map-wrap {position:relative;}
+.gp-leaflet-map-wrap a{color:#000000!important;}
+.gp-leaflet-map {height:460px!important;}
+.map-center-here {position:absolute; top:9px; right:9px; z-index:9999;}
+.map-title{margin-top:0;font-size:2.4em;}
+.gp-map-actions-toggles {position:relative; margin-top:-41px; z-index:9999;margin-left:0;}
+.gp-map-export,.gp-map-markers-index{display:none;}
+.gp-map-markers-index-toggle{padding:6px 8px 6px 39px;float:left;font-size:1em;background:#39526E url('img/sprite.png') -470px 7px no-repeat; }
+.gp-map-export-map-toggle{padding:6px 8px 6px 24px;float:left;margin-left:5px;font-size:1em;background:#39526E url('img/sprite.png') -482px -47px no-repeat; }
+.gp-map-markers-index-toggle:hover,.gp-map-export-map-toggle:hover{text-decoration:none;opacity:0.8;}
+.map-content{font-size:1.2em;margin:50px 0 0 0;}
+#geotagp{margin-top:40px!important;font-size:16px;}
+#geotagp a:hover{opacity:0.7;}
+.gp-map-markers-index,.gp-map-export{padding:15px;width:100%;margin-top: 38px;margin-bottom:0!important;}
+.gp-map-markers-index {column-count:3;}
+.map-popup-marker-title{font-size:1.2em;margin-bottom:15px!important;font-weight:bold;}
+.leaflet-popup-content .map-popup-marker-content {width:250px;font-size:1.2em!important;background:#FFFFFF!important;}
+.leaflet-popup-content .map-popup-marker-content img{width:100%;height:auto;margin-bottom:15px;}
+.map-project{font-size:1.1em;}
+.leaflet-popup-content .map-popup-marker-more a{text-transform:uppercase;text-decoraton:none;font-size:1em;}
+.gp-leaflet-map-container .gp-map-markers-index ul{padding:0;margin:0;list-style-type:none;}
+.gp-leaflet-map-container .gp-map-markers-index li {margin-bottom:6px;height:20px;}
+.gp-leaflet-map-container .gp-map-markers-index li:last-child {margin-bottom:0;}
+.gp-leaflet-map-container .gp-map-markers-index li img{height:20px;width:auto;float:left;margin-right:10px;}
+.gp-map-markers-index-toggle:active,.gp-map-markers-index-toggle:focus, .gp-map-markers-index-toggle.active,.gp-map-export-map-toggle:active, .gp-map-export-map-toggle:focus,.gp-map-export-map-toggle.active{font-weight:bold;} 
+.gp-map-markers-index a:focus,.gp-map-markers-index a:active{font-weight:bold!important;}
+.gp-map-export h3{font-size: 1.5em;margin-bottom: 25px;}
+.gp-map-export input{padding:6px;width:100%;max-width:150px;margin-left:10px;}
+.gp-map-export textarea{padding:6px;width:100%;}
+.projects-contents img{height:auto!important;}
+.map-popup-marker-more a:hover{text-decoration:none!important;opacity:0.7;}
+.gp-map-marker-title{padding-left:30px;}
+.gp-leaflet-map-container .gp-map-markers-index li {display:inline-block!important;}

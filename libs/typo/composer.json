@@ -1,0 +1,18 @@
+{
+	"name": "master_shiva/wp-french-typo",
+	"description": "Ce plugin pour WordPress applique les rêgles de la typographie française aux articles que vous publiez sur vos pages.",
+	"license": "GPL-3+",
+	"keywords": ["wordpress", "plugin", "french typo"],
+	"homepage": "https://bitbucket.org/master_shiva/wp-french-typo",
+	"type": "wordpress-plugin",
+	"authors": [
+		{
+			"name": "Gilles Marchand",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.3",
+		"composer/installers": "~1.0"
+	}
+}

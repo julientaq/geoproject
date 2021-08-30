@@ -1,0 +1,24 @@
+html{margin: 0;padding: 0;font-size: 88%\9;font-family: 'Raleway', Arial, Helvetica, sans-serif;}
+body{background: #000000!important;font-size: 1em;color: #000000;font-family: Arial, Helvetica, sans-serif;margin: 0;padding: 0;text-align: center;}
+h1{font-size: 1.13em;color: #000000;text-transform: uppercase;font-weight: 700;letter-spacing: 0.05em;}
+ul{padding: 0;margin: 5.2% 0 0 0;list-style-type: none;position: relative;}
+li{height: 2em;}
+.login .button-primary {background: #D91E18 !important;border: none !important;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;}
+.login .button-primary:hover {background:#000000!important;}
+.login #nav a, .login #backtoblog a, a, a:visited{color: #FFFFFF!important;text-decoration: none;-webkit-transition: all 0.5s linear 0s; -moz-transition: all 0.5s linear 0s; transition: all 0.5s linear 0s !important;}
+a:hover, .login #nav a:hover, #backtoblog a:hover, #backtoblog:hover, #nav:hover, #nav a:hover, 
+.login #backtoblog a:hover{text-decoration:underline;color:#D91E18!important;}
+div.updated, .login .message {background-color: #EDEFEF !important;border-color: #D91E18 !important;}
+#loginform{padding: 2em 2em 2.5em 2em;border:1px dotted #BABABA;background:#EDEDED;color:#222222;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;}
+form{margin: 1em 0 0 0;}
+label{font-family: 'Raleway', sans-serif;font-weight: 500;padding: 0 0 0 1em;font-size: 0.899em;}
+.field{width: 100%;margin: 0.2em 0 1em 0;}
+#remember{font-size: 0.8em;padding: 0.3em 0 0 0;}
+.checkbox{padding: 0.2em 0 0 -0.5em;}
+.button:hover{cursor: pointer;background:#000000!important;opacity:1;}
+input[type="checkbox"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime-local"]:focus, input[type="datetime"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="radio"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, select:focus, textarea:focus
+{border:1px solid #D91E18;box-shadow:none;}
+.login h1 a {background-image: url('../../img/admin.gif');width:320px;background-size: 320px auto!important;height:96px;margin-bottom:-10px;}
+.wp-core-ui .button-primary {box-shadow: none;text-shadow: none;}
+.message{margin-top:25px;}
+.login-action-lostpassword #nav{display:none;}

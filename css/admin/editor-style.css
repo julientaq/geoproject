@@ -1,0 +1,38 @@
+#tinymce.wp-editor .alignleft {float: left; }
+#tinymce.wp-editor .alignleft .wp-caption-text {display: block;float: left;width: 100%;height: auto;margin: -10px 0 20px 0;font-size: 15px;color: #787878; }
+#tinymce.wp-editor .alignleft img {height: auto;margin: 5px 0 15px 0 !important;float: left;padding-right: 20px;max-width: 100%; }
+#tinymce.wp-editor .alignright {float: right; } 
+#tinymce.wp-editor .alignright .wp-caption-text {display: block;text-align: right;float: right;width: 100%;height: auto;margin: -10px 0 20px 0;font-size: 15px;color: #787878; }
+#tinymce.wp-editor .alignright img {height: auto;margin: 5px 0 15px 0 !important;float: right;padding-left: 20px;max-width: 100%; }
+#tinymce.wp-editor .aligncenter .wp-caption-text, .alignnone .wp-caption-text {display: block;text-align: center;width: 100%;height: auto;margin: 5px 0 20px 0;font-size: 15px;color: #787878; } 
+#tinymce.wp-editor .aligncenter {text-align: center;max-width: 100%;float: none;margin: 40px auto!important;height: auto;text-align: center; }
+#tinymce.wp-editor .aligncenter img {width: auto;height: auto;max-width: 100%; } 
+#tinymce.wp-editor .alignnone {width: 100%!important;float: none;text-align: center;height: auto!important;margin: 40px 0; }
+#tinymce.wp-editor .alignnone img {width: 100%!important;float: none;height: auto!important; }
+#tinymce.wp-editor blockquote{margin: 40px auto !important;text-align: center;padding: 10px;line-height: 1.4;max-width: 74%;float: none; font-size: 1.15em;border:none;}
+#tinymce.wp-editor h1{margin-bottom:30px;font-size:2.4em;}
+#tinymce.wp-editor h2{font-size:1.8em;margin-bottom:40px;line-height:1.2;font-weight:500!important;}
+#tinymce.wp-editor h3, #tinymce.wp-editor h4{margin:50px 0 30px;font-size:1.6em;}
+#tinymce.wp-editor h4, #tinymce.wp-editor  h5{margin:40px 0 30px;font-size:1.4em;}
+#tinymce.wp-editor h5{font-size:1.3em;}
+#tinymce.wp-editor blockquote::before {content:"\201C";display: inline;height: 0; line-height: 0;left: 0;position: relative;top: 30px;color: #787878;font-size: 4em;font-family: 'Times New Roman',serif;}
+#tinymce.wp-editor blockquote::after {content:"\201D";display: inline;height: 0; line-height: 0;left: 0;position: relative;top: 20px;color: #787878;font-size: 4em;font-family: 'Times New Roman',serif;} 
+#tinymce.wp-editor iframe{width:100%;border:none;margin:30px 0;}
+#tinymce.wp-editor .well{padding:20px;border:1px solid #DEDEDE;margin:40px 0;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;}
+#tinymce.wp-editor .panel{padding:20px;background:#EFEFEF!important;color:#222222;margin:40px 0;}
+#tinymce.wp-editor .jumbotron{padding:20px;color:#FFFFFF;margin:40px 0;background:#d91e18;}
+#tinymce.wp-editor .soundcite{padding:4px 8px;background:#EFEFEF;}
+#tinymce.wp-editor .lettrine, #tinymce.wp-editor .lettrine, #tinymce.wp-editor span.lettrine, .wp-editor .lettrine, .wp-editor span.lettrine, span.lettrine, .lettrine, #tinymce.wp-editor .lettrine {font-size: 3em!important;font-weight: bold!important;padding-right: 0.2em;float: left!important;color: #676767!important; }
+
+/**Gallery**/
+#tinymce.wp-editor .gallery{height: auto;overflow: auto;}
+#tinymce.wp-editor .gallery-columns-1 .gallery-item {width:100%!important;height:auto;margin:0;float:left;}
+#tinymce.wp-editor .gallery-columns-2 .gallery-item {width:46%!important;height:auto;margin:0 2%;float:left;}
+#tinymce.wp-editor .gallery-columns-3 .gallery-item {width:29%!important;height:auto;margin:0 2%;float:left;}
+#tinymce.wp-editor .gallery-columns-4 .gallery-item {width:21%!important;height:auto;margin:0 2%;float:left;}
+#tinymce.wp-editor .gallery-columns-5 .gallery-item {width:16%!important;height:auto;margin:0 2%;float:left;}
+#tinymce.wp-editor .gallery-columns-6 .gallery-item {width:14%!important;height:auto;margin:0 1.3%;float:left;}
+#tinymce.wp-editor .gallery-columns-7 .gallery-item {width:11.8%!important;height:auto;margin:0 1.2%;float:left;}
+#tinymce.wp-editor .gallery-columns-8 .gallery-item {width:10.5%!important;height:auto;margin:0 1%;float:left;}
+#tinymce.wp-editor .gallery-columns-9 .gallery-item {width:9.1%!important;height:auto;margin:0 1%;float:left;}
+#tinymce.wp-editor .gallery-item img{border:none!important;width:100%!important;height:auto;margin-bottom:30px;}

@@ -1,0 +1,117 @@
+body.custom-background { background-image: none!important;}
+ <?php if( !empty( $meta_font_size ) ) { 
+  if ($meta_font_size == "select-two") { ?> html,body{font-size:1.1em}<?php } elseif ($meta_font_size == "select-three") { ?> html,body{font-size:.9em}.content{font-size:1.1em!important}<?php } else { ?> html,body{font-size:1em}<?php }
+ }
+ 
+ if( !empty( $sec_title_align ) ) { 
+  if ( $sec_title_align == "select-one" ) { ?>.title_bg_une h1,.title_home h1{text-align:center!important}<?php } 
+  elseif ( $sec_title_align == "select-three" ) { ?>.title_bg_une h1,.title_home h1{text-align:right;margin-left:30px}<?php } else { ?>.title_bg_une h1,.title_home h1{text-align:left;margin-right:30px}<?php } 
+ }
+ 
+ if( !empty( $sec1_title_align ) ) { 
+  if ( $sec1_title_align == "select-two" ) { ?> #sec1_title{text-align:center!important}<?php } 
+  elseif ( $sec1_title_align == "select-three" ) { ?> #sec1_title{text-align:right}<?php } else { ?> #sec1_title{text-align:left}<?php } 
+ }
+ 
+ if( !empty( $sec2_title_align ) ) { 
+  if ($sec2_title_align == "select-two" ) { ?> #sec2_title{text-align:center}<?php } elseif ($sec2_title_align == "select-three" ) { ?> #sec2_title{text-align:right}<?php } else { ?> #sec2_title{text-align:left}<?php } 
+ }
+ 
+ if( !empty( $sec3_title_align ) ) { 
+  if ($sec3_title_align == "select-two" ) { ?> #sec3_title{text-align:center}<?php } elseif ($sec3_title_align == "select-three" ) { ?> #sec3_title{text-align:right}<?php } else { ?> #sec3_title{text-align:left}<?php } 
+ } 
+  
+ if( !empty( $sec4_title_align ) ) { 
+  if ($sec4_title_align == "select-two" ) { ?> #sec4_title{text-align:center}<?php } elseif ($sec4_title_align == "select-three" ) { ?> #sec4_title{text-align:right}<?php } else { ?> #sec4_title{text-align:left}<?php } 
+ }
+ 
+ if( !empty( $sec5_title_align ) ) { 
+  if ($sec5_title_align == "select-two" ) { ?> #sec5_title{text-align:center}<?php } elseif ($sec5_title_align == "select-three" ) { ?> #sec5_title{text-align:right}<?php } else { ?> #sec5_title{text-align:left}<?php } 
+ }
+ 
+ if( !empty( $sec6_title_align ) ) { 
+  if ($sec6_title_align == "select-two" ) { ?> #sec6_title{text-align:center}<?php } else if ($sec6_title_align == "select-three" ) { ?> #sec6_title{text-align:right}<?php } else { ?> #sec6_title{text-align:left}<?php } 
+ }
+ 
+ if( !empty( $sec7_title_align ) ) { 
+  if ($sec7_title_align == "select-two" ) { ?> #sec7_title{text-align:center}<?php } else if ($sec7_title_align == "select-three" ) { ?> #sec7_title{text-align:right}<?php } else { ?> #sec7_title{text-align:left}<?php } 
+ } 
+if( !empty( $top_title ) ) {  
+  if ($top_title == "select-one") { ?>.bloc_title_top{color:#FFFFFF!important;background:none!important;line-height:110%!important}<?php } elseif ($top_title == "select-two") { ?>.bloc_title_top{color:#000;background:none!important;line-height:110%!important}<?php } elseif ($top_title == "select-three") { ?>.bloc_title_top{line-height:180%;color:#fff;padding:10px 20px;background:<?php echo $meta_color; ?>;margin:0;text-align:center}<?php } else { ?>.title h1{color:#fff}
+  
+  @media screen and (max-width:550px){.intro-effect-jam3:not(.notrans).header h1{font-size:2.7em;margin:0 auto}.title{padding:0 2%;top:20%}.bloc_title_top{line-height:190%;color:#FFFFFF!important;padding:10px}
+  #bloc_title_1,#bloc_title_2,#bloc_title_3,#bloc_title_4,#bloc_title_5{padding:10px;line-height:210%}}@media screen and (max-width:450px){.title{padding:0 2%;top:10%}.intro-effect-jam3:not(.notrans).header h1{font-size:2.5em}}@media screen and (max-width:350px){.title{padding:0 2%;top:40px}}<?php }  
+} 
+if( !empty( $sec1_title ) ) {  
+  if ($sec1_title == "select-two") { ?> #sec1_title h1{color:#000000!important;}<?php } 
+  elseif ($sec1_title == "select-three") { ?> #bloc_title_1{color:#FFFFFF!important;padding:10px 20px;background:<?php echo $meta_color; ?>;margin:0;text-align:center;line-height:190%}<?php } else { ?> #sec1_title h1{color:#FFFFFF!important}<?php }  
+ }
+
+ if( !empty( $sec2_title ) ) {  
+  if ($sec2_title == "select-two") { ?> #sec2_title h1{color:#000000!important;}<?php } 
+  elseif ($sec2_title == "select-three") { ?> #bloc_title_2{color:#FFFFFF!important;padding:10px 20px;background:<?php echo $meta_color; ?>;margin:0;text-align:center;line-height:190%}<?php } else { ?> #sec2_title h1{color:#FFFFFF!important}<?php }  
+ }
+ if( !empty( $sec3_title ) ) {  
+  if ($sec3_title == "select-two") { ?> #sec3_title h1{color:#000000!important;}<?php } elseif ($sec3_title == "select-three") { ?> #bloc_title_3{color:#FFFFFF!important;padding:10px 20px;background:<?php echo $meta_color; ?>;margin:0;text-align:center;line-height:190%}<?php } else { ?> #sec3_title h1{color:#FFFFFF!important}<?php }  
+ }
+ if( !empty( $sec4_title ) ) {  
+  if ($sec4_title == "select-two") { ?> #sec4_title h1{color:#000000!important;}<?php } elseif ($sec4_title == "select-three") { ?> #bloc_title_4{color:#FFFFFF!important;padding:10px 20px;background:<?php echo $meta_color; ?>;margin:0;text-align:center;line-height:190%}<?php } else { ?> #sec4_title h1{color:#FFFFFF!important}<?php }  
+ } 
+ if( !empty( $sec5_title ) ) {  
+  if ($sec5_title == "select-two") { ?> #sec5_title h1{color:#000000!important;}<?php } elseif ($sec5_title == "select-three") { ?> #bloc_title_5{color:#FFFFFF!important;padding:10px 20px;background:<?php echo $meta_color; ?>;margin:0;text-align:center;line-height:190%}<?php } else { ?> #sec5_title h1{color:#FFFFFF!important}<?php }
+ }
+ 
+ if( !empty( $sec6_title ) ) {
+  if ($sec6_title == "select-two") { ?> #sec6_title h1{color:#000000!important;}<?php } elseif ($sec6_title == "select-three") { ?> #bloc_title_6{color:#FFFFFF!important;padding:10px 20px;background:<?php echo $meta_color; ?>;margin:0;text-align:center;line-height:190%}<?php } else { ?> #sec6_title h1{color:#FFFFFF!important}<?php }
+ }
+ 
+ if( !empty( $sec7_title ) ) {  
+  if ($sec7_title == "select-two") { ?> #sec7_title h1{color:#000000!important;}<?php } elseif ($sec7_title == "select-three") { ?> #bloc_title_7{color:#FFFFFF!important;padding:10px 20px;background:<?php echo $meta_color; ?>;margin:0;text-align:center;line-height:190%}<?php } else { ?> #sec7_title h1{color:#FFFFFF!important}<?php }
+ }
+ 
+ if( !empty( $section_img_1 ) ) { ?> #section_un{background:<?php echo $meta_color; ?> url("<?php echo $section_img_1; ?>") center fixed}<?php }
+ if( !empty( $section_img_2 ) ) { ?> #section_deux{background:<?php echo $meta_color; ?> url("<?php echo $section_img_2; ?>") center fixed}<?php }
+ if( !empty( $section_img_3 ) ) { ?> #section_trois{background:<?php echo $meta_color; ?> url("<?php echo $section_img_3; ?>") center fixed}<?php }
+ if( !empty( $section_img_4 ) ) { ?> #section_quatre{background:<?php echo $meta_color; ?> url("<?php echo $section_img_4; ?>") center fixed}<?php }
+ if( !empty( $section_img_5 ) ) { ?> #section_cinq{background:<?php echo $meta_color; ?> url("<?php echo $section_img_5; ?>") center fixed}<?php }  
+ if( !empty( $section_img_6 ) ) { ?> #section_six{background:<?php echo $meta_color; ?> url("<?php echo $section_img_6; ?>") center fixed}<?php }  
+ if( !empty( $section_img_7 ) ) { ?> #section_sept{background:<?php echo $meta_color; ?> url("<?php echo $section_img_7; ?>") center fixed}<?php }  
+ 
+ if ($meta_bar == "select-one") { ?> #progression{top:0}<?php } elseif ($meta_bar == "select-two") { ?> #progression{bottom:0}<?php } elseif ($meta_bar == "select-three") { ?> #progression{display:none!important}<?php }  
+ 
+ if($shadow == 'select-two') : ?>.navbar{-webkit-box-shadow:0 2px 4px 0 rgba(158,158,158,0.77);-moz-box-shadow:0 2px 4px 0 rgba(158,158,158,0.77);box-shadow:0 2px 4px 0 rgba(158,158,158,0.77)}<?php endif;
+ 
+ if ($bar_site == 'select-two') : ?>.navbar-fixed-bottom #top_title{margin:16px 0 0 50px}<?php endif;
+ if( !empty( $meta_top ) ) { ?>.page_loader div,.bg-img{background:<?php echo $meta_color; ?> url('<?php echo $meta_top; ?>') no-repeat center center fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;min-width:100%;min-height:100%;@media(max-width:600px){background-attachment:scroll}@media(max-width:@iphone-screen){background-attachment:scroll}}<?php } 
+ if ($bar_sup == "select-two" && empty( $footer ) ) {?> #nextpage{padding:30px 0 120px 0}<?php } if ($bar_sup == "select-two") { ?>#up{bottom:70px}<?php } if( !empty( $top_bar) ) { ?> <?php if ($top_bar == "select-one") { ?>.navbar{background:<?php echo $meta_color; ?>;color:#FFFFFF!important}#side_nav{border-color:#fff}#barre{opacity:.7}
+.navbar a,.navbar{color:#FFFFFF!important}
+ <?php } elseif ($top_bar == "select-two") { ?>.navbar{background:#fff;color:<?php echo $meta_color; ?>}.navbar a{color:<?php echo $meta_color; ?>}
+.navbar-fixed-bottom{border-top:1px solid <?php echo $meta_color; ?>}.navbar-fixed-top{border-bottom:1px solid <?php echo $meta_color; ?>}#side_nav{border-color:transparent}<?php } elseif ($top_bar == "select-three") { ?>.navbar{background:#000;color:#fff}
+.navbar a,.navbar{color:#FFFFFF!important}#side_nav{border-color:transparent}<?php }  } 
+if( !empty( $meta_quote) ) {
+if ($meta_quote == "select-one") { ?>.content blockquote{border:0;border-left:4px solid;padding-left:20px;}<?php } 
+elseif ($meta_quote == "select-two") { ?>.content blockquote{border:0;border-right:4px solid;padding-right:20px;}<?php } 
+elseif ($meta_quote == "select-three") { ?>.content blockquote{border:0;border-bottom:4px solid;padding-bottom:20px}<?php } 
+elseif ($meta_quote == "select-five") { ?>.content blockquote{border:0;border:none!important!;} blockquote::before {content:"\201C";display: inline;height: 0; line-height: 0;left: 0;position: relative;top: 30px!important;color:<?php echo $meta_color; ?>;font-size: 4em;font-family: 'Times New Roman',serif;} blockquote::after {content:"\201D";display: inline;height: 0; line-height: 0;left: 0;position: relative;top: 20px;color:<?php echo $meta_color; ?>;font-size: 4em;font-family: 'Times New Roman',serif;} @media only screen and (max-width: 767px) { blockquote{font-size: 1.15em;font-family:'Raleway',sans-serif;} blockquote::before {top: 20px} blockquote::after {top:30px;} }<?php }
+  } 
+if( !empty( $meta_color ) ) { ?>.page_loader,#side_nav,.carousel-indicators{background:<?php echo $meta_color; ?>}.jumbotron{background:<?php echo $meta_color; ?>}a,a:link,a:visited,a:active,a:focus,#up,a.navbar-brand:nth-child(2):hover,.left:hover,.right:hover,.comment-notes,input#submit:hover,.mejs-currenttime,.mejs-duration{color:<?php echo $meta_color; ?>}input#submit:hover{background:<?php echo $meta_color; ?>!important;color:#fff}#barre,#side_nav,.carousel-indicators,.chapitre,.mejs-embed,.mejs-embed body,.mejs-container.mejs-controls,.mejs-controls.mejs-time-rail.mejs-time-total,.mejs-horizontal-volume-current,.mejs-controls.mejs-time-rail.mejs-time-current,.mejs-volume-handle,.mejs-horizontal-volume-total,.mejs-time-loaded{background:<?php echo $meta_color; ?>}#show.open,.togglenav:hover,.togglenav:active,.togglenav:focus{background:<?php echo $meta_color; ?>;}#nextpage,.intro-effect-jam3.modify.header h1,.intro-effect-jam3.modify.subline{color:<?php echo $meta_color; ?>}.btn,input#submit:hover,.btn-succes{margin:0 auto;background:<?php echo $meta_color; ?>;color:#fff}.btn:hover,.btn-succes:hover{border:1px solid <?php echo $meta_color; ?>;color:<?php echo $meta_color; ?>;background:#fff}<?php if ( $meta_trigger == 'select-one' || $meta_trigger == 'select-four' || $meta_trigger == 'select-five' ) { ?> button.trigger{position:fixed;background:transparent;bottom:60px;width:20%;left:40%;z-index:8000;display:block;padding:8px 22px;border:1px solid #FFFFFF!important;font-size:1.2em;cursor:pointer;margin:0 auto;color:#fff}button.trigger:hover{border:1px solid <?php echo $meta_color; ?>!important;color:<?php echo $meta_color; ?>}<?php if (!empty ($top_title) ) 
+ { 
+  if ($top_title == "select-two") { ?> button.trigger{border:1px solid #000;color:#000}<?php } 
+ }  
+ } else { ?> button.trigger{color:<?php echo $meta_color; ?>}button.trigger:hover{opacity:.7}<?php } if ( $meta_quote_design == 'select-one' ) { ?>.content blockquote{border-color:<?php echo $meta_color; ?>}<?php } elseif ( $meta_quote_design == 'select-two' ) { ?>.content blockquote{border-color:<?php echo $meta_color; ?>;border-style:dotted}<?php } elseif ( $meta_quote_design == 'select-four' ) { ?>.content blockquote{border-style:dotted}<?php } else { ?>.content blockquote{border-color:#eee}<?php } 
+ if ( $reseaux == 'select-one' ) { ?>.right-net a{color:<?php echo $meta_color; ?>!important;}<?php } 
+elseif ( $reseaux == 'select-two' ) { ?>.right-net a{color:#FFFFFF!important}<?php } 
+elseif ( $reseaux == 'select-n' ) { ?>.right-net a.fa{color:#FFFFFF!important}.fa-pinterest{background:#bd081c!important;}.fa-whatsapp{background:#25d366;}.fa-twitter{background:#2ca8d2!important;}.fa-facebook{background:#305891!important;}.fa-google-plus{background:#ce4d39!important;}.fa-linkedin{background:#4498c8!important;}.fa-envelope-o{background:#787878!important;}<?php } 
+elseif ( $reseaux == 'select-three' ) { ?>.right-net a{color:#000000!important;}<?php } 
+ } 
+if ( $reseaux == 'select-one' ) { ?>.right-net a.fa{color:<?php echo $meta_color; ?>}<?php } 
+elseif ( $reseaux == 'select-two' ) { ?>.right-net a.fa{background:<?php echo $meta_color; ?>;color:#FFFFFF!important}<?php } 
+elseif ( $reseaux == 'select-three' ) { ?>.right-net a.fa{color:#FFFFFF!important}.fa-pinterest{background:#bd081c}.fa-whatsapp{background:#25d366;.fa-twitter{background:#2ca8d2}.fa-facebook{background:#305891}.fa-google-plus{background:#ce4d39}.fa-linkedin{background:#4498c8}.fa-envelope-o{background:#787878}<?php } 
+elseif ( $reseaux == 'select-three' ) { ?>.right-net a.fa{color:#fff}<?php } 
+if( !empty( $meta_color ) ) { ?>.dropcap,section ul li:before{color:<?php echo $meta_color; ?>}#nextpage a{border-bottom:1px solid <?php echo $meta_color; ?>!important}.btn-slf{background:<?php echo $meta_color; ?>!important;color:#fff}<?php } ?> 
+#footer{background:<?php echo $footer_bg; ?>;color:<?php echo $footer_color; ?>!important;} 
+<?php if ($footer_link_color == "select-one") { ?> #footer a {color:<?php echo $footer_color; ?>!important;} 
+ <?php } elseif ($footer_link_color == "select-two") { ?> #footer a {color:<?php echo $primary; ?>!important;}
+ <?php } elseif ($footer_link_color == "select-three") { ?> #footer a {color:#FFFFFF!important;}
+ <?php } elseif ($footer_link_color == "select-four") { ?> #footer a {color:#000000!important;}
+ <?php } 
