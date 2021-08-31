@@ -13,12 +13,18 @@ The icon library used is the fabulous Ionicons. The theme is customizable with a
 
 It includes, as well, a toolbox partly based on the KnightLab tools for journalistic storytelling.
 
+
+## Version
+
+This theme is version 4.7c
+
 ## What ?
-This theme adds 4 custom content types :
-* Projects : for grouping Maps and Posts in groups
-* Maps : a map contains Markers
-* Markers : markers belong to a Map and can contain a mix of text, image, audio or video.
-* Geoformat : to build long form stories with including maps.
+This theme adds 5 custom content types :
+* Projects: for grouping Maps and Posts in groups
+* Maps: a map contains Markers
+* Markers: markers belong to a Map and can contain a mix of text, image, audio or video.
+* Geoformat: to build long form stories with including maps.
+* Capes: to add stories following a roadmap
 
 ## How ?
 To install this theme, just click on the download ZIP link at right and uncompress it in your __wp-content/themes__ directory.

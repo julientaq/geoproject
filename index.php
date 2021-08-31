@@ -3,12 +3,14 @@
 Template Name: Template for index (general, not used)
 */
 get_header();  
-get_template_part('project-list'); ?>
+get_template_part('project-list');
+
+ ?>
 <div class="row">
 	
 	<?php $the_query = new WP_Query( 
 		array (
-			'post_type' => array('post','maps','geoformat'),
+			'post_type' => array('post','maps','geoformat', 'waymark_map'),
 			'posts_per_page' => 12
 		)
 	);
@@ -90,7 +92,6 @@ get_template_part('project-list'); ?>
 							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 								<div class="wrap">
 									<h3><?php the_title(); ?></h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
 								</div>
 							</a>
 						</figcaption>
@@ -104,7 +105,91 @@ get_template_part('project-list'); ?>
 				</div>
 			
 <?php break;
-		
+
+
+			
+			// Maps
+			
+			case "capes" :  ?>
+				<div class="col col-lg-4 col-md-6 col-sm-12 col-12">
+					<?php 
+					$link = get_the_permalink();
+					$map = str_replace('capes', 'capes/home', $link);		
+					?>
+					<div class="gp-leaflet-map-container">
+						<?php if( has_tag() ) : ?>
+							<div class="cat-tag">
+								<?php geoproject_first_post_tag_link(); ?>
+							</div>
+						<?php endif; ?>
+						<?php if(get_post_meta($post->ID, 'display_image_une', true) == 'yes') : 
+							the_post_thumbnail();
+						else: ?>
+							<iframe src="<?php echo $map; ?>" width="100%" height="400"></iframe>
+						<?php endif; ?>
+					</div>
+						
+					<figure class="show-fig">	
+						<figcaption>
+							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+								<div class="wrap">
+									<h3><?php the_title(); ?></h3>
+								</div>
+							</a>
+						</figcaption>
+					</figure>
+					 
+					 <div class="mentions">
+						<div class="ion"><ion-icon name="timer"></ion-icon></div> <?php the_time('d-m-Y'); ?>
+						<div class="type"><ion-icon name="pin"></ion-icon></div>
+					</div>
+					
+				</div>
+			
+<?php break;
+
+
+
+			// Maps
+			
+			case "waymark_map" :  
+				<?php if(get_post_meta($post->ID, 'display_image_une', true) == 'yes') : 
+				?>
+				<div class="col col-lg-4 col-md-6 col-sm-12 col-12">
+					<?php 
+					$link = get_the_permalink();
+					?>
+					<div class="map-container">
+						<?php if( has_tag() ) : ?>
+							<div class="cat-tag">
+								<?php geoproject_first_post_tag_link(); ?>
+							</div>
+						<?php the_post_thumbnail(); ?>
+					</div>
+						
+					<figure class="show-fig">	
+						<figcaption>
+							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+								<div class="wrap">
+									<h3><?php the_title(); ?></h3>
+								</div>
+							</a>
+						</figcaption>
+					</figure>
+					 
+					 <div class="mentions">
+						<div class="ion"><ion-icon name="timer"></ion-icon></div> <?php the_time('d-m-Y'); ?>
+						<div class="type"><ion-icon name="pin"></ion-icon></div>
+					</div>
+					
+				</div>
+				<?php endif; ?>
+<?php break;
+
+
+
+
+
 		//Geoformat
 			
 		case "geoformat" : 

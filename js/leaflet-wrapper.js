@@ -31,7 +31,10 @@ var customZindex = my_options.customZindex;
 var customCopyright = my_options.customCopyright;
 var customDisplaying = my_options.customDisplaying;
 var customDisplayingMap = my_options.customDisplayingMap;
-var customMinZoom = my_options.customMinZoom;
+var customTilesPath = my_options.customTilesPath;
+var customImageNorthEast = my_options.customImageNorthEast;
+var customImageSouthWest = my_options.customImageSouthWest;
+
 
 if (style == "") {
 	style = 'mapbox/streets-v11';
@@ -249,9 +252,7 @@ if (style == "") {
 		}
 		this.initLngatSearchBox();
 		this.initLocateMeBox();
-
-		
-
+		this.setBoundsNonGeographicalMap();
 	}
 
 
@@ -307,6 +308,7 @@ if (style == "") {
 		var dragMarkerIconFilename = this.jqMap.data( 'map-drag-marker-icon-filename' );
 		this._dragMarkerIconFilename = ( dragMarkerIconFilename != undefined && dragMarkerIconFilename != '' ) ? dragMarkerIconFilename : defaultMarkerIconFilename;
 
+
 		// Fields for saving Lat, Lng and Zoom - Default : ''
 		var latFieldID = this.jqMap.data( 'map-lat-field' );
 		var lngFieldID = this.jqMap.data( 'map-lng-field' );
@@ -329,6 +331,12 @@ if (style == "") {
 			var zoomField = jQuery( '#' + zoomFieldID );
 			this._zoomField = ( zoomField.length != 0 ) ? zoomField : '';
 		}
+
+
+		// Is admin page
+		var isAdmin = this.jqMap.data( 'map-admin' );
+		this._isAdmin = ( isAdmin != undefined && isAdmin == 1  ) ? true : false;
+
 
 		// Embed map - Default : false
 		var isEmbed = this.jqMap.data( 'map-embed' );
@@ -358,6 +366,10 @@ if (style == "") {
 		var hasMarkersIndex = this.jqMap.data( 'map-markers-index' );
 		this._hasMarkersIndex = ( hasMarkersIndex != undefined && hasMarkersIndex == 1 && this._permalink == '' ) ? true : false;
 
+		// Show markers Filter - Default : false
+		var hasMarkersFilters = this.jqMap.data( 'map-markers-filters' );
+		this._hasMarkersFilters = ( hasMarkersFilters != undefined && hasMarkersFilters == 1  ) ? true : false;
+
 		// Show Map export - Default : false
 		var hasExport = this.jqMap.data( 'map-export' );
 		this._hasExport = ( hasExport != undefined && hasExport == 1 && this._permalink == '' ) ? true : false;
@@ -370,21 +382,27 @@ if (style == "") {
 			this._customBGMap = ( customBGMap.length != 0 ) ? customBGMap : '';
 		}
 		
+		if ( customImageSouthWest != undefined ) {
+			this._customImageSouthWest = ( customImageSouthWest.length != 0 ) ? customImageSouthWest : '';
+		}
+		if ( customImageNorthEast != undefined ) {
+			this._customImageNorthEast = ( customImageNorthEast.length != 0 ) ? customImageNorthEast : '';
+		}		
+
 		//Type of displaying (replace or overlay)
-		if ( customDisplaying == 'replace' || customDisplayingMap == 'replace' ) {
-			this._customDisplaying = 'replace';
+		if ( customDisplayingMap == 'replace' ) {
 			this._customDisplayingMap = 'replace';
 		}
 		else {
-			this._customDisplaying = 'overlay';
 			this._customDisplayingMap = 'overlay';
 		}
-		
-		
-		if ( customMinZoom != undefined ) {
-			this.customMinZoom = ( customMinZoom != 0 ) ? customMinZoom : '';
+		if ( customDisplaying == 'replace' ) {
+			this._customDisplaying = 'replace';
 		}
-		
+		else {
+			this._customDisplaying = 'overlay';
+		}
+
 		//Map image options
 		if ( customLat1 != undefined ) {
 			this._customLat1 = ( customLat1 != 0 ) ? customLat1 : '';
@@ -417,53 +435,93 @@ if (style == "") {
 	Plugin.prototype.createMap = function () {
 		var _this = this;
 		
-	if ( this._customDisplaying == 'replace' || this._customDisplayingMap == 'replace'  ) {
-	//Create Map CRS
-		this._llMap = L.map(
-			this.jqMap.attr( 'id' ),
-			{
-				fullscreenControl: this._hasControls,
-				dragging: this._hasDrag,
-				touchZoom: this._hasControls,
-				scrollWheelZoom: false,
-				doubleClickZoom: this._hasControls,
-				boxZoom: this._hasControls,
-				crs: L.CRS.Simple,
-				minZoom: this._customMinZoom,
-			}
-		);
-	
-	} 
-	else {
-	// Create Map
-		this._llMap = L.map(
-			this.jqMap.attr( 'id' ),
-			{
-				fullscreenControl: this._hasControls,
-				dragging: this._hasDrag,
-				touchZoom: this._hasControls,
-				scrollWheelZoom: false,
-				doubleClickZoom: this._hasControls,
-				boxZoom: this._hasControls,
-				zoomControl: this._hasControls
-			}
-		);
+		if ( this._customDisplaying == 'replace' || this._customDisplayingMap == 'replace'  ) {
+		//Create Map CRS
+			this._llMap = L.map(
+				this.jqMap.attr( 'id' ),
+				{
+					fullscreenControl: this._hasControls,
+					touchZoom: this._hasControls,
+					dragging: this._hasDrag,
+					scrollWheelZoom: false,
+					boxZoom: this._hasControls,
+					zoomControl: this._hasControls,
+				}
+			);
 		
-	}
+		} 
+		else {
+		// Create Map
+			this._llMap = L.map(
+				this.jqMap.attr( 'id' ),
+				{
+					fullscreenControl: this._hasControls,
+					dragging: this._hasDrag,
+					touchZoom: this._hasControls,
+					scrollWheelZoom: false,
+					doubleClickZoom: this._hasControls,
+					boxZoom: this._hasControls,
+					zoomControl: this._hasControls
+				}
+			);
+			
+		}
+		if(!this._isAdmin && this._hasExport)
+		{
+			var comp = new L.Control.Compass({autoActive: true, showDigit:true});
+			this._llMap.addControl(comp);
+		}
+
 	
-	// Add tiles layer
-	if ( this._customDisplaying == 'replace' || this._customDisplayingMap == 'replace'  ) {
-	}
-	else {
-		var tilesUrl = this._tiles.url;
-		L.tileLayer(
-			tilesUrl,
+
+
+		// Add tiles layer
+
+		// Non geographical Map (custom image replace map)
+		if ( this._customDisplaying == 'replace' || this._customDisplayingMap == 'replace'  ) {
+
+			var tilesUrl = customTilesPath;
+
+			//if NorthWest and SouthPoint have been entered by administrator
+			if ( this._customImageSouthWest  &&  this._customImageNorthEast  ) 
 			{
-				attribution: this._tiles.attribution,
-				maxZoom: this._tiles.maxZoom
+				var southWest = L.latLng(JSON.parse("[" + customImageSouthWest + "]"));
+				var northEast = L.latLng(JSON.parse("[" + customImageNorthEast + "]"));
+				var customBounds = L.latLngBounds(southWest, northEast);	
+				
+				L.tileLayer(tilesUrl+'/{z}_{x}_{y}.png', {
+						minZoom: 0,
+						maxZoom: 5,
+						noWrap: true, 
+						reuseTiles : true,				
+						bounds: customBounds,
+						attribution: this._tiles.attribution,
+				}).addTo(this._llMap);	
 			}
-		).addTo( this._llMap );
-	}
+			else{
+				L.tileLayer(tilesUrl+'/{z}_{x}_{y}.png', {
+						minZoom: 0,
+						maxZoom: 5,
+						noWrap: true, 
+						reuseTiles : true,				
+						attribution: this._tiles.attribution,
+				}).addTo(this._llMap);	
+
+			}		
+
+		}
+		// Regular map
+		else {
+			var tilesUrl = this._tiles.url;
+			L.tileLayer(
+				tilesUrl,
+				{
+					attribution: this._tiles.attribution,
+					maxZoom: this._tiles.maxZoom
+				}
+			).addTo( this._llMap );
+		}
+
 	
 		// Map acts as a permalink ?
 		if ( this._permalink != '' ) {
@@ -529,13 +587,13 @@ if (style == "") {
 				
 			if ( this._customDisplaying == 'replace' )
 			{
-				var imageUrl =  background;
+			/*	var imageUrl =  background;
 				var imageBounds = [[0,0], [1000,1000]];
 				var overlay =  L.imageOverlay(imageUrl, imageBounds, {
 					interactive: true,
 					attribution: this._customCopyright,
 				}).addTo( this._llMap );
-				this._llMap.fitBounds(imageBounds);
+				this._llMap.fitBounds(imageBounds);*/
 			}
 			else
 			{  
@@ -561,13 +619,30 @@ if (style == "") {
 				
 			if ( this._customDisplayingMap == 'replace' )
 			{
-				var imageUrl =  background;
-				var imageBounds = [[0,0], [1000,1000]];
-				var overlay =  L.imageOverlay(imageUrl, imageBounds, {
-					interactive: true,
-					attribution: this._customCopyright,
-				}).addTo( this._llMap );
-				this._llMap.fitBounds(imageBounds);
+				var tilesUrl = customTilesPath;
+
+				if ( this._customImageSouthWest &&  this._customImageNorthEast ) 
+				{
+					var southWest = L.latLng(JSON.parse("[" + customImageSouthWest + "]"));
+					var northEast = L.latLng(JSON.parse("[" + customImageNorthEast + "]"));
+					var customBounds = L.latLngBounds(southWest, northEast);	
+					L.tileLayer(tilesUrl+'/{z}_{x}_{y}.png', {
+						minZoom: 0,
+						maxZoom: 5,
+						noWrap: true,           
+						reuseTiles : true,          
+						attribution: this._customCopyright,
+					}).addTo(this._llMap);
+				}
+				else{
+					L.tileLayer(tilesUrl+'/{z}_{x}_{y}.png', {
+							minZoom: 0,
+							maxZoom: 5,
+							noWrap: true, 
+							reuseTiles : true,				
+							attribution: this._tiles.attribution,
+					}).addTo(this._llMap);	
+				}		
 			}
 			else
 			{  
@@ -583,7 +658,6 @@ if (style == "") {
 				}).addTo( this._llMap );	
 			}
 		}
-
 	};
 
 
@@ -666,6 +740,7 @@ if (style == "") {
 		if ( this._mapID != 0 ) {
 
 			var ajaxAction = ( this._mapID == 'all' ) ? 'gp-get-all-markers' : 'gp-get-map-markers';
+	
 
 			jQuery.ajax({
 				url: ajaxurl,
@@ -686,40 +761,95 @@ if (style == "") {
 							// Add to lists of markers
 							this._markersInOrder.push( currentMarker );
 							this._markersByID[resp[key].id] = currentMarker;
-
 						}
+				
 
-						
 						// Add to Cluster OR FeatureGroup and then to the map
-						if ( this._clusterizeMarkers ) {
+/*						if ( this._clusterizeMarkers ) {
 							this._clusterMarkers = new L.MarkerClusterGroup();
 							this._clusterMarkers.addLayers( this._markersInOrder );
 							this._clusterMarkers.addTo( this._llMap );
 							bounds = this._clusterMarkers.getBounds();
 						}
-						else {
+						else {*/
 							this._featureGroup = L.featureGroup( this._markersInOrder );
 							this._featureGroup.addTo( this._llMap );
 							bounds = this._featureGroup.getBounds();
+						/*}*/
+
+								
+						if ( this._hasMarkersFilters && this._markersJSON != '' ) 
+						{
+
+							jQuery('div#fltr_projects input[type="radio"]').on('change', function() {   
+							        var radio = jQuery(this);
+
+							        var ProjectValue = radio.parent().attr("data-project");
+
+
+							        var CatActiveValue = jQuery( "label[class*=active]").attr("data-cat");
+
+							        if(ProjectValue === "prjct_all" && CatActiveValue === "cat_all" ){
+							        	jQuery( ".leaflet-marker-icon" ).show();
+							        }
+							        else if(ProjectValue === "prjct_all"){
+							        	jQuery( ".leaflet-marker-icon" ).hide();
+							        	jQuery( "img[class*="+CatActiveValue+"][class*=prjct_]" ).show();
+							        }
+							        else if(CatActiveValue === "cat_all"){
+							        	jQuery( ".leaflet-marker-icon" ).hide();
+							        	jQuery( "img[class*="+ProjectValue+"][class*=cat_]" ).show();
+							        }						        
+							        else{
+							        	jQuery( ".leaflet-marker-icon" ).hide();
+							        	jQuery("."+ProjectValue+"."+CatActiveValue).show();
+							        }
+							 })
+
+							jQuery('div#fltr_cats input[type="radio"]').on('change', function() {   
+							        var radio = jQuery(this);
+
+							        var CatValue = radio.parent().attr("data-cat");
+
+							        var ProjectActiveValue = jQuery( "label[class*=active]").attr("data-project");
+							      
+
+							        if(CatValue === "cat_all" && ProjectActiveValue === "prjct_all" ){
+							        	jQuery( ".leaflet-marker-icon" ).show();
+							        }
+							        else if(ProjectActiveValue === "prjct_all"){
+							        	jQuery( ".leaflet-marker-icon" ).hide();
+							        	jQuery( "img[class*="+CatValue+"][class*=prjct_]" ).show();
+							        }
+							        else if(CatValue === "cat_all"){
+							        	jQuery( ".leaflet-marker-icon" ).hide();
+							        	jQuery( "img[class*="+ProjectActiveValue+"][class*=cat_]" ).show();
+							        }						        
+							        else{
+							        	jQuery( ".leaflet-marker-icon" ).hide();
+							        	jQuery("."+CatValue+"."+ProjectActiveValue).show();
+							        }					    
+							 })
+						
 						}
 
-
-
-						// Fit Bounds on Map
-						if ( this._customDisplaying == 'overlay' || this._customDisplayingMap == 'overlay' )  {
-							if ( this._markersInOrder.length > 1 ) {
-								this._llMap.fitBounds( bounds );
-							}
-							else if ( this._markersInOrder.length == 1 ) {
+						// has more than 1 marker
+						if ( this._markersInOrder.length > 1 ) {
+								this._llMap.fitBounds( bounds , {padding: [50,50]});
+						}
+						// has only 1 marker
+						else if ( this._markersInOrder.length == 1 ) {
 								var onlyMarkerLatLng = this._markersInOrder[0].getLatLng();
 								this._llMap.setView( [onlyMarkerLatLng.lat, onlyMarkerLatLng.lng], this._zoom );
-							}
 						}
-
+							
+						
 						// Show the markers index ?
 						if ( this._hasMarkersIndex ) {
 							this.addMarkersIndex();
 						}
+
+
 
 						// Open Marker on load ?
 						if ( this._openMarker != 0 ) {
@@ -735,16 +865,25 @@ if (style == "") {
 							}
 
 						}
+						
 
 					}
-					// Map error
+					// Map error or map without markers
 					else {
-
-						// Center map on default center
-						this._llMap.setView( [this._centerLat, this._centerLng], this._zoom );
+						// Non geographical map without markers but bounds entered by administrator
+						if ( this._customImageSouthWest  &&  this._customImageNorthEast  ) 
+						{
+							var southWest = L.latLng(JSON.parse("[" + customImageSouthWest + "]"));
+							var northEast = L.latLng(JSON.parse("[" + customImageNorthEast + "]"));
+							var customBounds = L.latLngBounds(southWest, northEast);
+							this._llMap.setView(customBounds.getCenter(), 1);
+						}
+						else{
+							this._llMap.setView( [this._centerLat, this._centerLng], 0 );      
+						}	
 
 					}
-
+					
 				},
 				dataType: 'json'
 			});
@@ -772,11 +911,11 @@ if (style == "") {
 				iconSize: [markerInfos.icon.icon_size.x, markerInfos.icon.icon_size.y],
 				iconAnchor: [Math.floor( markerInfos.icon.icon_size.x / 2 ), markerInfos.icon.icon_size.y - 1],
 				popupAnchor: [0, -( markerInfos.icon.icon_size.y )],
+				className: markerInfos.classsname,
 			};
 
 			// Create marker
 			var marker = L.marker( L.latLng( markerInfos.lat, markerInfos.lng ), { icon: L.icon( markerIcon ) } );
-
 
 			//Redirect Read More link ?
 			if (markerInfos.readmorelnk !== '') 
@@ -1165,6 +1304,49 @@ if (style == "") {
 
 
 
+
+	/**
+	 *  in admin, get bounds of Non geographical maps (custom image)
+	 */
+	Plugin.prototype.setBoundsNonGeographicalMap = function() {
+
+		if ( this._isAdmin != ''  && this._customDisplaying == 'replace'  )  {
+			var _this = this;
+			
+			// Init vars
+			var mboxMapPreview = jQuery( '#mbox_map_preview' );
+			var customImageBox = jQuery( '#custom_image-custom-image' );
+	        var northEast = customImageBox.find( 'input[name=custom_image_northeast]' );
+	        var southWest = customImageBox.find( 'input[name=custom_image_southwest]' );
+
+			_this._llMap.on('contextmenu',function(e) {
+			    	var latlng = _this._llMap.mouseEventToLatLng(e.originalEvent);
+		       		northEast.val(latlng.lat + ', ' + latlng.lng);
+		       		alert('Coordonnées Nord Est sauvegardées :' + latlng.lat + ', ' + latlng.lng);
+
+	  			return false;
+
+		  	});
+
+
+			_this._llMap.on('click',function(k) {
+						var latlng2 = _this._llMap.mouseEventToLatLng(k.originalEvent);
+			       		southWest.val(latlng2.lat + ', ' + latlng2.lng);
+			       		alert('Coordonnées Sud Ouest sauvegardées : '+ latlng2.lat + ', ' + latlng2.lng);
+		  				return false;
+		  	});
+
+		 }
+
+
+	};
+
+
+
+
+
+
+
 	/**
 	 * Init Locate Me Box
 	 */
@@ -1191,7 +1373,7 @@ if (style == "") {
 						context: _this,
 						success: function( res )
 						{
-									$('.loading').hide(); //hide progress bar
+									jQuery('.loading').hide(); //hide progress bar
 
 									_this._llMap.locate({
 									  setView: true
@@ -1354,6 +1536,11 @@ if (style == "") {
 		}
 
 	};
+
+
+
+
+
 
 
 	/**

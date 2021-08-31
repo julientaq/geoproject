@@ -137,6 +137,55 @@ add_action( 'edit_category', 'gp_category_transient_flusher' );
 add_action( 'save_post', 'gp_category_transient_flusher' );
 
 
+
+
+
+/**
+ * Prints HTML of the categories List sidebar
+ */
+function gp_the_categories_list_nav() {
+					$args = array(
+					'show_option_all'    => '',
+					'show_option_none'   => __('No categories'),
+					'orderby'            => 'name',
+					'order'              => 'ASC',
+					'style'              => 'list',
+					'show_count'         => 0,
+					'hide_empty'         => 1,
+					'use_desc_for_title' => 1,
+					'child_of'           => 0,
+					'feed'               => '',
+					'feed_type'          => '',
+					'feed_image'         => '',
+					'exclude'            => '',
+					'exclude_tree'       => '',
+					'include'            => '',
+					'hierarchical'       => true,
+					'title_li'           => false,
+					'number'             => NULL,
+					'echo'               => 1,
+					'depth'              => 0,
+					'current_category'   => 0,
+					'pad_counts'         => 0,
+					'taxonomy'           => 'category',
+					'separator'          => '<br />',
+				);
+				?>
+				<div> 
+					<ul class="nav-list">
+						<li class="nav-title"><?php _e( 'Categories', 'geoformat' ); ?></li>
+						<?php wp_list_categories( $args ); ?>
+					</ul>
+				</div>
+				<?php
+
+}
+
+
+
+
+
+
 /**
  * Prints HTML of the projects List sidebar
  */
@@ -147,7 +196,7 @@ function gp_the_projects_list_nav() {
 	$projects_list = gp_query_get_projects(
 		array(
 			'orderby'	=> 'date',
-			'order' 	=> 'DESC'
+			'order' 	=> 'DESC',
 		)
 	);
 
@@ -156,8 +205,8 @@ function gp_the_projects_list_nav() {
 
 	if ( $total_projects > 0 ) : ?>
 		
-				<ul id="liste">
-					<li id="pj-title"><ion-icon name="pin"></ion-icon> <?php _e( 'Projects list', 'geoformat' ); ?></li>
+				<ul class="nav-list">
+					<li class="nav-title"><ion-icon name="pin"></ion-icon> <?php _e( 'Projects list', 'geoformat' ); ?></li>	
 					
 					<?php
 					// Loop through projects
@@ -284,6 +333,109 @@ function gp_the_side_last_markers( $params = array() ) {
 	}
 
 }
+
+
+
+//Last capes
+function gp_the_side_last_capes( $params = array() ) {
+	global $post;
+	
+	// Get last capes list
+	$lastCapes = new WP_Query( 
+		array (
+		'post_type'			=> 'capes',
+		'order'				=> 'date',
+		'orderby'			=> 'DESC',
+		'posts_per_page'	=> 2,
+		'post__not_in' => array($post->ID)
+	)); 
+
+	if($lastCapes->have_posts())
+	{
+	?>
+		<h2 class="side-title-marker txt-on-bg">
+			<span class="iont"><ion-icon name="airplane"></ion-icon></span>  <?php _e( 'Last Capes', 'geoformat' ); ?>
+		</h2>
+		
+		<?php while ( $lastCapes->have_posts()) : $lastCapes->the_post();  
+		 ?>
+			
+			<aside class="side">		
+				<h3>
+					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+				</h3>
+
+				<?php 
+						$link = get_the_permalink();
+						$cape = str_replace('capes', 'capes/home', $link);		
+						?>
+						<div class="gp-leaflet-map-container">	
+							<?php if ( has_post_thumbnail() ) : ?>
+								<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_title() ); ?>">
+									<?php the_post_thumbnail(); ?>
+								</a>
+							<?php else: ?>
+								<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_title() ); ?>">
+									<iframe src="<?php echo $cape; ?>" width="100%" height="400"></iframe>
+								</a>
+							<?php endif; ?>
+						</div>
+			</aside>
+			<?php endwhile;
+			wp_reset_postdata();
+	}
+
+}
+
+//Last capes
+function gp_the_side_last_itineraries( $params = array() ) {
+	global $post;
+	
+	// Get last capes list
+	$lastItineraries = new WP_Query( 
+		array (
+		'post_type'			=> 'waymark_map',
+		'order'				=> 'date',
+		'orderby'			=> 'DESC',
+		'posts_per_page'	=> 2,
+		'post__not_in' => array($post->ID)
+	)); 
+
+	if($lastItineraries->have_posts())
+	{
+	?>
+		<?php 
+		$i=0;
+			while ( $lastItineraries->have_posts()) : $lastItineraries->the_post();  
+		 ?>
+			<?php if ( has_post_thumbnail() ) :  $i++;  ?>
+				<?php  if ( $i<2 ): ?>
+					<h2 class="side-title-marker txt-on-bg">
+						<span class="iont"><ion-icon name="map"></ion-icon></span>  <?php _e( 'Last Itineraries', 'geoformat' ); ?>
+					</h2>
+				<?php endif; ?>
+				<aside class="side">		
+					<h3>
+						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+					</h3>
+					<?php 
+						$link = get_the_permalink();
+					?>
+						<div class="gp-leaflet-map-container">	
+							<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_title() ); ?>">
+								<?php the_post_thumbnail(); ?>
+							</a>
+						</div>
+				</aside>
+			<?php endif; ?>
+			<?php endwhile;
+			wp_reset_postdata();
+	}
+
+}
+
+
+
 
 //Two last Geoformats
 function gp_the_side_last_geoformat( $params = array() ) {

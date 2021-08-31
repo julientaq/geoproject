@@ -67,7 +67,7 @@ add_action( 'after_setup_theme', 'gp_setup' );
 
 // Thumbnails
 
-	add_theme_support( 'post-thumbnails', array( 'post','projects', 'maps', 'geoformat' ) );
+	add_theme_support( 'post-thumbnails', array( 'post','projects', 'maps', 'geoformat', 'capes' ) );
 	set_post_thumbnail_size (800, 533, array( 'center', 'center' ));
 
 if ( ! isset ( $content_width) )
@@ -83,9 +83,21 @@ require_once(get_template_directory() . '/inc/functions-common-utils.php' );
 require_once(get_template_directory() . '/inc/functions-ajax.php' );
 require_once(get_template_directory() . '/inc/cpt/projects.php' );
 require_once(get_template_directory() . '/inc/cpt/maps.php' );
+require_once(get_template_directory() . '/inc/cpt/capes.php' );
 require_once(get_template_directory() . '/inc/cpt/markers.php' );
 require_once(get_template_directory() . '/inc/cpt/geoformat.php' );
 require_once(get_template_directory() . '/inc/admin/widget-posts-in-category.php' );
+
+
+
+function add_category_to_waymark_map() {
+    register_taxonomy_for_object_type( 'category', 'waymark_map' );
+    unregister_taxonomy_for_object_type( 'waymark_collection', 'waymark_map' );
+}
+add_action( 'init', 'add_category_to_waymark_map' );
+
+
+
 
 //Flush Rewrite Rules on theme switching
 function gp_flush_rewrite_rules() {
@@ -192,8 +204,9 @@ function gp_manage_theme_options() {
 		'map_trash_keep_markers'		=> GP_DEFAULT_MAP_TRASH_KEEP_MARKERS,
 		'blog_title'   					=> GP_DEFAULT_BLOG_TITLE,
 		'copyright'   					=> GP_DEFAULT_COPYRIGHT,
-		'year'   						=> GP_DEFAULT_YEAR
-		
+		'year'   						=> GP_DEFAULT_YEAR,
+		'bigmap_on_hp'   				=> GP_DEFAULT_BIGMAP_ON_HP
+
 	);
 
 	// Get current options if any

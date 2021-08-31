@@ -10,174 +10,177 @@
 			
 		 $post_ids[] = get_the_ID();
 		 
-		 $cpt = get_post_type(); ?>
+		 $cpt = get_post_type(); 
+
+
+		 ?>
 
 	<?php //Switched by CPT
 		switch ($cpt) {
 			 
 			case "post" : ?>
 
-				<div class="col col-lg-3 col-md-4 col-sm-6 col-12 grid-item col-loop">
-					  
-					<figure class="effeckt-caption" data-effeckt-type="cover-fade">
-					<?php if( has_tag() ) : ?>
-						<div class="cat-tag">
-							<?php geoproject_first_post_tag_link(); ?>
-						</div>
-					<?php endif; 	
-							if ( has_post_thumbnail() ) : 
-								the_post_thumbnail();
-							else: ?>
-									
+				<div class="col col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+					<h3 class="home-title"><a href="<?php the_permalink(); ?>" title="<?php _e( 'See the post', 'geoformat' ); ?>"><?php the_title(); ?> </a></h3>
+					<?php	
+							if ( has_post_thumbnail() ) : ?>
+							<a href="<?php the_permalink(); ?>" title="<?php _e( 'See the post', 'geoformat' ); ?>">
+								<?php the_post_thumbnail(); ?>
+							</a>
+							<?php else: ?>
+							<a href="<?php the_permalink(); ?>" title="<?php _e( 'See the post', 'geoformat' ); ?>">								
 								<div class="abstract">
-									<h3><?php the_title(); ?></h3>
+									<?php the_title(); ?>
 								</div>
-							
+							</a>
 							<?php endif; ?>
-							
-							<figcaption>
-							  <a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_title() ); ?>">
-								<div class="effeckt-figcaption-wrap">
-									<?php if ( has_post_thumbnail() ) : ?>
-										<h3><?php the_title(); ?></h3>
-									<?php endif; ?>
-										<?php echo excerpt(10); ?>
-								</div>
-							  </a>
-							</figcaption>
-						</figure>
-						
-						<div class="mentions">
-							<div class="ion"><ion-icon name="timer"></ion-icon></div> <?php the_time('d-m-Y'); ?>
-							<div class="type"><?php get_template_part('format'); ?></div>
-						</div>
+					<div class="mentions home-mentions">
+						<span class="iontt"><?php if( has_tag() ) : geoproject_first_post_tag_link(); endif; ?></span>
+						<div class="type"><ion-icon name="document"></ion-icon></div>
+					</div>
 				</div>
-			
 <?php break;
 			
 			// Maps
+			case "maps" :  
 			
-			case "maps" :  ?>
-				<div class="col col-lg-3 col-md-4 col-sm-6 col-12 grid-item col-loop">
-						
-					<figure class="effeckt-caption" data-effeckt-type="cover-fade">
-					<?php if( has_tag() ) : ?>
-						<div class="cat-tag">
-							<?php geoproject_first_post_tag_link(); ?>
-						</div>
-					<?php endif;
-					if(get_post_meta($post->ID, 'display_image_une', true) == 'yes') : 
-						the_post_thumbnail();
-					else : 
+		
+		 		?>
+				<div class="col col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+					<h3 class="home-title"><a href="<?php the_permalink(); ?>" title="<?php _e( 'See the map', 'geoformat' ); ?>"><?php the_title(); ?> </a></h3>
+							
+						<?php 
 						$link = get_the_permalink();
-						$map = str_replace('maps', 'maps/home', $link);	
-					?>		
-					<iframe class="mappy" src="<?php echo $map; ?>" width="100%" height="400"></iframe>
-					<?php endif; ?>
-						<figcaption>
-							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-								<div class="wrap">
-									<h3><?php the_title(); ?></h3>
-									<?php echo excerpt(10); ?>
-								</div>
-							</a>
-						</figcaption>
-					</figure>
-					 
-					 <div class="mentions">
-						<div class="ion"><ion-icon name="timer"></ion-icon></div> <?php the_time('d-m-Y'); ?>
-						<div class="type"><ion-icon name="pin"></ion-icon></div>
-					</div>
-					
+						$map = str_replace('maps', 'maps/home', $link);		
+						?>
+						<div class="map-container">
+							<?php if(get_post_meta($post->ID, 'display_image_une', true) == 'yes') : ?>
+								<a href="<?php the_permalink(); ?>" title="<?php _e( 'See the map', 'geoformat' ); ?>">
+										<?php the_post_thumbnail(); ?>
+								</a>
+							<?php else: ?>
+								<a href="<?php the_permalink(); ?>" title="<?php _e( 'See the map', 'geoformat' ); ?>">
+										<iframe src="<?php echo $map; ?>" width="100%" height="400"></iframe>
+								</a>
+							<?php endif; ?>
+						</div>
+						
+						 <div class="mentions home-mentions">
+							<span class="iontt"><?php if( has_tag() ) : geoproject_first_post_tag_link(); endif; ?></span>
+							<div class="type"><ion-icon name="map"></ion-icon></div>
+						</div>
 				</div>
 			
 <?php break;
+
+			// Maps
+			case "waymark_map" :   ?>
+				<div class="col col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+					<h3 class="home-title"><a href="<?php the_permalink(); ?>" title="<?php _e( 'See the map', 'geoformat' ); ?>"><?php the_title(); ?> </a></h3>
+						<?php 
+						$link = get_the_permalink();
+						?>
+						<div class="map-container">
+								<a href="<?php the_permalink(); ?>" title="<?php _e( 'See the map', 'geoformat' ); ?>">
+										<?php the_post_thumbnail(); ?>
+								</a>
+						</div>
+						
+						 <div class="mentions home-mentions">
+							<span class="iontt"><?php if( has_tag() ) : geoproject_first_post_tag_link(); endif; ?></span>
+							<div class="type"><ion-icon name="map"></ion-icon></div>
+						</div>
+				</div>
+<?php break;
+
+
+			// Markers
+			case "markers" :  	
+		 		?>
+				<div class="col col-lg-4 col-md-6 col-sm-12 col- mb-5">
+					<h3 class="home-title"><a href="<?php the_permalink(); ?>" title="<?php _e( 'See the marker', 'geoformat' ); ?>"><?php the_title(); ?> </a></h3>
+							
+						<?php 
+						$link = get_the_permalink();
+						$marker = str_replace('markers', 'markers/export', $link);		
+						?>
+					
+						<?php if ( has_post_thumbnail() ) : ?>
+							<div><a href="<?php the_permalink(); ?>" title="<?php _e( 'See the map', 'geoformat' ); ?>">
+										<?php the_post_thumbnail(); ?>
+								</a></div>
+						<?php else: ?>
+							<div class="map-container"><a href="<?php the_permalink(); ?>" title="<?php _e( 'See the map', 'geoformat' ); ?>">
+										<iframe src="<?php echo $marker; ?>" width="100%" height="400"></iframe>
+							</a></div>
+						<?php endif; ?>
+						
+						
+					<div class="mentions home-mentions">
+						<span class="iontt"><?php if( has_tag() ) : geoproject_first_post_tag_link(); endif; ?></span>
+						<div class="type"><ion-icon name="pin"></ion-icon></div>
+					</div>
+				</div>
+			
+<?php break;
+
 		
 		//Geoformat
-			
 		case "geoformat" : 
 		?>			
-			
-			<div class="col col-lg-3 col-md-4 col-sm-6 col-12 grid-item col-loop">
-					
-				<figure class="effeckt-caption" data-effeckt-type="cover-fade">
-					<?php if( has_tag() ) : ?>
-						<div class="cat-tag">
-							<?php geoproject_first_post_tag_link(); ?>
-						</div>
-					<?php endif;
+				<div class="col col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+				<h3 class="home-title"><a href="<?php the_permalink(); ?>" title="<?php _e( 'View geoformat', 'geoformat' ); ?>"><?php the_title(); ?> </a></h3>
+					<?php 
 					$meta_map = html_entity_decode(get_post_meta( get_the_ID(), 'meta-map',true ));
 					$meta_map = str_replace('export','home', $meta_map);
 					
 					if(!empty($meta_map) ) {
 						echo do_shortcode($meta_map);
-					} elseif ( has_post_thumbnail() ) { 
-						the_post_thumbnail();	
-					} else { ?>
-						<div class="abstract">
-							<?php the_title(); ?>
-						</div>	
-					<?php } ?>
-					
-					<figcaption>
-						<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_title() ); ?>">
-							<div class="effeckt-figcaption-wrap">
-								<?php if ( has_post_thumbnail() ) : ?>
-									<h3><?php the_title(); ?></h3>
-								<?php endif; ?>
-									<?php echo excerpt(10); ?>
-							</div>
+					} elseif ( has_post_thumbnail() ) { ?>
+						<a href="<?php the_permalink(); ?>" title="<?php _e( 'View geoformat', 'geoformat' ); ?>">
+							<?php the_post_thumbnail(); ?>
 						</a>
-					</figcaption>
-				</figure>
-						
-					<div class="mentions">
-						<div class="ion"><ion-icon name="timer"></ion-icon></div> <?php the_time('d-m-Y'); ?>
+					<?php } else { ?>
+						<a href="<?php the_permalink(); ?>" title="<?php _e( 'View geoformat', 'geoformat' ); ?>">
+							<div class="abstract">
+								<?php the_title(); ?>
+							</div>	
+						</a>
+					<?php } ?>
+					<div class="mentions home-mentions">
+						<span class="iontt"><?php if( has_tag() ) : geoproject_first_post_tag_link(); endif; ?></span>
 						<div class="type"><ion-icon name="paper"></ion-icon></div>
 					</div>
-				
-				</div>
+			</div>
+
+
+
 <?php break;
 		
 	//Projects		
 		case "projects" : 
 ?>						
-			<div class="col col-lg-3 col-md-4 col-sm-6 col-12 grid-item col-loop">
-					
-				<figure class="effeckt-caption" data-effeckt-type="cover-fade">
-					<?php if( has_tag() ) : ?>
-						<div class="cat-tag">
-							<?php geoproject_first_post_tag_link(); ?>
-						</div>
-					<?php endif;	
-						if ( has_post_thumbnail() ) : 
-							the_post_thumbnail();
-						else: ?>
-									
-						<div class="abstract">
-							<h3><?php the_title(); ?></h3>
-						</div>
-							
-						<?php endif; ?>
-							
-						<figcaption>
-						  <a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_title() ); ?>">
-							<div class="effeckt-figcaption-wrap">
-								<?php if ( has_post_thumbnail() ) : ?>
-									<h3><?php the_title(); ?></h3>
-								<?php endif; ?>
-									<?php echo excerpt(10); ?>
-							</div>
-						  </a>
-						</figcaption>
-				</figure>
-						
-					<div class="mentions">
-						<div class="ion"><ion-icon name="timer"></ion-icon></div> <?php the_time('d-m-Y'); ?>
-						<div class="type"><ion-icon name="folder"></ion-icon></div>
+				<div class="col col-lg-4 col-md-6 col-sm-12 col-12 mb-5">
+				<h3 class="home-title"><a href="<?php the_permalink(); ?>" title="<?php _e( 'View project', 'geoformat' ); ?>"><?php the_title(); ?> </a></h3>
+					<?php 
+					if ( has_post_thumbnail() ) { ?>
+						<a href="<?php the_permalink(); ?>" title="<?php _e( 'View project', 'geoformat' ); ?>">
+							<?php the_post_thumbnail(); ?>
+						</a>
+					<?php } else { ?>
+						<a href="<?php the_permalink(); ?>" title="<?php _e( 'View project', 'geoformat' ); ?>">
+							<div class="abstract">
+								<?php the_title(); ?>
+							</div>	
+						</a>
+					<?php } ?>
+					<div class="mentions home-mentions">
+						<span class="iontt"><?php if( has_tag() ) : geoproject_first_post_tag_link(); endif; ?></span>
+						<div class="type"><ion-icon name="paper"></ion-icon></div>
 					</div>
-				
-				</div>
+			</div>
+
+
 <?php break;
 		
 		}

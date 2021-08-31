@@ -33,7 +33,7 @@ function tools_admin_menu(){
 	$menu_slug= 'toolbox'; 
 	$function = 'tools_page';
 	$icon_url = 'dashicons-media-code'; 
-	$position = 24;
+	$position = 35;
 	 add_menu_page( 
 		 $page_title,
 		 $menu_title,

@@ -56,7 +56,7 @@ class gp_cpt_markers {
 			'supports'            	=> array( 'title', 'editor', 'thumbnail', 'revisions', 'comments' ),
 			'rewrite' 				=> true,
 			'query_var'           	=> true,
-			'taxonomies' 			=> array( 'post_tag'),
+			'taxonomies' 			=> array( 'post_tag', 'category' ),
 			'can_export'          	=> true
 		);
 

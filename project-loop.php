@@ -7,7 +7,7 @@
 	$project_ID = get_the_ID();
 	
 	$args = array( 
-		'post_type'   	=> array('post', 'geoformat', 'maps'),
+		'post_type'   	=> array('post', 'geoformat', 'maps', 'capes', 'waymark_map'),
 		'meta_key' 	=> 'gp_project',
 		'meta_value' => $project_ID,
 		'meta_value_type' 	=> 'numeric',
@@ -74,6 +74,62 @@
 				</div>
 		</div>
 	<?php endif;
+
+
+	if ($cpt == 'waymark_map') :
+
+	 	//on regroupe les IDs dans un array pour chercher ensuite les marqueurs.
+	 	$mapsIDs[]=get_the_ID();
+
+	   if( has_post_thumbnail( get_the_ID() ) ) : ?>
+			<div class="col col-lg-6 col-md-6 col-sm-12 col-12 grid-item">
+				<h3 class="home-title"><a href="<?php the_permalink(); ?>" title="<?php _e( 'See the map', 'geoformat' ); ?>"><?php the_title(); ?> </a></h3>
+					<?php 
+					$link = get_the_permalink();
+					?>
+					<div class="map-container">
+						<a href="<?php the_permalink(); ?>" title="<?php _e( 'See the map', 'geoformat' ); ?>">
+							<?php the_post_thumbnail(); ?>
+						</a>
+					</div>
+					 <div class="mentions home-mentions">
+						<span class="iontt"><?php if( has_tag() ) : geoproject_first_post_tag_link(); endif; ?></span>
+						<div class="type"><ion-icon name="map"></ion-icon></div>
+					</div>
+			</div>
+		<?php endif; ?>
+	<?php endif;
+
+
+
+	if ($cpt == 'capes') :
+	  ?>			
+		<div class="col col-lg-6 col-md-6 col-sm-12 col-12 grid-item">
+			<h3 class="home-title"><a href="<?php the_permalink(); ?>" title="<?php _e( 'See the map', 'geoformat' ); ?>"><?php the_title(); ?> </a></h3>
+				<?php 
+				$link = get_the_permalink();
+				$cape = str_replace('capes', 'capes/home', $link);		
+				?>
+				<div class="map-container">
+					<?php if(get_post_meta($post->ID, 'display_image_une', true) == 'yes') : ?>
+						<a href="<?php the_permalink(); ?>" title="<?php _e( 'See the map', 'geoformat' ); ?>">
+								<?php the_post_thumbnail(); ?>
+						</a>
+					<?php else: ?>
+						<a href="<?php the_permalink(); ?>" title="<?php _e( 'See the map', 'geoformat' ); ?>">
+								<iframe src="<?php echo $cape; ?>" width="100%" height="400"></iframe>
+						</a>
+					<?php endif; ?>
+				</div>
+				
+				 <div class="mentions home-mentions">
+					<span class="iontt"><?php if( has_tag() ) : geoproject_first_post_tag_link(); endif; ?></span>
+					<div class="type"><ion-icon name="airplane"></ion-icon></div>
+				</div>
+		</div>
+	<?php endif;
+
+
 
 	if ($cpt == 'geoformat') : ?>		
 		<div class="col col-lg-6 col-md-6 col-sm-12 col-12 grid-item">

@@ -194,14 +194,14 @@ function gp_maps_load_performers_or_summary_template( $template ) {
 	
 
     // If performer = 1 then we are on event/performers link
-    if( $export === 1 ) {
+    if( $export === 1 && is_post_type('maps') ) {
         $template = locate_template( array( 'export-map.php' ) );
     }
-	if( $home === 1 ) {
+	if( $home === 1 && is_post_type('maps') ) {
         $template = locate_template( array( 'home-map.php' ) );
     }
 	
-	if( $print === 1 ) {
+	if( $print === 1 && is_post_type('maps') ) {
         $template = locate_template( array( 'print-map.php' ) );
     }
 	

@@ -76,6 +76,28 @@ function gp_get_markers_infos_from_obj( $markers_objects ) {
 
 			}
 
+			
+			//Get className icons (used o filter markers on Big map template)
+ 			$classNameIcon = "";
+
+		    //get marker project ID
+			if ( !empty(gp_query_get_markers_project( $m->ID) ) ):
+				$marker_map_project_ID = gp_query_get_markers_project( $m->ID);
+				$classNameIcon .= "prjct_".$marker_map_project_ID;
+			else:
+				$classNameIcon .= " prjct_all";
+			endif;
+		    //get marker categories ID
+		    if(wp_get_post_categories($m->ID)):
+				foreach (wp_get_post_categories($m->ID) as $c) {
+					$classNameIcon .= " cat_".$c;
+				}
+			else:
+				$classNameIcon .= " cat_all";
+			endif;
+	
+
+
 			// Add to Markers infos array
 			$markers_array[] = array(
 				'id' 			=> $m->ID,
@@ -86,6 +108,7 @@ function gp_get_markers_infos_from_obj( $markers_objects ) {
 				'lng' 			=> get_post_meta( $m->ID, 'gp_lng', true ),
 				'icon'			=> gp_get_all_icon_infos( get_post_meta( $m->ID, 'gp_icon_type', true ), get_post_meta( $m->ID, 'gp_icon_filename', true ) ),
 				'contt' 	 	=> $marker_content,
+				'classsname' 	=> $classNameIcon,
 				'readmorelnk' 	=> get_post_meta( $m->ID, 'gp_read_more_link', true )
 			);
 
@@ -96,6 +119,9 @@ function gp_get_markers_infos_from_obj( $markers_objects ) {
 	return $markers_array;
 
 }
+
+
+
 
 
 /**

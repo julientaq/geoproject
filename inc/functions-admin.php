@@ -13,6 +13,7 @@ require_once(get_template_directory() . '/inc/mbox/project-infos.php' );
 require_once(get_template_directory() . '/inc/mbox/custom-image.php' );
 require_once(get_template_directory() . '/inc/mbox/map-preview.php' );
 require_once(get_template_directory() . '/inc/mbox/map-infos.php' );
+require_once(get_template_directory() . '/inc/mbox/cape-infos.php' );
 require_once(get_template_directory() . '/inc/mbox/marker-infos.php' );
 require_once(get_template_directory() . '/inc/mbox/admin-avatar.php' );
 
@@ -32,11 +33,18 @@ require_once(get_template_directory() . '/inc/admin/dashboard.php' );
  * - Register settings fields
  */
 function gp_admin_init() {
+     global $post_type;
+
     // Register settings
     if ( current_user_can( 'delete_others_posts' ) ) {
         require_once(get_template_directory() . '/inc/admin/settings.php' );
 		gp_register_settings();
     }   
+
+
+    
+
+
 }
 add_action( 'admin_init', 'gp_admin_init' );
 
@@ -48,11 +56,48 @@ function gp_admin_enqueue_scripts( $hook ) {
 		$soundcite = $gp_options['soundcite'];
 	endif; 
 
+
+    // Add LeafLet and Polyline Measures plugins For Capes
+    if ( $post_type == 'capes') {
+
+        // Leaflet JS
+        wp_register_script( 'gp_leaflet_js', get_template_directory_uri() . '/libs/leaflet/leaflet.js', array( 'jquery' ), GP_THEME_VERSION, false );
+        wp_enqueue_script( 'gp_leaflet_js' );
+         // Leaflet CSS
+        wp_enqueue_style( 'gp_leaflet_css', get_template_directory_uri() . '/libs/leaflet/leaflet.css', array(), GP_THEME_VERSION, 'all' );
+        
+        // Polyline Measure Plugin JS
+        wp_register_script('gp_polyline_measure_js', get_template_directory_uri() . '/libs/leaflet/plugins/polyline-measure/leaflet.polylinemeasure.js', '','', false);
+        wp_enqueue_script( 'gp_polyline_measure_js' );        
+        // Polyline Measure Plugin CSS
+        wp_register_style( 'gp_polylinemeasure_css', get_template_directory_uri() . '/libs/leaflet/plugins/polyline-measure/leaflet.polylinemeasure.css', array(), GP_THEME_VERSION, 'all' );
+        wp_enqueue_style('gp_polylinemeasure_css');
+
+        // Admin JS
+        wp_enqueue_script( 'gp_admin_js', get_template_directory_uri() . '/js/admin.js', array( 'jquery' ), GP_THEME_VERSION, true );
+
+        include(get_template_directory() . '/inc/data_map_js.php' );
+        
+        wp_localize_script('gp_admin_js', 'my_options', $scriptData);
+
+        // Custom JS
+        wp_register_script('gp_cape_js', get_template_directory_uri() . '/js/cape.js', '','1.0', false);
+        wp_enqueue_script( 'gp_cape_js' );
+        wp_localize_script('gp_cape_js', 'my_options', $scriptData);
+    }       
+
+
 	// Admin CSS
-	wp_enqueue_style( 'gp_admin_css', get_template_directory_uri() . '/css/admin/admin.css', array(), GP_THEME_VERSION, 'all' );
-	
-	wp_register_style('ionicons', 'https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css',  array(), ' ', 'all' );
-	wp_enqueue_style('ionicons');
+    if ( $post_type != 'waymark_map') :
+	   wp_enqueue_style( 'gp_admin_css', get_template_directory_uri() . '/css/admin/admin.css', array(), GP_THEME_VERSION, 'all' );
+    endif;
+
+
+	if ( $post_type == 'geoformat' ):
+	   wp_register_style('ionicons', 'https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css',  array(), ' ', 'all' );
+	   wp_enqueue_style('ionicons');
+    endif;
+
 	
 		if (!empty($soundcite)  )  :
 			wp_register_style('soundcite', 'https://cdn.knightlab.com/libs/soundcite/latest/css/player.css',  array(), ' ', 'all' );
@@ -66,10 +111,8 @@ function gp_admin_enqueue_scripts( $hook ) {
 		
         // Leaflet CSS
         wp_enqueue_style( 'gp_leaflet_css', get_template_directory_uri() . '/libs/leaflet/leaflet.css', array(), GP_THEME_VERSION, 'all' );
-
         
 		//Marker cluster
-		
 		wp_register_style('gp_leaflet_markercluster', get_template_directory_uri() . '/libs/leaflet/markercluster.css',  array(), ' ', 'all' );
 		wp_enqueue_style('gp_leaflet_markercluster');
 		
@@ -86,6 +129,8 @@ function gp_admin_enqueue_scripts( $hook ) {
 		
 		// Admin JS
 		wp_enqueue_script( 'gp_admin_js', get_template_directory_uri() . '/js/admin.js', array( 'jquery' ), GP_THEME_VERSION, true );
+
+
   
 		// Custom Leaflet JS
         $overlay = get_post_meta( get_the_ID(), 'custom_image_displaying', true );
@@ -107,6 +152,7 @@ function gp_admin_enqueue_scripts( $hook ) {
 		wp_localize_script('gp_leaflet_wrapper_js', 'my_options', $scriptData);
 		wp_localize_script('gp_admin_js', 'my_options', $scriptData);
     }
+
 
     // For Settings page
     if ( $pagenow == 'admin.php') {
@@ -391,7 +437,7 @@ function alaune_get_meta( $value ) {
 }
 
 function alaune_add_meta_box() {
-	$types = array('post', 'geoformat', 'maps', 'markers');
+	$types = array('post', 'geoformat', 'maps', 'markers', 'capes', 'waymark_map');
 	
 	foreach( $types as $type )
     {
@@ -410,15 +456,21 @@ add_action( 'add_meta_boxes', 'alaune_add_meta_box' );
 function alaune_html( $post) {
 	wp_nonce_field( '_alaune_nonce', 'alaune_nonce' ); 
 	
-	$checkboxMeta = get_post_meta( $post->ID ); ?>
+	$checkboxMeta = get_post_meta( $post->ID ); 
+	$post_type= get_post_type( $post->ID ); ?>
 
 	<p>
 
 		<input type="checkbox" name="alaune_une" id="alaune_une" value="yes" <?php if ( isset ( $checkboxMeta['alaune_une'] ) ) checked( $checkboxMeta['alaune_une'][0], 'yes' ); ?> />
 		<label><?php _e( 'Yes', 'geoformat' ); ?></label>
 	</p>
-		<?php
+	<?php
+	if($post_type == 'waymark_map'):
+		echo '<p>'._e('This post will be displayed only if it has a featured image.', 'geoformat').'</p>';
+	endif;
 }
+
+
 
 function alaune_save( $post_id ) {
 	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
@@ -432,6 +484,48 @@ function alaune_save( $post_id ) {
     }
 }
 add_action( 'save_post', 'alaune_save' );
+
+
+
+
+
+function add_featured_image_text_for_waymark_map( $content, $post_id ) {
+
+	global $post_type;
+	if ( $post_type == 'waymark_map'):
+
+		$field_id    = 'show_featured_image';
+		$field_value = esc_attr( get_post_meta( $post_id, $field_id, true ) );
+		$field_text  = esc_html__( 'Show image.', 'generatewp' );
+		$field_state = checked( $field_value, 1, false);
+
+		$field_label = sprintf(
+		    '<p>'. _e('Featured Image is required for this post type', 'geoformat').'</p>',
+		    $field_id, $field_value, $field_state, $field_text
+		);
+
+		return $content .= $field_label;
+
+	else:
+		global $post_type;
+
+		$field_id    = 'show_featured_image';
+		$field_value = esc_attr( get_post_meta( $post_id, $field_id, true ) );
+		$field_text  = esc_html__( 'Show image.', 'generatewp' );
+		$field_state = checked( $field_value, 1, false);
+
+		$field_label = sprintf(
+		    $field_value, $field_state, $field_text
+		);
+
+		return $content .= $field_label;
+
+
+	endif;
+}
+add_filter( 'admin_post_thumbnail_html', 'add_featured_image_text_for_waymark_map', 10, 2 );
+
+
 
 
 //Redirect after setting
@@ -457,6 +551,68 @@ function geoformat_plugin_notice() {
 	}
 }
 add_action('admin_notices', 'geoformat_plugin_notice');
+
+
+//Admin notice
+function unset_bounds_for_image_notice() {
+    
+    global $current_user;
+    $user_id = $current_user->ID;
+    global $post;
+    global $post_type;
+
+    if ( $post_type == 'maps' ) {
+                $custom_image_download = get_post_meta( $post->ID, 'custom_image_download', true );
+                $custom_image_northeast = get_post_meta( $post->ID, 'custom_image_northeast', true );
+                $custom_image_southwest = get_post_meta( $post->ID, 'custom_image_southwest', true );
+
+                if ( !empty($custom_image_download) AND ( empty($custom_image_northeast) OR empty($custom_image_southwest) ) ) {
+               echo '<div class="notice notice-warning is-dismissible"><p>'. __('Warning: You haven\'t defined the map bounds yet! <a href="#mbox_map_preview">Define now</a>','geoformat').'</p></div>';
+                }
+    }
+}
+add_action('admin_notices', 'unset_bounds_for_image_notice');
+
+
+
+/**
+ * Remove the submenu Collections in Waymark Menu
+ */
+function wpdocs_adjust_the_wp_menu() {
+    $page = remove_submenu_page( 'edit.php?post_type=waymark_map', 'edit-tags.php?taxonomy=waymark_collection&post_type=waymark_map' );
+}
+add_action( 'admin_menu', 'wpdocs_adjust_the_wp_menu', 999 );
+
+
+// Rename plugin name Waymark
+function rename_plugin_waymark() {
+    global $menu;
+
+
+    // Define your changes here
+    $updates = array(
+        "Waymark" => array(
+            'name' => 'Itinéraires & tracés'
+        )
+    );
+
+    foreach ( $menu as $k => $props ) {
+
+        // Check for new values
+        $new_values = ( isset( $updates[ $props[0] ] ) ) ? $updates[ $props[0] ] : false;
+        if ( ! $new_values ) continue;
+
+        // Change menu name
+        $menu[$k][0] = $new_values['name'];
+    }
+}
+add_action( 'admin_init', 'rename_plugin_waymark' );
+
+
+
+
+
+
 
 function geoformat_plugin_notice_ignore() {
 	
@@ -486,6 +642,7 @@ function posts_custom_id_columns($column_name, $id){
         	echo $id;
     }
 }
+
 
 //Delete default image size
 update_option('small_large_size_w', '0');

@@ -13,7 +13,9 @@
 function gp_mbox_projects_list() {
   	add_meta_box( 'mbox_projects_list', __( 'Project', 'geoformat' ), 'gp_mbox_projects_list_content', 'maps', 'side', 'core' );
   	add_meta_box( 'mbox_projects_list', __( 'Project', 'geoformat' ), 'gp_mbox_projects_list_content', 'post', 'side', 'core' );
+    add_meta_box( 'mbox_projects_list', __( 'Project', 'geoformat' ), 'gp_mbox_projects_list_content', 'capes', 'side', 'core' );
   	add_meta_box( 'mbox_projects_list', __( 'Project', 'geoformat' ), 'gp_mbox_projects_list_content', 'geoformat', 'side', 'core' );
+    add_meta_box( 'mbox_projects_list', __( 'Project', 'geoformat' ), 'gp_mbox_projects_list_content', 'waymark_map', 'side', 'core' );
 }
 
 add_action( 'add_meta_boxes', 'gp_mbox_projects_list' );

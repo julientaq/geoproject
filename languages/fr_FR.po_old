@@ -1,0 +1,4089 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: GeoProjects\n"
+"POT-Creation-Date: 2020-08-18 12:16+0200\n"
+"PO-Revision-Date: 2021-06-30 09:41-0400\n"
+"Last-Translator: Laurence Dierickx\n"
+"Language-Team: Labomedia <nderambure@labomedia.net>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.3\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:10
+msgid "An error occured"
+msgstr "Une erreur s'est produite"
+
+#: ../404.php:16
+msgid "Page not found.<br/> Try another research or go back"
+msgstr "Page introuvable.<br>Essayez une autre recherche ou rendez-vous sur la"
+
+#: ../404.php:16
+msgid " to the homepage</a>"
+msgstr " page d'accueil</a>"
+
+#: ../archive-geoformat.php:11 ../inc/admin/print.php:4180 ../inc/cpt/geoformat.php:11
+msgid "Geoformats"
+msgstr "Géoformats"
+
+#: ../archive-geoformat.php:66
+msgid "+ See more"
+msgstr "+ Voir plus"
+
+#: ../archive-maps.php:11 ../inc/admin/print.php:130 ../inc/cpt/maps.php:21 ../inc/cpt/maps.php:31
+msgid "Maps"
+msgstr "Cartes"
+
+#: ../archive-capes.php:11 ../inc/cpt/capes.php:21 ../inc/cpt/capes.php:31
+msgid "Capes"
+msgstr "Caps"
+
+#: ../archive-markers.php:11 ../inc/admin/custom-listing-columns.php:202 ../inc/cpt/markers.php:21 ../inc/cpt/markers.php:31
+msgid "Markers"
+msgstr "Marqueurs"
+
+#: ../archive-projects.php:11 ../inc/cpt/projects.php:21
+msgid "Projects"
+msgstr "Projets"
+
+#: ../archive.php:16
+#, php-format
+msgid "Category Archives : %s"
+msgstr "Archives de la catégorie : %s"
+
+#: ../archive.php:19
+#, php-format
+msgid "Tag Archives : %s"
+msgstr "Archives du mot-clé : %s"
+
+#: ../archive.php:26
+#, php-format
+msgid "Author Archives : %s"
+msgstr "Archives de l'auteur : %s"
+
+#: ../archive.php:34
+#, php-format
+msgid "Daily Archives : %s"
+msgstr "Archives du : %s"
+
+#: ../archive.php:37
+#, php-format
+msgid "Monthly Archives : %s"
+msgstr "Archives de : %s"
+
+#: ../archive.php:40
+#, php-format
+msgid "Yearly Archives : %s"
+msgstr "Archives de : %s"
+
+#: ../archive.php:43
+msgid "Archives"
+msgstr "Archives"
+
+#: ../author.php:19
+msgid "Contact:"
+msgstr "Contact :"
+
+#: ../comments.php:23
+msgid "Comments"
+msgstr "Commentaires"
+
+#: ../comments.php:28 ../comments.php:48
+msgid "Comment navigation"
+msgstr "Navigation dans les commentaires"
+
+#: ../comments.php:29 ../comments.php:49
+msgid "<span class=\"fa fa-angle-left\"></span> Older Comments"
+msgstr "<span class=\"fa fa-angle-left\"></span> Commentaires précédents"
+
+#: ../comments.php:30 ../comments.php:50
+msgid "Newer Comments <span class=\"fa fa-angle-right\"></span>"
+msgstr "Commentaires suivants <span class=\"fa fa-angle-right\"></span>"
+
+#: ../comments.php:59
+msgid "Comments are closed."
+msgstr "Les commentaires sont fermés."
+
+#: ../comments.php:69
+#, php-format
+msgid "Logged in as <a href=\"%1$s\">%2$s</a> - <a href=\"%3$s\" title=\"Log out of this account\">Log out?</a>"
+msgstr "Connecté en tant que <a href=\"%1$s\">%2$s</a> - <a href=\"%3$s\" title=\"Déconnexion\">Déconnexion</a>"
+
+#: ../comments.php:71
+msgid "Name"
+msgstr "Nom"
+
+#: ../comments.php:73
+msgid "Email"
+msgstr "E-mail"
+
+#: ../comments.php:75
+msgid "Website"
+msgstr "Site web"
+
+#: ../content-single-map.php:16 ../inc/admin/custom-listing-columns.php:201 ../inc/admin/custom-listing-columns.php:249 ../inc/admin/custom-listing-columns.php:269 ../inc/cpt/projects.php:20 ../inc/mbox/format.php:35 ../inc/mbox/projects-list.php:14 ../inc/mbox/projects-list.php:15 ../inc/mbox/projects-list.php:16 ../print-map.php:153
+msgid "Project"
+msgstr "Projet"
+
+#: ../content-single-marker.php:23 ../print-marker.php:162
+msgid "Linked map:"
+msgstr "Carte parente :"
+
+#: ../content-single-marker.php:24 ../print-marker.php:163
+msgid "See this map"
+msgstr "Voir cette carte"
+
+#: ../content-single-marker.php:39 ../print-marker.php:178
+msgid "Linked project: "
+msgstr "Projet lié : "
+
+#: ../content-single-marker.php:40 ../print-marker.php:179
+msgid "See this project"
+msgstr "Voir ce projet"
+
+#: ../content-single-marker.php:67
+msgid "<p><strong>Error: you have to link your marker to a map</strong> - "
+msgstr "<p><strong>Erreur : vous devez lier votre marqueur à une carte</strong> - "
+
+#: ../content-single-marker.php:68 ../image.php:29
+msgid "Edit"
+msgstr "Modifier"
+
+#: ../content-single-marker.php:74
+msgid "In the same map"
+msgstr "Dans la même carte"
+
+#: ../content-single-project.php:21
+msgid "Started on"
+msgstr "Démarré le"
+
+#: ../content-single-project.php:34
+msgid "Initiated by"
+msgstr "Initié par"
+
+#: ../content-single-project.php:88 ../networks.php:64 ../print-geoformat.php:102 ../print-map.php:97 ../print-marker.php:97 ../print-page.php:95 ../print-project.php:95 ../print-single.php:95
+msgid "Print this page"
+msgstr "Imprimer cette page"
+
+#: ../content-single-project.php:94 ../networks.php:70 ../networks.php:78 ../networks.php:85 ../networks.php:92 ../networks.php:99
+msgid "Preview before printing"
+msgstr "Aperçu avant impression"
+
+#: ../home.php:30 ../home.php:33 ../home.php:38 ../project-loop.php:54 ../project-loop.php:62 ../project-loop.php:66
+msgid "See the post"
+msgstr "Voir l'article"
+
+#: ../image.php:13
+msgid "Image name: "
+msgstr "Nom de l'image "
+
+#: ../image.php:18
+#, php-format
+msgid "Published <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%8$s</a>"
+msgstr "Publié le <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> à <a href=\"%3$s\" title=\"Lien vers l'image originale\">%4$s &times; %5$s</a> dans <a href=\"%6$s\" title=\"Retourner vers %7$s\" rel=\"gallery\">%8$s</a>"
+
+#: ../image.php:83
+msgid "Pages:"
+msgstr "Pages :"
+
+#: ../image.php:92
+msgid "Previous Image"
+msgstr "Image précédente"
+
+#: ../image.php:93
+msgid "Next Image"
+msgstr "Image suivante"
+
+#: ../inc/admin/admin-menus.php:15 ../inc/admin/admin-menus.php:24 ../inc/admin/admin-menus.php:40
+msgid "Theme settings"
+msgstr "Paramètres du thème"
+
+#: ../inc/admin/admin-menus.php:15
+msgid "Settings GP"
+msgstr "Réglages GP"
+
+#: ../inc/admin/admin-menus.php:18 ../inc/admin/help.php:9
+msgid "FAQ - Help"
+msgstr "FAQ - aide"
+
+#: ../inc/admin/admin-menus.php:18
+msgid "FAQ- Help"
+msgstr "FAQ - aide"
+
+#: ../inc/admin/admin-menus.php:45
+msgid "Storytelling and maps"
+msgstr "Récits et cartes"
+
+#: ../inc/admin/admin-menus.php:46
+msgid "Design"
+msgstr "Design"
+
+#: ../inc/admin/admin-menus.php:47 ../inc/cpt/geoformat.php:12
+msgid "Geoformat"
+msgstr "Géoformat"
+
+#: ../inc/admin/admin-menus.php:48
+msgid "Social Networks"
+msgstr "Réseaux sociaux"
+
+#: ../inc/admin/admin-menus.php:49
+msgid "Metadata & analytics"
+msgstr "Métadonnées et audiences"
+
+#: ../inc/admin/admin-menus.php:50
+msgid "Footer content"
+msgstr "Contenu du pied de page"
+
+#: ../inc/admin/admin-menus.php:56
+msgid "General settings for projects"
+msgstr "Paramètres généraux des projets"
+
+#: ../inc/admin/admin-menus.php:85
+msgid "General settings for Geoformats"
+msgstr "Paramètres généraux pour les Géoformats"
+
+#: ../inc/admin/admin-menus.php:92
+msgid "Set your Geofomats"
+msgstr "Régler vos Géoformats"
+
+#: ../inc/admin/admin-menus.php:96
+msgid ""
+"The settings of each Geoformat must be done at the creation of each new Geoformat. Several options will then be proposed to customize your Geoformat. No field is required: what is not completed or activated will not be displayed. If you do not want to review these settings with each new geoformat, display the list and hover over the Geoformat of your choice. Then click on "
+"\"Duplicate Model\". This action duplicates all settings but beware: it also duplicates the contents!"
+msgstr ""
+"Les paramètres de chaque Géoformat doivent être effectués lors de la création de chaque nouveau Geoformat. Plusieurs options seront alors proposées pour personnaliser votre Géoformat. Aucun champ n'est requis : ce qui n'est pas terminé ou activé ne sera pas affiché. Si vous ne souhaitez pas revoir ces paramètres à chaque nouveau Géoformat, affichez la liste et planez au-dessus du "
+"Géoformat de votre choix. Cliquez ensuite sur \"Dupliquer le modèle\". Cette action reproduit tous les réglages à l'identique mais attention : elle reproduit également le contenu !"
+
+#: ../inc/admin/admin-menus.php:100
+msgid "You can find more information in the \"FAQ\" page of the \"GP Settings\" menu."
+msgstr "Vous pouvez trouver plus d'informations dans la page \"FAQ\" du menu \"GP Paramètres\"."
+
+#: ../inc/admin/admin-menus.php:123
+msgid "Save changes"
+msgstr "Sauver les changements"
+
+#: ../inc/admin/custom-listing-columns.php:64
+msgid "maps"
+msgstr "cartes"
+
+#: ../inc/admin/custom-listing-columns.php:66
+msgid "map"
+msgstr "carte"
+
+#: ../inc/admin/custom-listing-columns.php:70
+msgid "posts"
+msgstr "articles"
+
+#: ../inc/admin/custom-listing-columns.php:72
+msgid "post"
+msgstr "article"
+
+#: ../inc/admin/custom-listing-columns.php:76
+msgid "geoformats"
+msgstr "Géoformats"
+
+#: ../inc/admin/custom-listing-columns.php:78
+msgid "geoformat"
+msgstr "Géoformat"
+
+#: ../inc/admin/custom-listing-columns.php:176 ../inc/admin/custom-listing-columns.php:246 ../inc/admin/custom-listing-columns.php:266
+msgid "Featured image"
+msgstr "Image à la une"
+
+#: ../inc/admin/custom-listing-columns.php:179
+msgid "Totals"
+msgstr "Totaux"
+
+#: ../inc/admin/custom-listing-columns.php:224 ../inc/mbox/marker-infos.php:87
+msgid "Icon"
+msgstr "Icône"
+
+#: ../inc/admin/custom-listing-columns.php:227 ../inc/cpt/maps.php:20 ../inc/cpt/maps.php:32 ../inc/mbox/format.php:50 ../inc/mbox/marker-infos.php:63
+msgid "Map"
+msgstr "Carte"
+
+#: ../inc/cpt/maps.php:32
+msgid "cape"
+msgstr "cap"
+
+msgid "Cape"
+msgstr "Cap"
+
+#: ../inc/admin/custom-listing-filters.php:36 ../inc/admin/custom-listing-filters.php:47
+msgid "Orphan Maps"
+msgstr "Cartes orphelines"
+
+#: ../inc/admin/custom-listing-filters.php:103 ../inc/admin/custom-listing-filters.php:114
+msgid "Orphan Markers"
+msgstr "Marqueurs orphelins"
+
+#: ../inc/admin/dashboard.php:22
+msgid "projects"
+msgstr "projets"
+
+#: ../inc/admin/dashboard.php:43
+msgid "About the theme Geoproject-Geoformat"
+msgstr "A propos du thème Geoproject-Geoformat"
+
+#: ../inc/admin/dashboard.php:59
+msgid "Field Notes"
+msgstr "Notes de terrain"
+
+#: ../inc/admin/dashboard.php:193
+msgid "Marker's name"
+msgstr "Nom du marqueur"
+
+#: ../inc/admin/dashboard.php:204
+msgid "Quick Description"
+msgstr "Description rapide"
+
+#: ../inc/admin/dashboard.php:204
+msgid "Your Recent Field Notes"
+msgstr "Dernières notes de terrain"
+
+#: ../inc/admin/extras.php:60
+#, php-format
+msgid "Page %s"
+msgstr "Page %s"
+
+#: ../inc/admin/help.php:12
+msgid "FAQ"
+msgstr "Questions fréquentes (FAQ)"
+
+#: ../inc/admin/help.php:13
+msgid "Réglez vos Géoformats"
+msgstr "Réglez vos Géoformats"
+
+#: ../inc/admin/help.php:14
+msgid "Cartes disponibles"
+msgstr "Cartes disponibles"
+
+#: ../inc/admin/help.php:15
+msgid "Credits"
+msgstr "Crédits"
+
+#: ../inc/admin/help.php:21
+msgid "How the contents are organized?"
+msgstr "Comment les contenus sont-ils organisés ?"
+
+#: ../inc/admin/help.php:26
+msgid "The GeoProjects Wordpress theme adds 5 content types : Projects, Maps, Capes, Markers and Geoformats."
+msgstr "Le thème Wordpress Géoprojects ajoute 4 types de contenu : Projets, Cartes, Caps, Marqueurs et Géoformats."
+
+#: ../inc/admin/help.php:29
+msgid "A Map contain markers and can be associated to a Project. You can also associate Geoformats as well as the traditionnals WordPress posts to Projects."
+msgstr "Une carte contient des marqueurs et peut être associée à un projet. Vous pouvez aussi associer à un projet des Géoformats ainsi que des articles classiques. Toutes les cartes ne présentent pas le même degré de granularité (voir les modèles de cartes disponibles)."
+
+#: ../inc/admin/help.php:32
+msgid "Markers can contain text, images, sound or video (and a mix of them), and you can provide you own icons to show up on the maps."
+msgstr "Les marqueurs peuvent contenir un texte, des images, du son ou de la vidéo (ou un mélange de tous ces formats). Vous pouvez fournir vos propres icônes de marqueurs personnalisés à afficher sur les cartes en cliquant sur le bouton \"Chargement\" figurant sous \"Chargez votre marqueur personnalisé\"."
+
+#: ../inc/admin/help.php:37
+msgid "Why does nothing appear on the homepage?"
+msgstr "Pourquoi rien n'apparaît en page d'accueil ?"
+
+#: ../inc/admin/help.php:42
+msgid "Do not panic ! This is linked to the \"Show as homepage\" option, which allows you to better control the content displayed. Just edit the items, maps, or geoformats you want to appear, check the ad hoc box and save them as is."
+msgstr "Pas de panique ! Ceci est lié à l'option \"Afficher en page d'accueil\", qui vous permet de mieux contrôler le contenu affiché. Il suffit d'éditer les articles, cartes ou géoformats que vous souhaitez voir apparaître, de cocher la case ad hoc et de les enregistrer tels quels."
+
+#: ../inc/admin/help.php:48
+msgid "How does Geoproject works?"
+msgstr "Comment fonctionne Géoproject ?"
+
+#: ../inc/admin/help.php:55
+msgid "What is Geoformat?"
+msgstr "Géoformat, c'est quoi ?"
+
+#: ../inc/admin/help.php:60
+msgid ""
+"The post type Geoformat permits you to create longform contents. Each new section is introduced with a title and a background map or a background image or a background video. The edit zones are well specified. A field not filled won't be displayed. The \"subline\" filed is used to display an abstract of the document on the front-pages and is also used for metadata (OpenGraph, "
+"Twitter Card and Dublin Core)."
+msgstr ""
+"Géoformat vous permet de créer des contenus \"long format\" (longform). Chaque nouvelle section est introduite par  un titre et (1) une carte de fond (code iframe à copier-coller) ou (2) une image de fond ou (3) une vidéo d'arrière-plan. Les zones d'édition sont bien spécifiées. Un champ non rempli ne sera pas affiché. Le champ \"sous-titre\" est utilisé pour afficher un résumé du "
+"document sur les pages du site mais aussi pour les métadonnées (OpenGraph, Twitter Card et Dublin Core), il est donc important de le compléter. Plusieurs options de personnalisation sont communes à Géoproject et Géoformat : retrouvez-les dans les réglages du thème. Il s'agit notamment des réglages concernant les couleurs et les polices de caractère (21 polices disponibles pour les "
+"textes et 17 polices pour les éléments de titraille). Les polices de caractère utilisées dans le thème par défaut sont Bree pour les titres (sérif) et Raleway pour les textes (sans sérif)."
+
+#: ../inc/admin/help.php:64
+msgid "You can create photo galleries or use third parties plugins to add graphical dynamic contents. The \"Formats\" button, available above each edit zone, permits you to create frames, dropcaps and buttons. "
+msgstr "Vous pouvez créer des galeries d'images ou utiliser des plugins tiers pour ajouter des contenus dynamiques graphiques. Le bouton \"Formats\", disponible au-dessus de chaque zone d'édition, vous permet de créer des encadrés (3 types sont disponibles), des lettrine (par exemple, la première lettre de chaque nouvel article de section) et des boutons. "
+
+#: ../inc/admin/help.php:68
+msgid "The official documentation of the original plugin can be found"
+msgstr "La documentation officielle du plugin original peut être trouvée"
+
+#: ../inc/admin/help.php:70
+msgid "on the website of the plugin's author."
+msgstr "sur le site internet de l'auteure du plugin."
+
+#: ../inc/admin/help.php:76
+msgid "What is the big Map Page?"
+msgstr "Tous mes marqueurs dans une grande carte ?"
+
+#: ../inc/admin/help.php:81
+msgid "The GeoProjects theme comes with a special page showing all Markers of all Maps."
+msgstr "Le thème Geoprojects vous donne la possibilité d'afficher une page spéciale contenant une carte avec tous les marqueurs de toutes les cartes créées."
+
+#: ../inc/admin/help.php:85
+msgid "To use it, create a new Page, and set its \"Model\" to \"Big Map\". You can then add this page to your menu."
+msgstr "Pour l'utiliser, créez une nouvelle page et sélectionnez le modèle \"Big Map\" dans le bloc de droite \"Attributs de la page\". Il suffit ensuite d'ajouter cette page à un menu (via \"Apparence\" / \"Menu\"). Deux zones de menu sont disponibles : pour le menu déroulant de la barre de navigation (navbar) et pour le menu personnalisable situé en bas de page."
+
+#: ../inc/admin/help.php:90
+msgid "Which widgets are used?"
+msgstr "Quels widgets sont utilisés ?"
+
+#: ../inc/admin/help.php:95
+msgid "This theme has a Widgets zone in the footer, where you can add any of them. There is a specific widget for Geoformats, if you wish to display the  list of the last longform publications."
+msgstr ""
+"Ce thème comporte une zone de widgets dans le pied de page où vous pouvez ajouter le widget de votre choix. Catégories, archives, articles, liens… plusieurs choix sont possibles mais vous devrez vous limiter à quatre widgets (soit 4 blocs). Un widget spécifique a été conçu pour les Géoformats. Il permet l'affichage, dans cette zone, de la liste des derniers Géoformats publiés."
+
+#: ../inc/admin/help.php:100
+msgid "Why Stadia maps are not displaying?"
+msgstr "Pourquoi les cartes Stadia Maps ne s’affichent pas ?"
+
+#: ../inc/admin/help.php:105
+msgid "To display a stadia map, you have to sign up to <a href=\"https://client.stadiamaps.com/signup/\" target=\"_blank\">Stadia Maps</a> and to whitelist your domain name (if you are not using geoprojet.fr)."
+msgstr "Pour afficher une carte Stadia Maps, vous devez vous inscrire à <a href=\"https://client.stadiamaps.com/signup/\" target=\"_blank\">Stadia Maps</a> et inscrire  votre nom de domaine (si vous n’utilisez pas geoprojet.fr)."
+
+#: ../inc/admin/help.php:111
+msgid "Why is the overlaid image not displayed correctly?"
+msgstr "Pourquoi l'image superposée ne s'affiche pas correctement ?"
+
+#: ../inc/admin/help.php:116
+msgid ""
+"The functionality of adding an image to a map is experimental. If this does not pose any display problem when the option is to replace the geographic basemap with an image, it is not always the same for displaying an overlaid image which requires defining a positioning via two latitudes and two longitudes. <a href=\"https://leafletjs.com/reference-1.6.0.html#imageoverlay\" target="
+"\"_blank\"> Documentation is available here </a>. How to find geographic coordinates? <a href=\"https://www.latlong.net/\" target=\"_blank\"> Go here </a>. In addition, it is possible that the rendering is not optimal when zooming in and out on the map."
+msgstr ""
+"La fonctionnalité d'ajout d'image dans une carte est expérimentale. Si cela ne pose aucun problème d'affichage lorsque l'option est de remplacer le fond de carte géographique par une image, il n'en va pas toujours de même pour afficher une image superposée qui nécessite de définir un positionnement via deux latitudes et deux longitudes. <a href=\"https://leafletjs.com/"
+"reference-1.6.0.html#imageoverlay\" target=\"_blank\">La documentation est disponible ici</a>. Comment trouver des coordonnées géographiques ? <a href=\"https://www.latlong.net/\" target=\"_blank\">Rendez-vous ici</a>. Par ailleurs, il est possible que le rendu ne soit pas optimal en zoomant et en dézoomant sur la carte."
+
+#: ../inc/admin/help.php:121
+msgid "How to set up printing options ?"
+msgstr "Comment configurer les options d’impression ?"
+
+#: ../inc/admin/help.php:126
+msgid "All of the documentation will be found on this page."
+msgstr "Toute la documentation se trouve sur cette page."
+
+#: ../inc/admin/help.php:127
+msgid "Please, read the \"About\" section before starting to set up."
+msgstr "Veuillez lire la section « À propos » avant de vous lancer dans des opérations d'impression."
+
+#: ../inc/admin/help.php:135
+msgid "General principles"
+msgstr "Principes généraux"
+
+#: ../inc/admin/help.php:138
+msgid "No field is required: an unfilled field will not be displayed."
+msgstr "Aucun champ n'est obligatoire : un champ non rempli ne sera pas affiché."
+
+#: ../inc/admin/help.php:139
+msgid "One exception is the \"subtitle\" field, this text is used for description metadata as well as for sharing on social networks."
+msgstr "Une seule exception : le champ « sous-titre », dont le texte est utilisé pour les métadonnées de description ainsi que pour le partage sur les réseaux sociaux."
+
+#: ../inc/admin/help.php:140
+msgid "Image formats at the top of section: 1400px wide x 777px high. The display of the image in full page will depend on the size of the screen."
+msgstr "Formats des images en tête de section : 1400px de large x 777 px de haut. L'affichage de l'image en pleine page va dépendre de la taille de votre écran."
+
+#: ../inc/admin/help.php:141
+msgid "As a simple article, Geoformat accepts labels, categories, and  featured image (this is used to display Geoformats on the home page and in category pages).."
+msgstr "Comme un article simple, le Géoformat accepte les mots-clés, les catégories et l'image à la une (celle-ci est utilisée pour l'affichage des Géoformats en page d'accueil et dans les pages de catégories)."
+
+#: ../inc/admin/help.php:142
+msgid "As a classic article, editing allows WYSIWYG formatting as well as the insertion of multimedia elements."
+msgstr "Comme dans un article classique, l'édition permet une mise en forme WYIWIG ainsi que l'insertion d'éléments multimédia."
+
+#: ../inc/admin/help.php:145
+msgid "Sidebar Settings"
+msgstr "Réglages des options (panneau latéral)"
+
+#: ../inc/admin/help.php:147
+msgid "General:"
+msgstr "Général :"
+
+#: ../inc/admin/help.php:149 ../inc/cpt/geoformat_metabox.php:121
+msgid "Text size"
+msgstr "Taille du texte"
+
+#: ../inc/admin/help.php:150
+msgid "Width of the central column"
+msgstr "Largeur de la colonne centrale"
+
+#: ../inc/admin/help.php:151
+msgid "Border style for blockquotes"
+msgstr "Style de bordure pour les blocs de citation"
+
+#: ../inc/admin/help.php:153
+msgid "Intro:"
+msgstr "Intro :"
+
+#: ../inc/admin/help.php:155
+msgid "Display the author's name in the loading intro"
+msgstr "Afficher ou non le nom de l'auteur dans l'intro du Géoformat"
+
+#: ../inc/admin/help.php:156
+msgid "Choice of the loader for loading (circle, by default)"
+msgstr "Choix du loader pour le chargement (cercle, par défaut, recommandé)"
+
+#: ../inc/admin/help.php:157
+msgid "Animation of the loader to its disappearance"
+msgstr "Animation du loader lors de sa disparition"
+
+#: ../inc/admin/help.php:158
+msgid "Geoformat intro effect"
+msgstr "Effet d'intro du Géoformat"
+
+#: ../inc/admin/help.php:159
+msgid "Style of the  \"trigger\" button (permits to pass from the full screen introduction to the contents)"
+msgstr "Style du boulon « déclencheur » (pour passer de l'intro plein écran vers les contenus)"
+
+#: ../inc/admin/help.php:161
+msgid "Navigation:"
+msgstr "Navigation :"
+
+#: ../inc/admin/help.php:163
+msgid "Position of the progress bar or deactivation of this function"
+msgstr "Position de la barre de progression ou désactivation de cette fonction"
+
+#: ../inc/admin/help.php:164
+msgid "Position and style of the fixed navigation bar (header or footer, background color, Geoformat title or not, intrapage navigation methode - via the hamburger drop-down menu - and appearance of social network icons)"
+msgstr "Position et style de la barre de navigation fixe (tête ou pied de page, couleur de fond, affichage du titre du Géoformat, dispositif de navigation intrapage – via le menu déroulant « hamburger » et apparence des icônes des réseaux sociaux)"
+
+#: ../inc/admin/help.php:171
+msgid "Maps catalog"
+msgstr "Catalogue de cartes"
+
+#: ../inc/admin/help.php:174
+msgid "23 map styles are available, including MapBox. You will find below the map catalog. The default basemap is \"OpenStreetMap\". If you wish to add your own MapBox style, you will have to fill the access token field in the setting page"
+msgstr "23 fonds de carte sont disponibles, y compris MapBox. Vous trouverez ci-dessous le catalogue de cartes. La carte de base par défaut est « OpenStreetMap ». Si vous souhaitez ajouter votre propre style MapBox, vous devrez remplir le champ de jeton d’accès dans la page de configuration du thème"
+
+#: ../inc/admin/help.php:250
+msgid "Credits - License"
+msgstr "Crédits - Licence"
+
+#: ../inc/admin/help.php:257
+#, php-format
+msgid ""
+"This Wordpress theme has been developped by %1$s and funded by the %2$s. The 2.0 version, which includes the Geoformat post type, is developed by Laurence Dierickx (%3$s), from the original plugin Simple Long Form, developed as an open source software for WordPress. She continued this work for version 3 of this theme, which she entirely reviewed in this fourth version, enriched "
+"with many features)."
+msgstr ""
+"Ce thème Wordpress a été développé par %1$s et financé par le %2$s. La version 2.0, qui intègre \"Géoformat\", est développé par Laurence Dierickx (%3$s), à partir du plugin original Simple Long Form, conçu pour réaliser des récits long format sur WordPress. Elle a poursuivi ce travail pour les versions 3 et 4 de ce thème, qui comporte plusieurs améliorations (interface et "
+"administration) ainsi que de nouvelles fonctionnalités)."
+
+#: ../inc/admin/help.php:268
+#, php-format
+msgid "Released under the GPL v.2 license, you can download this theme on %1$s. Please, feel free to report bugs and submit fixes or new features !"
+msgstr "Distribué sous Licence GPL v.2, vous pouvez télécharger ce thème sur %1$s. N'hésitez pas à reporter tout bug et proposer des corrections ou de nouvelles fonctionnalités !"
+
+#: ../inc/admin/print.php:5 ../inc/admin/settings.php:7
+msgid "You should not access to this file directly"
+msgstr "Vous ne devriez pas directement accéder à ce fichier"
+
+#: ../inc/admin/print.php:14 ../inc/admin/print.php:15
+msgid "Print"
+msgstr "Impression"
+
+#: ../inc/admin/print.php:38
+msgid "Default printing"
+msgstr "Impression par défaut"
+
+#: ../inc/admin/print.php:39
+msgid "Enable custom printing"
+msgstr "Activer l’impression personnalisée"
+
+#: ../inc/admin/print.php:40
+msgid "Add print button to pages"
+msgstr "Ajouter un bouton d’impression aux pages"
+
+#: ../inc/admin/print.php:41
+msgid "Add preview button to pages"
+msgstr "Ajouter un bouton de prévisualisation"
+
+#: ../inc/admin/print.php:42
+msgid "Activate Paged.js "
+msgstr "Activer Paged.js "
+
+#: ../inc/admin/print.php:44
+msgid "Customize the header"
+msgstr "Personnaliser l’en-tête"
+
+#: ../inc/admin/print.php:45
+msgid "Common settings"
+msgstr "Paramètres communs"
+
+#: ../inc/admin/print.php:46 ../inc/admin/print.php:81 ../inc/admin/print.php:113 ../inc/admin/print.php:133 ../inc/admin/print.php:154 ../inc/cpt/geoformat_metabox.php:351
+msgid "Custom CSS"
+msgstr "CSS personnalisé"
+
+#: ../inc/admin/print.php:48
+msgid "Set up the cover page"
+msgstr "Configurer la page de couverture"
+
+#: ../inc/admin/print.php:49 ../inc/admin/print.php:84 ../inc/admin/print.php:119 ../inc/admin/print.php:136
+msgid "Print format"
+msgstr "Format d’impression"
+
+#: ../inc/admin/print.php:50 ../inc/admin/print.php:85 ../inc/admin/print.php:120 ../inc/admin/print.php:137
+msgid "Activate custom print format"
+msgstr "Format de page personnalisé"
+
+#: ../inc/admin/print.php:51 ../inc/admin/print.php:86 ../inc/admin/print.php:121 ../inc/admin/print.php:138
+msgid "Show crop marks"
+msgstr "Afficher les traits de coupe"
+
+#: ../inc/admin/print.php:52 ../inc/admin/print.php:87 ../inc/admin/print.php:122 ../inc/admin/print.php:139
+msgid "Margins"
+msgstr "Marges"
+
+#: ../inc/admin/print.php:53 ../inc/admin/print.php:90 ../inc/admin/print.php:943 ../inc/admin/print.php:2259
+msgid "Content width"
+msgstr "Largeur du contenu"
+
+#: ../inc/admin/print.php:54
+msgid "Content vertical alignment"
+msgstr "Alignement vertical du contenu"
+
+#: ../inc/admin/print.php:55 ../inc/admin/print.php:92 ../inc/admin/print.php:123 ../inc/admin/print.php:140 ../inc/cpt/geoformat_metabox.php:37 ../inc/cpt/geoformat_metabox.php:209
+msgid "Background color"
+msgstr "Couleur d'arrière-plan"
+
+#: ../inc/admin/print.php:56 ../inc/cpt/geoformat_metabox.php:650 ../inc/cpt/geoformat_metabox.php:773 ../inc/cpt/geoformat_metabox.php:897 ../inc/cpt/geoformat_metabox.php:1014 ../inc/cpt/geoformat_metabox.php:1131 ../inc/cpt/geoformat_metabox.php:1248
+msgid "Background image"
+msgstr "Image de fond"
+
+#: ../inc/admin/print.php:57 ../inc/admin/print.php:94
+msgid "Font family (title)"
+msgstr "Typographie (titre)"
+
+#: ../inc/admin/print.php:58 ../inc/admin/print.php:95 ../inc/admin/print.php:425 ../inc/admin/print.php:713
+msgid "Title font size"
+msgstr "Taille du titre"
+
+#: ../inc/admin/print.php:59 ../inc/admin/print.php:96 ../inc/admin/print.php:716 ../inc/cpt/geoformat_metabox.php:381 ../inc/cpt/geoformat_metabox.php:522 ../inc/cpt/geoformat_metabox.php:641 ../inc/cpt/geoformat_metabox.php:764 ../inc/cpt/geoformat_metabox.php:888 ../inc/cpt/geoformat_metabox.php:1005 ../inc/cpt/geoformat_metabox.php:1122 ../inc/cpt/geoformat_metabox.php:1239
+msgid "Title color"
+msgstr "Couleur du titre"
+
+#: ../inc/admin/print.php:60 ../inc/admin/print.php:97 ../inc/admin/print.php:126
+msgid "Attributes of the title"
+msgstr "Attributs du titre"
+
+#: ../inc/admin/print.php:61
+msgid "Do not display the subtitle"
+msgstr "Ne pas afficher le sous-titre"
+
+#: ../inc/admin/print.php:62
+msgid "Font family (subtitle)"
+msgstr "Typographie (sous-titre)"
+
+#: ../inc/admin/print.php:63
+msgid "Subitle font size"
+msgstr "Taille du sous-titre"
+
+#: ../inc/admin/print.php:64
+msgid "Subitle color"
+msgstr "Couleur du sous-titre"
+
+#: ../inc/admin/print.php:65
+msgid "Attributes of the subtitle"
+msgstr "Attributs du sous-titre"
+
+#: ../inc/admin/print.php:66
+msgid "Additionnal text (optional)"
+msgstr "Texte additionnel (facultatif)"
+
+#: ../inc/admin/print.php:67
+msgid "Font family (additionnal text)"
+msgstr "Typographie"
+
+#: ../inc/admin/print.php:68
+msgid "Text font size"
+msgstr "Taille du texte"
+
+#: ../inc/admin/print.php:69 ../inc/cpt/geoformat_metabox.php:32
+msgid "Text color"
+msgstr "Couleur du texte"
+
+#: ../inc/admin/print.php:70
+msgid "Text attributes"
+msgstr "Attributs du texte"
+
+#: ../inc/admin/print.php:71
+msgid "Text position"
+msgstr "Position du texte"
+
+#: ../inc/admin/print.php:72
+msgid "Add an image (optional)"
+msgstr "Ajouter une image (facultatif)"
+
+#: ../inc/admin/print.php:73
+msgid "Image width"
+msgstr "Largeur de l’image"
+
+#: ../inc/admin/print.php:74
+msgid "Image options"
+msgstr "Options de l’image"
+
+#: ../inc/admin/print.php:75
+msgid "Image position"
+msgstr "Position de l'image"
+
+#: ../inc/admin/print.php:76
+msgid "Frame border"
+msgstr "Bordure de cadre"
+
+#: ../inc/admin/print.php:77 ../inc/admin/print.php:857 ../inc/admin/print.php:1762 ../inc/admin/print.php:1906
+msgid "Border style"
+msgstr "Style de bordure"
+
+#: ../inc/admin/print.php:78 ../inc/admin/print.php:871 ../inc/admin/print.php:1713 ../inc/admin/print.php:1776 ../inc/admin/print.php:1920
+msgid "Border width"
+msgstr "Largeur de bordure"
+
+#: ../inc/admin/print.php:79 ../inc/admin/print.php:865 ../inc/admin/print.php:1710 ../inc/admin/print.php:1770 ../inc/admin/print.php:1914 ../inc/admin/print.php:1961 ../inc/admin/print.php:2138
+msgid "Border color"
+msgstr "Couleur de la bordure"
+
+#: ../inc/admin/print.php:80 ../inc/admin/print.php:868 ../inc/admin/print.php:1716 ../inc/admin/print.php:1773 ../inc/admin/print.php:1917
+msgid "Border padding"
+msgstr "Rembourrage"
+
+#: ../inc/admin/print.php:83
+msgid "Customize the table of contents"
+msgstr "Configurer la page de la table des matières"
+
+#: ../inc/admin/print.php:88 ../inc/admin/print.php:124 ../inc/admin/print.php:141
+msgid "Recto verso printing"
+msgstr "Impression recto-verso"
+
+#: ../inc/admin/print.php:89
+msgid "Page break before chapter title"
+msgstr "Saut de page avant le titre du chapitre"
+
+#: ../inc/admin/print.php:91
+msgid "Content columns"
+msgstr "Nbre de colonnes (contenus)"
+
+#: ../inc/admin/print.php:93
+msgid "Page title"
+msgstr "Titre de la page"
+
+#: ../inc/admin/print.php:98
+msgid "Font family (all subtitles)"
+msgstr "Typographies (tous les sous-titres)"
+
+#: ../inc/admin/print.php:99
+msgid "Subtitles font size"
+msgstr "Taille des sous-titres"
+
+#: ../inc/admin/print.php:100
+msgid "Subtitles color"
+msgstr "Couleur des sous-titres"
+
+#: ../inc/admin/print.php:101
+msgid "Attributes of the subtitles"
+msgstr "Attributs des sous-titres"
+
+#: ../inc/admin/print.php:102
+msgid "Font family (posts list)"
+msgstr "Famille de polices (liste des publications)"
+
+#: ../inc/admin/print.php:103
+msgid "List font size"
+msgstr "Taille des listes"
+
+#: ../inc/admin/print.php:104
+msgid "List color"
+msgstr "Couleur des listes"
+
+#: ../inc/admin/print.php:105
+msgid "List attributes"
+msgstr "Attributs des listes"
+
+#: ../inc/template-tags.php:160
+msgid "Projects list"
+msgstr "Liste des récits"
+
+#: ../inc/template-tags.php:176
+msgid "Categories"
+msgstr "Catégories"
+
+#: ../inc/admin/print.php:107
+msgid "Maps list"
+msgstr "Liste des cartes"
+
+msgid "Capes list"
+msgstr "Liste des caps"
+
+#: ../inc/admin/print.php:108
+msgid "Markers list"
+msgstr "Liste des marqueurs"
+
+#: ../inc/admin/print.php:109
+msgid "Geoformats list"
+msgstr "Liste des Géoformats"
+
+#: ../inc/admin/print.php:110
+msgid "Posts list"
+msgstr "Liste des articles"
+
+#: ../inc/admin/print.php:111
+msgid "Pages list"
+msgstr "Liste des pages"
+
+#: ../inc/admin/print.php:112
+msgid "Display posts by category"
+msgstr "Afficher les publications par catégorie"
+
+#: ../inc/admin/print.php:115
+msgid "About the printing options"
+msgstr "À propos des paramètres d’impression"
+
+#: ../inc/admin/print.php:116
+msgid "To read before printing"
+msgstr "À lire avant d'imprimer"
+
+#: ../inc/admin/print.php:118
+msgid "Adjust your settings for printing contents"
+msgstr "Configuration des contenus (impression personnalisée)"
+
+#: ../inc/admin/print.php:125 ../inc/admin/print.php:142
+msgid "Print comments"
+msgstr "Imprimer les commentaires"
+
+#: ../inc/admin/print.php:127
+msgid "Metadata printing"
+msgstr "Impression des métadonnées"
+
+#: ../inc/admin/print.php:128
+msgid "Attributes of the content"
+msgstr "Attributs du contenu"
+
+#: ../inc/admin/print.php:129 ../inc/admin/print.php:151
+msgid "Images"
+msgstr "Images"
+
+#: ../inc/admin/print.php:131 ../inc/admin/print.php:152
+msgid "Embedded contents"
+msgstr "Contenus intégrés (embed)"
+
+#: ../inc/admin/print.php:132 ../inc/admin/print.php:153
+msgid "Page numbering"
+msgstr "Numérotation des pages"
+
+#: ../inc/admin/print.php:135
+msgid "Adjust your settings for printing Geoformats"
+msgstr "Configuration des géoformats (impression personnalisée)"
+
+#: ../inc/admin/print.php:143
+msgid "Titles font family"
+msgstr "Typographie des  titres"
+
+#: ../inc/admin/print.php:144
+msgid "Subtitles font family"
+msgstr "Typographie des sous-titres et exergues"
+
+#: ../inc/admin/print.php:145 ../inc/admin/print.php:4182
+msgid "Cover"
+msgstr "Couverture"
+
+#: ../inc/admin/print.php:146
+msgid "Headline"
+msgstr "Titraille"
+
+#: ../inc/admin/print.php:147
+msgid "Introduction"
+msgstr "Introduction"
+
+#: ../inc/admin/print.php:149
+msgid "Section titles"
+msgstr "Titraille des sections"
+
+#: ../inc/admin/print.php:150
+msgid "Section contents"
+msgstr "Contenus des sections"
+
+#: ../inc/admin/print.php:168
+msgid ""
+"Default printing does not include maps or images to save your printer ink. <br/>\n"
+"\tAll settings of your theme are kept.\n"
+"\t<br/>\t\n"
+"\tCheck this box if you wish personalized settings for the contents or Geoformats (in this cas, you will have to print from the preview page. Please, active the preview button too."
+msgstr ""
+"L’impression par défaut n’inclut pas de cartes ou d’images pour économiser l’encre de votre imprimante.<br/>Tous les paramètres de votre thème sont conservés.<br/>Cochez cette case si vous souhaitez des paramètres personnalisés pour l'impression de vos contenus ou géoformats (dans ce cas, vous devez activer le bouton de prévisualisation des contenus afin d'accéder à la maquette de "
+"la page d'impression)."
+
+#: ../inc/admin/print.php:184
+msgid "Check this box if you wish to add to each page a shortcut button to print in PDF without leaving the interface."
+msgstr "Cochez cette case si vous souhaitez ajouter à chaque page un bouton de raccourci pour imprimer en PDF sans quitter l’interface."
+
+#: ../inc/admin/print.php:209
+msgid "Check this box if you wish to add to each page a shortcut button to view the printing customize settings of the document before its printing. This function is required if you wish to print your page for publishing."
+msgstr "Cochez cette case si vous souhaitez ajouter à chaque page un bouton permettant de prévisualiser le document avant de l'imprimer. Cette fonction est recommandée pour toute impression professionnelle (numérique ou offset)."
+
+#: ../inc/admin/print.php:222
+msgid "This JavaScript library enables an optimization for PDF printing. The preview page will look slightly different, the notice as well as the print button will not be displayed. To print, please push Ctrl+P on your keyboard. In addition, all of the custom settings could not be taken into account."
+msgstr "Cette bibliothèque JavaScript permet une optimisation pour l’impression PDF. La page d’aperçu sera légèrement différente, la notice en tête de page ainsi que le bouton d’impression ne seront pas affichés. Pour imprimer, veuillez appuyer sur Ctrl+P sur votre clavier. En outre, tous les paramètres personnalisés peuvent ne pas être pris en compte par cette librairie."
+
+#: ../inc/admin/print.php:338
+msgid "Display website title"
+msgstr "Afficher le titre du site web"
+
+#: ../inc/admin/print.php:343
+msgid "Display website subtitle"
+msgstr "Afficher le sous-titre du site web"
+
+#: ../inc/admin/print.php:348
+msgid "Do not apply document margins"
+msgstr "Ne pas appliquer les marges du document"
+
+#: ../inc/admin/print.php:353
+msgid "Title font family"
+msgstr "Typographie du titre"
+
+#: ../inc/admin/print.php:389
+msgid "Subtitle font family"
+msgstr "Typographie du sous-titre"
+
+#: ../inc/admin/print.php:428
+msgid "Subtitle font size"
+msgstr "Taille du sous-titre"
+
+#: ../inc/admin/print.php:431
+msgid "Header text align"
+msgstr "Alignement du texte de l’en-tête"
+
+#: ../inc/admin/print.php:433 ../inc/admin/print.php:721 ../inc/admin/print.php:770 ../inc/admin/print.php:844 ../inc/admin/print.php:1009 ../inc/admin/print.php:1068 ../inc/admin/print.php:1202 ../inc/admin/print.php:1484 ../inc/admin/print.php:1514 ../inc/admin/print.php:1661 ../inc/admin/print.php:1688 ../inc/admin/print.php:1749 ../inc/admin/print.php:1893
+#: ../inc/admin/print.php:1947 ../inc/admin/print.php:2088 ../inc/admin/print.php:2171 ../inc/admin/print.php:2325 ../inc/admin/print.php:2333 ../inc/admin/print.php:2398 ../inc/admin/print.php:2465 ../inc/admin/print.php:2872 ../inc/admin/print.php:2900 ../inc/admin/print.php:2930 ../inc/admin/print.php:2985 ../inc/admin/print.php:3064 ../inc/admin/print.php:3503
+#: ../inc/admin/print.php:3606 ../inc/cpt/geoformat_metabox.php:376 ../inc/cpt/geoformat_metabox.php:516 ../inc/cpt/geoformat_metabox.php:635 ../inc/cpt/geoformat_metabox.php:758 ../inc/cpt/geoformat_metabox.php:882 ../inc/cpt/geoformat_metabox.php:999 ../inc/cpt/geoformat_metabox.php:1116 ../inc/cpt/geoformat_metabox.php:1233
+msgid "Left"
+msgstr "Gauche"
+
+#: ../inc/admin/print.php:434 ../inc/admin/print.php:722 ../inc/admin/print.php:771 ../inc/admin/print.php:845 ../inc/admin/print.php:1010 ../inc/admin/print.php:1069 ../inc/admin/print.php:1203 ../inc/admin/print.php:1485 ../inc/admin/print.php:1503 ../inc/admin/print.php:1515 ../inc/admin/print.php:1662 ../inc/admin/print.php:1689 ../inc/admin/print.php:1750
+#: ../inc/admin/print.php:1894 ../inc/admin/print.php:1948 ../inc/admin/print.php:2089 ../inc/admin/print.php:2172 ../inc/admin/print.php:2326 ../inc/admin/print.php:2334 ../inc/admin/print.php:2399 ../inc/admin/print.php:2466 ../inc/admin/print.php:2861 ../inc/admin/print.php:2873 ../inc/admin/print.php:2901 ../inc/admin/print.php:2931 ../inc/admin/print.php:2986
+#: ../inc/admin/print.php:3065 ../inc/admin/print.php:3504 ../inc/admin/print.php:3607
+msgid "Center"
+msgstr "Centré"
+
+#: ../inc/admin/print.php:435 ../inc/admin/print.php:723 ../inc/admin/print.php:772 ../inc/admin/print.php:846 ../inc/admin/print.php:1011 ../inc/admin/print.php:1070 ../inc/admin/print.php:1204 ../inc/admin/print.php:1486 ../inc/admin/print.php:1516 ../inc/admin/print.php:1663 ../inc/admin/print.php:1690 ../inc/admin/print.php:1751 ../inc/admin/print.php:1895
+#: ../inc/admin/print.php:1949 ../inc/admin/print.php:2090 ../inc/admin/print.php:2173 ../inc/admin/print.php:2327 ../inc/admin/print.php:2335 ../inc/admin/print.php:2400 ../inc/admin/print.php:2467 ../inc/admin/print.php:2874 ../inc/admin/print.php:2902 ../inc/admin/print.php:2932 ../inc/admin/print.php:2987 ../inc/admin/print.php:3066 ../inc/admin/print.php:3505
+#: ../inc/admin/print.php:3608 ../inc/cpt/geoformat_metabox.php:377 ../inc/cpt/geoformat_metabox.php:518 ../inc/cpt/geoformat_metabox.php:637 ../inc/cpt/geoformat_metabox.php:760 ../inc/cpt/geoformat_metabox.php:884 ../inc/cpt/geoformat_metabox.php:1001 ../inc/cpt/geoformat_metabox.php:1118 ../inc/cpt/geoformat_metabox.php:1235
+msgid "Right"
+msgstr "Droit"
+
+#: ../inc/admin/print.php:438
+msgid "Header text color"
+msgstr "Couleur du texte de l’en-tête"
+
+#: ../inc/admin/print.php:441
+msgid "Header border"
+msgstr "Bordure de l'en-tête"
+
+#: ../inc/admin/print.php:443 ../inc/admin/print.php:851 ../inc/admin/print.php:1122 ../inc/admin/print.php:1703 ../inc/admin/print.php:1756 ../inc/admin/print.php:1900 ../inc/admin/print.php:1955
+msgid "No border"
+msgstr "Aucune bordure"
+
+#: ../inc/admin/print.php:444 ../inc/admin/print.php:852 ../inc/admin/print.php:1757 ../inc/admin/print.php:1901
+msgid "Framed"
+msgstr "Encadré"
+
+#: ../inc/admin/print.php:445 ../inc/admin/print.php:853 ../inc/admin/print.php:1758 ../inc/admin/print.php:1902
+msgid "Border top and bottom"
+msgstr "Bordure en haut et en bas"
+
+#: ../inc/admin/print.php:446 ../inc/admin/print.php:854 ../inc/admin/print.php:1759 ../inc/admin/print.php:1903
+msgid "Border bottom"
+msgstr "Bordure en bas"
+
+#: ../inc/admin/print.php:449
+msgid "Header border color"
+msgstr "Couleur de la bordure d'en-tête"
+
+#: ../inc/admin/print.php:452
+msgid "Header border padding"
+msgstr "Rembourrage de bordure d’en-tête"
+
+#: ../inc/admin/print.php:455
+msgid "Header border width"
+msgstr "Hauteur de la bordure de l’en-tête"
+
+#: ../inc/admin/print.php:458
+msgid "Header bottom border width"
+msgstr "Hauteur de la bordure inférieure de l’en-tête"
+
+#: ../inc/admin/print.php:461
+msgid "Header border style"
+msgstr "Style de bordure de l’en-tête"
+
+#: ../inc/admin/print.php:463 ../inc/admin/print.php:472 ../inc/admin/print.php:859 ../inc/admin/print.php:1704 ../inc/admin/print.php:1764 ../inc/admin/print.php:1908 ../inc/admin/print.php:2132 ../inc/admin/print.php:3155
+msgid "Solid"
+msgstr "Solide"
+
+#: ../inc/admin/print.php:464 ../inc/admin/print.php:473 ../inc/admin/print.php:860 ../inc/admin/print.php:1705 ../inc/admin/print.php:1765 ../inc/admin/print.php:1909 ../inc/admin/print.php:2133 ../inc/admin/print.php:3156
+msgid "Dotted"
+msgstr "Pointillés"
+
+#: ../inc/admin/print.php:465 ../inc/admin/print.php:474 ../inc/admin/print.php:861 ../inc/admin/print.php:1706 ../inc/admin/print.php:1766 ../inc/admin/print.php:1910 ../inc/admin/print.php:2134 ../inc/admin/print.php:3157
+msgid "Dashed"
+msgstr "Tirets"
+
+#: ../inc/admin/print.php:466 ../inc/admin/print.php:475 ../inc/admin/print.php:862 ../inc/admin/print.php:1707 ../inc/admin/print.php:1767 ../inc/admin/print.php:1911 ../inc/admin/print.php:2135 ../inc/admin/print.php:3158
+msgid "Double"
+msgstr "Double"
+
+#: ../inc/admin/print.php:469
+msgid "Bottom border style"
+msgstr "Style de bordure inférieure"
+
+#: ../inc/admin/print.php:471
+msgid "Do not change"
+msgstr "Pas de style différent"
+
+#: ../inc/admin/print.php:478
+msgid "Margin after the main title"
+msgstr "Marge après le titre principal"
+
+#: ../inc/admin/print.php:481 ../inc/admin/print.php:726 ../inc/admin/print.php:1060 ../inc/admin/print.php:1114 ../inc/admin/print.php:1157 ../inc/admin/print.php:1488 ../inc/admin/print.php:2390 ../inc/admin/print.php:2431 ../inc/admin/print.php:2904 ../inc/admin/print.php:2934 ../inc/admin/print.php:2989 ../inc/admin/print.php:3068 ../inc/admin/print.php:3507
+#: ../inc/admin/print.php:3610 ../inc/admin/print.php:3745
+msgid "Top margin "
+msgstr "Marge au-dessus "
+
+#: ../inc/admin/print.php:484 ../inc/admin/print.php:729 ../inc/admin/print.php:874 ../inc/admin/print.php:1063 ../inc/admin/print.php:1117 ../inc/admin/print.php:1160 ../inc/admin/print.php:1779 ../inc/admin/print.php:1923 ../inc/admin/print.php:1967 ../inc/admin/print.php:2393 ../inc/admin/print.php:2434 ../inc/admin/print.php:2906 ../inc/admin/print.php:2936
+#: ../inc/admin/print.php:2991 ../inc/admin/print.php:3070 ../inc/admin/print.php:3509 ../inc/admin/print.php:3612 ../inc/admin/print.php:3748
+msgid "Bottom margin"
+msgstr "Marge en-dessous"
+
+#: ../inc/admin/print.php:523 ../inc/admin/print.php:1236 ../inc/admin/print.php:2509 ../inc/admin/print.php:3270
+msgid "Paper size"
+msgstr "Orientation de la page"
+
+#: ../inc/admin/print.php:525 ../inc/admin/print.php:1238 ../inc/admin/print.php:2511 ../inc/admin/print.php:3272
+msgid "Portrait"
+msgstr "Portrait"
+
+#: ../inc/admin/print.php:526 ../inc/admin/print.php:1239 ../inc/admin/print.php:2512 ../inc/admin/print.php:3273
+msgid "Landscape"
+msgstr "Paysage"
+
+#: ../inc/admin/print.php:552 ../inc/admin/print.php:1265 ../inc/admin/print.php:2538 ../inc/admin/print.php:3299
+msgid "Width:"
+msgstr "Largeur :"
+
+#: ../inc/admin/print.php:555 ../inc/admin/print.php:1268 ../inc/admin/print.php:2541 ../inc/admin/print.php:3302
+msgid "Height:"
+msgstr "Hauteur :"
+
+#: ../inc/admin/print.php:585 ../inc/admin/print.php:1298 ../inc/admin/print.php:2571 ../inc/admin/print.php:3332
+msgid "Top & bottom:"
+msgstr "Haut & bas:"
+
+#: ../inc/admin/print.php:588 ../inc/admin/print.php:1301 ../inc/admin/print.php:2574 ../inc/admin/print.php:3335
+msgid "Left & right:"
+msgstr "Gauche & droite :"
+
+#: ../inc/admin/print.php:627 ../inc/admin/print.php:2828 ../inc/admin/print.php:3403
+msgid "To be printed, you must activate \"Print background and image\" in the settings of your browser."
+msgstr "Pour imprimer le fond de couleur de page, vous devez activer « Imprimer l’arrière-plan et l’image » dans les paramètres d'impression de votre navigateur."
+
+#: ../inc/admin/print.php:677 ../inc/admin/print.php:962 ../inc/admin/print.php:2278
+msgid "Typography"
+msgstr "Typographie"
+
+#: ../inc/admin/print.php:719 ../inc/admin/print.php:2898 ../inc/admin/print.php:3501
+msgid "Title alignment"
+msgstr "Alignement du titre"
+
+#: ../inc/admin/print.php:732
+msgid "Subtitles typography"
+msgstr "Typographie des sous-titres et exergues"
+
+#: ../inc/admin/print.php:768
+msgid "Subitle alignment"
+msgstr "Alignement des sous-titres et exergues"
+
+#: ../inc/admin/print.php:831
+msgid "Display all"
+msgstr "Tout afficher"
+
+#: ../inc/admin/print.php:832
+msgid "Display author name"
+msgstr "Afficher le nom de l'auteur"
+
+#: ../inc/admin/print.php:833
+msgid "Display date and author name"
+msgstr "Afficher la date et le nom de l'auteur"
+
+#: ../inc/admin/print.php:834
+msgid "Hide"
+msgstr "Ne pas imprimer"
+
+#: ../inc/admin/print.php:837
+msgid "Do not print metadata icons"
+msgstr "Ne pas imprimer les icônes des métadonnées"
+
+#: ../inc/admin/print.php:842 ../inc/admin/print.php:1066 ../inc/admin/print.php:2396
+msgid "Alignment"
+msgstr "Alignement"
+
+#: ../inc/admin/print.php:849 ../inc/admin/print.php:1120 ../inc/admin/print.php:1754 ../inc/admin/print.php:1898
+msgid "Border"
+msgstr "Bordure"
+
+#: ../inc/admin/print.php:946 ../inc/admin/print.php:2262
+msgid "Content columns "
+msgstr "Nbre de colonnes "
+
+#: ../inc/admin/print.php:949 ../inc/admin/print.php:2265
+msgid "Columns gutter "
+msgstr "Gouttière des colonnes "
+
+#: ../inc/admin/print.php:952 ../inc/admin/print.php:2268 ../inc/admin/print.php:3386
+msgid "Add a net between columns"
+msgstr "Ajouter un filet entre les colonnes"
+
+#: ../inc/admin/print.php:957 ../inc/admin/print.php:2273 ../inc/admin/print.php:3381
+msgid "Fill column"
+msgstr "Remplir la colonne"
+
+#: ../inc/admin/print.php:998 ../inc/admin/print.php:1474 ../inc/admin/print.php:2093 ../inc/admin/print.php:2314 ../inc/admin/settings.php:35
+msgid "Font size"
+msgstr "Taille du texte"
+
+#: ../inc/admin/print.php:1001 ../inc/admin/print.php:1477 ../inc/admin/print.php:2096 ../inc/admin/print.php:2317
+msgid "Line-height"
+msgstr "Interlignage"
+
+#: ../inc/admin/print.php:1004 ../inc/admin/print.php:1479 ../inc/admin/print.php:2099 ../inc/admin/print.php:2166 ../inc/admin/print.php:2320
+msgid "Font color"
+msgstr "Couleur de la police"
+
+#: ../inc/admin/print.php:1007 ../inc/admin/print.php:2323
+msgid "Text alignment "
+msgstr "Alignement du texte "
+
+#: ../inc/admin/print.php:1012 ../inc/admin/print.php:1950 ../inc/admin/print.php:2328
+msgid "Justify"
+msgstr "Justifié"
+
+#: ../inc/admin/print.php:1014
+msgid "Do not print project list"
+msgstr "Ne pas imprimer la liste des projets"
+
+#: ../inc/admin/print.php:1052 ../inc/admin/print.php:2382
+msgid "Do not print images"
+msgstr "Ne pas imprimer les images"
+
+#: ../inc/admin/print.php:1057 ../inc/admin/print.php:2387
+msgid "Images width"
+msgstr "Largeur des images"
+
+#: ../inc/admin/print.php:1106
+msgid "Do not print maps"
+msgstr "Ne pas imprimer les cartes"
+
+msgid "Do not print capes"
+msgstr "Ne pas imprimer les caps"
+
+#: ../inc/admin/print.php:1111
+msgid "Maps height"
+msgstr "Hauteur des cartes"
+
+msgid "Capes height"
+msgstr "Hauteur des caps"
+
+#: ../inc/admin/print.php:1123 ../inc/admin/print.php:1956
+msgid "Thin"
+msgstr "Fine"
+
+#: ../inc/admin/print.php:1124 ../inc/admin/print.php:1957
+msgid "Regular"
+msgstr "Normale"
+
+#: ../inc/admin/print.php:1125 ../inc/admin/print.php:1887 ../inc/admin/print.php:1941 ../inc/admin/print.php:1958
+msgid "Bold"
+msgstr "Grasse"
+
+#: ../inc/admin/print.php:1152 ../inc/admin/print.php:2426
+msgid "Do not print embed content"
+msgstr "Ne pas imprimer le contenu embarqué"
+
+#: ../inc/admin/print.php:1196 ../inc/admin/print.php:2459
+msgid "Activate page numbering"
+msgstr "Activer la numérotation des pages"
+
+#: ../inc/admin/print.php:1200 ../inc/admin/print.php:2463
+msgid "Position"
+msgstr "Position"
+
+#: ../inc/admin/print.php:1207 ../inc/admin/print.php:2470
+msgid "Start numbering from"
+msgstr "Commencer la numérotation à partir de"
+
+#: ../inc/admin/print.php:1209 ../inc/admin/print.php:2472
+msgid "This function is experimental and does not work in all cases."
+msgstr "Cette fonction est expérimentale et ne fonctionne pas dans tous les cas."
+
+#: ../inc/admin/print.php:1468
+msgid "Activate cover printing"
+msgstr "Activer l’impression d'une page de couverture"
+
+#: ../inc/admin/print.php:1472
+msgid "Printing the cover disables printing of the contents. To print the content of the geformat, deactivate this option."
+msgstr "L’impression de la couverture désactive l’impression du contenu. Pour imprimer le contenu du geformat, désactivez cette option."
+
+#: ../inc/admin/print.php:1482
+msgid "Title alignment "
+msgstr "Alignement du titre "
+
+#: ../inc/admin/print.php:1491
+msgid "Padding"
+msgstr "Rembourrage (marges intérieures)"
+
+#: ../inc/admin/print.php:1500 ../inc/admin/print.php:2858
+msgid "Vertical positioning of the image"
+msgstr "Positionnement vertical de l’image de fond"
+
+#: ../inc/admin/print.php:1502 ../inc/admin/print.php:2600 ../inc/admin/print.php:2860
+msgid "Top"
+msgstr "Haut"
+
+#: ../inc/admin/print.php:1504 ../inc/admin/print.php:2602 ../inc/admin/print.php:2862
+msgid "Bottom"
+msgstr "Bas"
+
+#: ../inc/admin/print.php:1512 ../inc/admin/print.php:2870
+msgid "Horizontal positioning of the image"
+msgstr "Positionnement horizontal de l’image"
+
+#: ../inc/admin/print.php:1659
+msgid "Main title alignment "
+msgstr "Alignement du titre principal "
+
+#: ../inc/admin/print.php:1666
+msgid "Main title font size"
+msgstr "Taille du titre principal"
+
+#: ../inc/admin/print.php:1669
+msgid "Main title font color"
+msgstr "Couleur du titre principal"
+
+#: ../inc/admin/print.php:1672 ../inc/admin/print.php:1695 ../inc/admin/print.php:2102 ../inc/admin/print.php:2123
+msgid "Margin top"
+msgstr "Marge supérieure"
+
+#: ../inc/admin/print.php:1675 ../inc/admin/print.php:1698 ../inc/admin/print.php:2105 ../inc/admin/print.php:2126 ../inc/admin/print.php:2176
+msgid "Margin bottom"
+msgstr "Marge inférieure"
+
+#: ../inc/admin/print.php:1678
+msgid "Break page after maintitle"
+msgstr "Saut de page après le titre principal"
+
+#: ../inc/admin/print.php:1686
+msgid "Main title multimedia alignment (image, map or video)"
+msgstr "Alignement de l'élément multimédia du titre principal (image, carte ou vidéo)"
+
+#: ../inc/admin/print.php:1692
+msgid "Multimedia element width"
+msgstr "Largeur de l'élément multimédia"
+
+#: ../inc/admin/print.php:1701
+msgid "Multimedia element border"
+msgstr "Bordure de l’élément multimédia"
+
+#: ../inc/admin/print.php:1719
+msgid "Do not display the multimedia element"
+msgstr "Ne pas afficher l’élément multimédia"
+
+#: ../inc/admin/print.php:1723
+msgid "Break page after the multimedia element"
+msgstr "Saut de page après l’élément multimédia"
+
+#: ../inc/admin/print.php:1732
+msgid "Do not display the author"
+msgstr "Ne pas afficher l’auteur"
+
+#: ../inc/admin/print.php:1737
+msgid "Do not display the author of the images"
+msgstr "N’affichez pas l’auteur des images"
+
+#: ../inc/admin/print.php:1742
+msgid "Do not display date"
+msgstr "Ne pas afficher la date"
+
+#: ../inc/admin/print.php:1747
+msgid "Metadata alignment"
+msgstr "Alignement des métadonnées"
+
+#: ../inc/admin/print.php:1782
+msgid "Break page after the metadata block"
+msgstr "Saut de page après le bloc de métadonnées"
+
+#: ../inc/admin/print.php:1882
+msgid "Font-size"
+msgstr "Taille de la police"
+
+#: ../inc/admin/print.php:1885
+msgid "Font weight"
+msgstr "Graisse de la police"
+
+#: ../inc/admin/print.php:1888 ../inc/admin/print.php:1942 ../inc/admin/print.php:2162
+msgid "Normal"
+msgstr "Normal"
+
+#: ../inc/admin/print.php:1891 ../inc/admin/print.php:2928 ../inc/admin/print.php:3604
+msgid "Subtitle alignment"
+msgstr "Alignement du sous-titre"
+
+#: ../inc/admin/print.php:1926
+msgid "Break page after the subtitle block"
+msgstr "Saut de page après le bloc de sous-titres"
+
+#: ../inc/admin/print.php:1936
+msgid "Font-size of the hat"
+msgstr "Taille du chapeau"
+
+#: ../inc/admin/print.php:1939
+msgid "Font weight of the hat"
+msgstr "Graisse du chapeau"
+
+#: ../inc/admin/print.php:1945
+msgid "Hat alignment"
+msgstr "Alignement du chapeau"
+
+#: ../inc/admin/print.php:1953
+msgid "Border under the hat"
+msgstr "Bordure sous le chapeau"
+
+#: ../inc/admin/print.php:1964
+msgid "Border bottom padding"
+msgstr "Rembourrage de fond de bordure"
+
+#: ../inc/admin/print.php:1970
+msgid "Bottom margin under the introduction block"
+msgstr "Marge sous le bloc d’introduction"
+
+#: ../inc/admin/print.php:2086
+msgid "Section title alignment "
+msgstr "Alignement du titre de la section "
+
+#: ../inc/admin/print.php:2113
+msgid "Multimedia element (image, map or video)"
+msgstr "Élément multimédia (image, carte ou vidéo)"
+
+#: ../inc/admin/print.php:2115
+msgid "Display after title"
+msgstr "Afficher après titre"
+
+#: ../inc/admin/print.php:2116
+msgid "Display before title"
+msgstr "Afficher avant titre"
+
+#: ../inc/admin/print.php:2117
+msgid "Do not display"
+msgstr "Ne pas afficher"
+
+#: ../inc/admin/print.php:2120
+msgid "Multimedia content width"
+msgstr "Largeur de contenu multimédia"
+
+#: ../inc/admin/print.php:2129
+msgid "Multimedia content border"
+msgstr "Bordure du contenu multimédia"
+
+#: ../inc/admin/print.php:2131
+msgid "No multimedia border"
+msgstr "Aucune bordure"
+
+#: ../inc/admin/print.php:2141
+msgid "Multimedia border width"
+msgstr "Largeur de la bordure"
+
+#: ../inc/admin/print.php:2144
+msgid "Multimedia border padding"
+msgstr "Rembourrage de la bordure (marge intérieure)"
+
+#: ../inc/admin/print.php:2152
+msgid "Do not display caption"
+msgstr "Ne pas afficher la légende"
+
+#: ../inc/admin/print.php:2157
+msgid "Caption font size"
+msgstr "Taille de la  légende"
+
+#: ../inc/admin/print.php:2160
+msgid "Caption style"
+msgstr "Style du texte de la légende"
+
+#: ../inc/admin/print.php:2163
+msgid "Italic"
+msgstr "Italique"
+
+#: ../inc/admin/print.php:2169
+msgid "Caption alignment"
+msgstr "Alignement de la légende"
+
+#: ../inc/admin/print.php:2179
+msgid "Break page after section title"
+msgstr "Saut de page après le titre de section"
+
+#: ../inc/admin/print.php:2331
+msgid "Subtitles alignment "
+msgstr "Alignement des sous-titres "
+
+#: ../inc/admin/print.php:2338
+msgid "Do not display dropcap"
+msgstr "Ne pas afficher les lettrines"
+
+#: ../inc/admin/print.php:2343
+msgid "Break page after each section"
+msgstr "Saut de page après chaque section"
+
+#: ../inc/admin/print.php:2601
+msgid "Middle"
+msgstr "Milieu"
+
+#: ../inc/admin/print.php:2842 ../inc/admin/print.php:3019
+msgid "Charger"
+msgstr "Charger"
+
+#: ../inc/admin/print.php:2844
+msgid "72 DPI for digital printing, 300 DPI for offset printing. To be printed, you must activate \"Print background and image\" in the settings of your browser."
+msgstr "72 DPI pour l’impression numérique, 300 DPI pour l’impression offset. Pour imprimer l'image de fond,, vous devez activer « Imprimer l’arrière-plan et l’image » dans les paramètres d'impression de votre navigateur."
+
+#: ../inc/admin/print.php:2850 ../inc/admin/print.php:3027
+msgid "Supprimer l'image"
+msgstr "Supprimer l'image"
+
+#: ../inc/admin/print.php:2983
+msgid "Text alignment"
+msgstr "Alignement du titre"
+
+#: ../inc/admin/print.php:3004 ../inc/admin/print.php:3083
+msgid "Before the title"
+msgstr "Avant le titre"
+
+#: ../inc/admin/print.php:3005 ../inc/admin/print.php:3084
+msgid "After the title"
+msgstr "Après le titre"
+
+#: ../inc/admin/print.php:3006 ../inc/admin/print.php:3085
+msgid "After the subtitle"
+msgstr "Après le sous-titre"
+
+#: ../inc/admin/print.php:3021
+msgid "72 DPI for digital printing, 300 DPI for offset printing."
+msgstr "72 DPI pour l’impression numérique, 300 DPI pour l’impression offset."
+
+#: ../inc/admin/print.php:3062
+msgid "Image alignment"
+msgstr "Alignement de l'image"
+
+#: ../inc/admin/print.php:3086
+msgid "After the text"
+msgstr "Après le texte"
+
+#: ../inc/admin/print.php:3120
+msgid "Page elements"
+msgstr "Eléments de la page"
+
+#: ../inc/admin/print.php:3125 ../inc/admin/print.php:3788 ../inc/admin/print.php:3833 ../inc/admin/print.php:3878 ../inc/admin/print.php:3923 ../inc/admin/print.php:3968 ../inc/admin/print.php:4013 ../inc/admin/settings.php:22
+msgid "Title"
+msgstr "Titre"
+
+#: ../inc/admin/print.php:3130 ../inc/admin/settings.php:23 ../inc/cpt/geoformat_metabox.php:368
+msgid "Subtitle"
+msgstr "Sous-titre"
+
+#: ../inc/admin/print.php:3136 ../inc/admin/settings.php:25 ../inc/cpt/geoformat_metabox.php:178 ../inc/mbox/format.php:38 ../inc/mbox/marker-infos.php:164
+msgid "Text"
+msgstr "Texte"
+
+#: ../inc/admin/print.php:3141 ../inc/mbox/marker-infos.php:165
+msgid "Image"
+msgstr "Image"
+
+#: ../inc/admin/print.php:3378
+msgid "Gutter "
+msgstr "Gouttière "
+
+#: ../inc/admin/print.php:3730
+msgid "Sorted by"
+msgstr "Triés par"
+
+#: ../inc/admin/print.php:3732
+msgid "From recent to oldest"
+msgstr "Du récent au plus ancien"
+
+#: ../inc/admin/print.php:3733
+msgid "From oldest to recent"
+msgstr "Du plus ancien au récent"
+
+#: ../inc/admin/print.php:3735
+msgid "List style"
+msgstr "Style de liste"
+
+#: ../inc/admin/print.php:3737
+msgid "No style"
+msgstr "Aucun style"
+
+#: ../inc/admin/print.php:3738
+msgid "Bullet"
+msgstr "Puce"
+
+#: ../inc/admin/print.php:3739
+msgid "Square"
+msgstr "Carré"
+
+#: ../inc/admin/print.php:3740
+msgid "Numbers"
+msgstr "Numéros"
+
+#: ../inc/admin/print.php:3742
+msgid "Padding left"
+msgstr "Marge (padding) gauche"
+
+#: ../inc/admin/print.php:3751
+msgid "Bottom margin under each element of the list"
+msgstr "Marge inférieure sous chaque élément de la liste"
+
+#: ../inc/admin/print.php:3784
+msgid "Do not display the projects"
+msgstr "Ne pas afficher les projets"
+
+#: ../inc/admin/print.php:3791 ../inc/admin/print.php:3836 ../inc/admin/print.php:3881 ../inc/admin/print.php:3926 ../inc/admin/print.php:3971 ../inc/admin/print.php:4016
+msgid "Do not display the title"
+msgstr "Ne pas afficher le titre"
+
+#: ../inc/admin/print.php:3796 ../inc/admin/print.php:3841 ../inc/admin/print.php:3886 ../inc/admin/print.php:3931 ../inc/admin/print.php:3976 ../inc/admin/print.php:4021
+msgid "ID to exclude (separated with a comma)"
+msgstr "ID à exclure (séparé avec une virgule)"
+
+#: ../inc/admin/print.php:3798
+msgid "ID can be found on the admin projects page"
+msgstr "L'ID peut être trouvé sur la page  projets de l'admin"
+
+#: ../inc/admin/print.php:3829
+msgid "Do not display the maps"
+msgstr "Ne pas afficher les cartes"
+
+msgid "Do not display the capes"
+msgstr "Ne pas afficher les caps"
+
+#: ../inc/admin/print.php:3843
+msgid "ID can be found on the admin maps page"
+msgstr "L'ID peut être trouvé sur la page cartes de l'admin"
+
+#: ../inc/admin/print.php:3874
+msgid "Do not display the markers"
+msgstr "N’affichez pas les marqueurs"
+
+#: ../inc/admin/print.php:3888
+msgid "ID can be found on the admin markers marker"
+msgstr "L'ID peut être trouvé sur la page  marqueurs  de l'admin"
+
+#: ../inc/admin/print.php:3919
+msgid "Do not display the geoformats"
+msgstr "Ne pas afficher les Géoformats"
+
+#: ../inc/admin/print.php:3933
+msgid "ID can be found on the admin Geoformats page"
+msgstr "L'ID peut être trouvé sur la page  Géoformats de l'admin"
+
+#: ../inc/admin/print.php:3964
+msgid "Do not display the posts"
+msgstr "Ne pas afficher les articles"
+
+#: ../inc/admin/print.php:3978
+msgid "ID can be found on the admin posts page"
+msgstr "L'ID peut être trouvé sur la page articles de l'admin"
+
+#: ../inc/admin/print.php:4009
+msgid "Do not display the pages"
+msgstr "Ne pas afficher les pages"
+
+#: ../inc/admin/print.php:4023
+msgid "ID can be found on the admin pages page"
+msgstr "ID peut être trouvé sur la page des pages d’administrateur"
+
+#: ../inc/admin/print.php:4036
+msgid "Do not display the categorys"
+msgstr "Ne pas afficher les catégories"
+
+#: ../inc/admin/print.php:4143 ../inc/admin/settings.php:39
+msgid " "
+msgstr " "
+
+#: ../inc/admin/print.php:4146 ../inc/admin/print.php:4162
+msgid "To view settings, the preview button must be activated in the general settings (\"General\" menu tab)."
+msgstr "Pour visualiser ces paramètres, le bouton \"Prévisualisation\" doit être activé dans les paramètres généraux (onglet « Général » du menu)."
+
+#: ../inc/admin/print.php:4152
+msgid "Complete this form to configure your cover page for printing."
+msgstr "Remplissez ce formulaire pour configurer votre page de couverture pour l’impression."
+
+#: ../inc/admin/print.php:4154 ../inc/admin/print.php:4159
+msgid "You can preview this page here</a>. Refresh the page (F5) to see the changes."
+msgstr "Vous pouvez prévisualiser cette page ici</a>. Actualisez la page (F5) pour voir les modifications."
+
+#: ../inc/admin/print.php:4157
+msgid "Complete this form to configure your table of contents page for printing."
+msgstr "Remplissez ce formulaire pour configurer votre page de table des matières pour l’impression."
+
+#: ../inc/admin/print.php:4165
+msgid ""
+"Only fill this section if you wish to add a customized header with the title or/and subtitle of your website at the top of each post (table of contents included).<br/>\n"
+"\tTo view settings, the preview button must be activated in the general settings (\"General\" menu tab)."
+msgstr "Remplissez cette section uniquement si vous souhaitez ajouter un en-tête personnalisé avec le titre ou/et le sous-titre de votre site web en tête de page (cela vaut pour tous les types de publication, table des matières incluse). <br/> Pour visualiser ces paramètres, le bouton \"Prévisualisation\" doit être activé dans les paramètres généraux (onglet « Général » du menu)."
+
+#: ../inc/admin/print.php:4174
+msgid "Print settings"
+msgstr "Paramètres d’impression"
+
+#: ../inc/admin/print.php:4177 ../inc/cpt/geoformat_metabox.php:21
+msgid "General"
+msgstr "Général"
+
+#: ../inc/admin/print.php:4178
+msgid "Headers"
+msgstr "En-tête"
+
+#: ../inc/admin/print.php:4179
+msgid "Contents"
+msgstr "Contenus"
+
+#: ../inc/admin/print.php:4181
+msgid "Table of contents"
+msgstr "Table des matières"
+
+#: ../inc/admin/print.php:4183
+msgid "About"
+msgstr "À propos"
+
+#: ../inc/admin/print.php:4484
+msgid "Choose an image"
+msgstr "Choisir une image"
+
+#: ../inc/admin/print.php:4485 ../inc/functions-admin.php:242
+msgid "Use this image"
+msgstr "Utiliser cette image"
+
+#: ../inc/admin/settings.php:17
+msgid "Theme customisation settings"
+msgstr "Paramètres de personnalisation du thème"
+
+#: ../inc/admin/settings.php:18 ../inc/admin/settings.php:339 ../inc/admin/settings.php:354
+msgid "Primary color"
+msgstr "Couleur primaire"
+
+#: ../inc/admin/settings.php:19 ../inc/admin/settings.php:356
+msgid "Secundary color"
+msgstr "Couleur secondaire"
+
+#: ../inc/admin/settings.php:20
+msgid "Header icon"
+msgstr "Icônes de l'en-tête"
+
+#: ../inc/admin/settings.php:21
+msgid "Burger menu"
+msgstr "Menu burger"
+
+#: ../inc/admin/settings.php:24
+msgid "Background"
+msgstr "Arrière-plan de la page"
+
+#: ../inc/admin/settings.php:26
+msgid "Menus"
+msgstr "Menus"
+
+#: ../inc/admin/settings.php:27
+msgid "Menus links"
+msgstr "Lien des menus"
+
+#: ../inc/admin/settings.php:28
+msgid "Insights (light gray by default)"
+msgstr "Exergues (fond grisé par défaut)"
+
+#: ../inc/admin/settings.php:29
+msgid "Footer background"
+msgstr "Arrière-plan du pied de page"
+
+#: ../inc/admin/settings.php:30
+msgid "Footer text"
+msgstr "Texte du pied de page"
+
+#: ../inc/admin/settings.php:31
+msgid "Footer links"
+msgstr "Liens du pied de page"
+
+#: ../inc/admin/settings.php:32
+msgid "Social links"
+msgstr "Icônes de partage vers les réseaux sociaux"
+
+#: ../inc/admin/settings.php:33
+msgid "Font family (main content)"
+msgstr "Typographie (contenus)"
+
+#: ../inc/admin/settings.php:34
+msgid "Font family (titles)"
+msgstr "Typographie (titres)"
+
+#: ../inc/admin/settings.php:36
+msgid "Add your favicon"
+msgstr "Ajoutez votre favicon"
+
+#: ../inc/admin/settings.php:40
+msgid "Activate Soundcite (see Toolbox/Knight Lab)"
+msgstr "Activer Soundcite (voir Boîte à outils/Knight Lab)"
+
+#: ../inc/admin/settings.php:41
+msgid "Number of maps on front page"
+msgstr "Nombre de cartes affichées sur la page d'accueil"
+
+#: ../inc/admin/settings.php:42
+msgid "When trashing a project"
+msgstr "Lorsqu'un projet est supprimé"
+
+#: ../inc/admin/settings.php:43
+msgid "When trashing a map"
+msgstr "Lorsqu'une carte est supprimée"
+
+#: ../inc/admin/settings.php:44
+msgid "Maps Options"
+msgstr "Options de cartes"
+
+#: ../inc/admin/settings.php:45
+msgid "Default tiles provider"
+msgstr "Fournisseur de dalles par défaut"
+
+#: ../inc/admin/settings.php:46
+msgid "Big map default tiles provider"
+msgstr "Fournisseur de dalles de la grande carte"
+
+#: ../inc/admin/settings.php:47
+msgid "Maps default center and zoom"
+msgstr "Centre par défaut des cartes"
+
+#: ../inc/admin/settings.php:48
+msgid "Export maps"
+msgstr "Exporter les cartes"
+
+#: ../inc/admin/settings.php:49
+msgid "Mapbox Access Token"
+msgstr "Jeton d'accès Mapbox (access token)"
+
+#: ../inc/admin/settings.php:50
+msgid "Mapbox Style"
+msgstr "Style MapBox"
+
+#: ../inc/admin/settings.php:53
+msgid "My social networks"
+msgstr "Mes réseaux sociaux"
+
+#: ../inc/admin/settings.php:54
+msgid "Twitter URL"
+msgstr "URL Twitter du projet"
+
+#: ../inc/admin/settings.php:55
+msgid "Twitter ID (@MyName)"
+msgstr "Identifiant Twitter (@MonNom)"
+
+#: ../inc/admin/settings.php:56
+msgid "Facebook URL"
+msgstr "URL Facebook du projet"
+
+#: ../inc/admin/settings.php:57
+msgid "YouTube URL"
+msgstr "URL YouTube"
+
+#: ../inc/admin/settings.php:58
+msgid "Instagram URL"
+msgstr "URL Instagram"
+
+#: ../inc/admin/settings.php:59
+msgid "Soundcloud URL"
+msgstr "URL Soundcloud"
+
+#: ../inc/admin/settings.php:60
+msgid "Medium URL"
+msgstr "URL blog Medium"
+
+#: ../inc/admin/settings.php:61
+msgid "My shared links"
+msgstr "Partages vers les réseaux sociaux"
+
+#: ../inc/admin/settings.php:62
+msgid "Chose the social networks links"
+msgstr "Sélectionner les réseaux sociaux souhaités"
+
+#: ../inc/admin/settings.php:65 ../inc/admin/settings.php:74
+msgid "Additional data for sharing"
+msgstr "Informations complémentaires pour le partage"
+
+#: ../inc/admin/settings.php:66
+msgid "Twitter card type"
+msgstr "Twitter card (format de partage sur Twitter)"
+
+#: ../inc/admin/settings.php:67
+msgid "Default image"
+msgstr "Image par défaut"
+
+#: ../inc/admin/settings.php:70
+msgid "Audience measurements"
+msgstr "Mesure des audiences"
+
+#: ../inc/admin/settings.php:71
+msgid "Google Analytics code"
+msgstr "Code Google Analytics"
+
+#: ../inc/admin/settings.php:75
+msgid "Meta description of the website"
+msgstr "Métadonnée de description du site web"
+
+#: ../inc/admin/settings.php:76
+msgid "Meta keywords"
+msgstr "Mots-clés"
+
+#: ../inc/admin/settings.php:80
+msgid "Next-previous Geoformat"
+msgstr "Géoformat suivant-précédent (affichage du lien)"
+
+#: ../inc/admin/settings.php:84
+msgid "Mentions"
+msgstr "Mentions"
+
+#: ../inc/admin/settings.php:85
+msgid "Custom text"
+msgstr "Texte personnalisé"
+
+#: ../inc/admin/settings.php:86
+msgid "Add logo"
+msgstr "Ajouter un logo"
+
+#: ../inc/admin/settings.php:338
+msgid "Footer text color"
+msgstr "Texte du pied de page"
+
+#: ../inc/admin/settings.php:340 ../inc/cpt/geoformat_metabox.php:212 ../inc/cpt/geoformat_metabox.php:229 ../inc/cpt/geoformat_metabox.php:384 ../inc/cpt/geoformat_metabox.php:525 ../inc/cpt/geoformat_metabox.php:644 ../inc/cpt/geoformat_metabox.php:767 ../inc/cpt/geoformat_metabox.php:891 ../inc/cpt/geoformat_metabox.php:1008 ../inc/cpt/geoformat_metabox.php:1125
+#: ../inc/cpt/geoformat_metabox.php:1242
+msgid "White"
+msgstr "Blanc"
+
+#: ../inc/admin/settings.php:341 ../inc/cpt/geoformat_metabox.php:213 ../inc/cpt/geoformat_metabox.php:230 ../inc/cpt/geoformat_metabox.php:385 ../inc/cpt/geoformat_metabox.php:526 ../inc/cpt/geoformat_metabox.php:645 ../inc/cpt/geoformat_metabox.php:768 ../inc/cpt/geoformat_metabox.php:892 ../inc/cpt/geoformat_metabox.php:1009 ../inc/cpt/geoformat_metabox.php:1126
+#: ../inc/cpt/geoformat_metabox.php:1243
+msgid "Black"
+msgstr "Noir"
+
+#: ../inc/admin/settings.php:355
+msgid "Original colors"
+msgstr "Couleurs originales"
+
+#: ../inc/admin/settings.php:369 ../inc/cpt/geoformat_metabox.php:124 ../inc/cpt/geoformat_metabox.php:133 ../navtop.php:59
+msgid "Medium"
+msgstr "Moyen"
+
+#: ../inc/admin/settings.php:370 ../inc/cpt/geoformat_metabox.php:126 ../inc/cpt/geoformat_metabox.php:135
+msgid "Small"
+msgstr "Petit"
+
+#: ../inc/admin/settings.php:371 ../inc/cpt/geoformat_metabox.php:125 ../inc/cpt/geoformat_metabox.php:134
+msgid "Large"
+msgstr "Grand"
+
+#: ../inc/admin/settings.php:418
+msgid "You can view samples of those different fonts on <a href=\"https://fonts.google.com/\" rel=\"noopener\" target=\"_blank\">fonts.google.com</a>. \"Faune\" is available <a href=\"http://www.cnap.graphismeenfrance.fr/faune/\" rel=\"noopener\" target=\"_blank\">on this page</a>"
+msgstr "Vous pouvez voir des échantillons de ces différentes polices sur <a href=\"https://fonts.google.com/\" rel=\"noopener\" target=\"_blank\">fonts.google.com</a>. \"Faune\" est disponible <a href=\"http://www.cnap.graphismeenfrance.fr/faune/\" rel=\"noopener\" target=\"_blank\">sur cette page</a>"
+
+#: ../inc/admin/settings.php:475
+msgid "Select your favicon"
+msgstr "Sélectionnez votre favicon"
+
+#: ../inc/admin/settings.php:477
+msgid "You can convert your favicon to the right format, .ico, with using a free online generator for jpg or png images. <br/> This one is great: <a href=\"http://realfavicongenerator.net/\" target=\"_blank\">realfavicongenerator.net</a>"
+msgstr "Vous pouvez convertir votre favicon au bon format, .ico, avec l'aide d'un générateur en ligne gratuit pour des images jpg ou png au format carré. Vous pouvez  par exemple utiliser <a href=\"http://realfavicongenerator.net/\" target=\"_blank\">ce service</a>"
+
+#: ../inc/admin/settings.php:486 ../inc/admin/settings.php:519 ../inc/admin/settings.php:846 ../inc/cpt/geoformat_metabox.php:408 ../inc/cpt/geoformat_metabox.php:541 ../inc/cpt/geoformat_metabox.php:660 ../inc/cpt/geoformat_metabox.php:783 ../inc/cpt/geoformat_metabox.php:907 ../inc/cpt/geoformat_metabox.php:1024 ../inc/cpt/geoformat_metabox.php:1141
+#: ../inc/cpt/geoformat_metabox.php:1258 ../inc/mbox/admin-avatar.php:24 ../inc/mbox/custom-image.php:41 ../inc/mbox/marker-infos.php:286
+msgid "Remove image"
+msgstr "Supprimer l'image"
+
+#: ../inc/admin/settings.php:512
+msgid "Select your logo"
+msgstr "Sélectionnez votre logo"
+
+#: ../inc/admin/settings.php:575 ../inc/admin/settings.php:618
+msgid "*If you wish to chose MapBox, don't forget to add your access token below, otherwise it won't works"
+msgstr "*Si vous souhaitez choisir MapBox, n’oubliez pas d’ajouter votre jeton d’accès (access token) ci-dessous, sinon il ne fonctionnera pas"
+
+#: ../inc/admin/settings.php:653
+msgid "Déplacez le curseur à la position souhaitée, aidez-vous du zoom pour vous déplacer dans la carte. Si la carte ne se charge pas complètement, merci de redimensionner manuellement la fenêtre de votre navigateur."
+msgstr "Déplacez le curseur à la position souhaitée, aidez vous du zoom Versez vous déplacer dans la carte. Si la carte ne se charge pas complètement, merci de redimensionner manuellement la fenêtre de votre navigateur."
+
+#: ../inc/admin/settings.php:654
+msgid "This is the default center and zoom when creating a marker or when a map has no markers."
+msgstr "C'est le centre de carte par défaut lors de la création d'un marqueur ou lorsqu'une carte ne contient aucun marqueur."
+
+#: ../inc/admin/settings.php:680
+msgid "Maps are shareable by default"
+msgstr "Les cartes sont partageables par défaut"
+
+#: ../inc/admin/settings.php:683
+msgid "If you change this setting, it will only be applied to new maps. You can change this setting in each map's form."
+msgstr "Si vous modifiez ce paramètre, il ne sera appliqué qu'aux nouvelles cartes. Vous pouvez modifier ce paramètre pour chaque carte, dans les champs du formulaire."
+
+#: ../inc/admin/settings.php:737
+msgid "*If you want to use MapBox as a tiles provider, you need to login <a href=\"http://mapbox.com\" target=\"_blank\">Mapbox</a> and retrieve your access key and style (style is not mandatoy, the default map will be used). <br/> Ex.: volvac/ck9ypkmf22lwi1ippsq6aec9z"
+msgstr "*Si vous souhaitez utiliser MapBox en tant que fournisseur de vignettes, vous devez vous connecter à <a href=\"http://mapbox.com\" target=\"_blank\">Mapbox</a> et récupérer votre clé d’accès et votre style (le style n’est pas obligatoire, la carte par défaut sera alors utilisée).<br/>Ex.: volvac/ck9ypkmf22lwi1ippsq6aec9z"
+
+#: ../inc/admin/settings.php:837
+msgid "Select your default image"
+msgstr "Sélectionnez votre image par défaut"
+
+#: ../inc/admin/settings.php:872
+msgid "Type of presentation: abstract (small image) or abstract with a large image."
+msgstr "Type de présentation : résumé (petite image) ou résumé avec une grande image."
+
+#: ../inc/admin/settings.php:913
+msgid "RSS"
+msgstr "RSS"
+
+#: ../inc/admin/settings.php:918 ../inc/admin/settings.php:1043
+msgid "E-mail"
+msgstr "E-mail"
+
+#: ../inc/admin/settings.php:923 ../navtop.php:31
+msgid "Twitter"
+msgstr "Twitter"
+
+#: ../inc/admin/settings.php:928 ../navtop.php:24
+msgid "Facebook"
+msgstr "Facebook"
+
+#: ../inc/admin/settings.php:933
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: ../inc/admin/settings.php:938
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: ../inc/admin/settings.php:943
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+#: ../inc/admin/settings.php:964
+msgid "Add your Google Analytics code ( <\\script>...<\\/script> )"
+msgstr "Ajoutez votre code Google Analytics (<\\script>...<\\/script>)"
+
+#: ../inc/admin/settings.php:983
+msgid "The description must be no longer than 200 characters"
+msgstr "La description ne doit pas être de plus de 200 caractères"
+
+#: ../inc/admin/settings.php:1000
+msgid "Maximum: 20 keywords"
+msgstr "Maximum: 20 mots clés"
+
+#: ../inc/admin/settings.php:1017
+msgid "Short text at the bottom of the page"
+msgstr "Texte court au bas de la page"
+
+#: ../inc/admin/settings.php:1048
+msgid "Copyright"
+msgstr "Copyright du thème"
+
+#: ../inc/admin/settings.php:1053
+msgid "Year"
+msgstr "Année courante"
+
+#: ../inc/admin/settings.php:1087
+msgid "Keep maps and posts (they won't belong to any project until you edit them)"
+msgstr "Conserver les cartes et les articles (ils n'appartiendront à aucun projet tant que vous ne les aurez pas modifiés)"
+
+#: ../inc/admin/settings.php:1094
+msgid "Send maps, markers and posts to trash"
+msgstr "Envoyer les cartes, marqueurs et articles à la corbeille"
+
+#: ../inc/admin/settings.php:1098
+msgid "Note that if you choose to send contents to trash, and want to restore them : the maps and posts won't belong to any project, and the markers won't belong to any map."
+msgstr "Si vous choisissez d'envoyer les contenus à la corbeille et que vous les restaurez  ensuite, les cartes et les articles n'appartiendront plus à aucun projet et les marqueurs n'appartiendront plus à aucune carte."
+
+#: ../inc/admin/settings.php:1112
+msgid "Keep markers (they won't belong to any map until you edit them)"
+msgstr "Conserver les marqueurs (ils n'appartiendront à aucune carte tant que vous ne les aurez pas modifiés)"
+
+#: ../inc/admin/settings.php:1119
+msgid "Send map's markers to trash"
+msgstr "Envoyer les marqueurs des cartes à la corbeille"
+
+#: ../inc/admin/settings.php:1123
+msgid "Note that if you choose to send markers to trash, they won't belong to any map if you restore them."
+msgstr "Si vous choisissez d'envoyer les marqueurs à la corbeille, ils n'appartiendront à aucune carte si vous les restaurez par la suite."
+
+#: ../inc/admin/settings.php:1360
+msgid "The number of maps on front must be an integer. It has been reset to the default value."
+msgstr "Le nombre de cartes affiché sur la page d'accueil doit être un entier."
+
+#: ../inc/admin/widget-posts-in-category.php:16
+msgid "Recents Posts in a category"
+msgstr "Articles récents d'une catégorie"
+
+#: ../inc/admin/widget-posts-in-category.php:18
+msgid "Display the titles of the recents posts in the choosen category"
+msgstr "Affiche les titres des articles récents d'une catégorie donnée"
+
+#: ../inc/admin/widget-posts-in-category.php:45
+msgid "Click to see this post"
+msgstr "Cliquer pour lire cet article"
+
+#: ../inc/admin/widget-posts-in-category.php:55 ../inc/admin/widget-posts-in-category.php:56
+msgid "See all"
+msgstr "Voir tout"
+
+#: ../inc/admin/widget-posts-in-category.php:84
+msgid "Category"
+msgstr "Catégorie"
+
+#: ../inc/admin/widget-posts-in-category.php:101
+msgid "Number of Posts max"
+msgstr "Nombre maximum d'articles"
+
+#: ../inc/cpt/geoformat.php:13
+msgid "Add New"
+msgstr "Créer"
+
+#: ../inc/cpt/geoformat.php:14
+msgid "Add geoformat"
+msgstr "Ajouter un Géoformat"
+
+#: ../inc/cpt/geoformat.php:15
+msgid "Edit geoformat"
+msgstr "Modifier le Géoformat"
+
+#: ../inc/cpt/geoformat.php:16
+msgid "New geoformat"
+msgstr "Nouveau Géoformat"
+
+#: ../inc/cpt/geoformat.php:17 ../home.php:59 ../home.php:66 ../home.php:72 ../project-loop.php:81 ../project-loop.php:89 ../project-loop.php:93
+msgid "View geoformat"
+msgstr "Voir le Géoformat"
+
+#: ../inc/cpt/geoformat.php:18
+msgid "Search geoformat"
+msgstr "Chercher un Géoformat"
+
+#: ../inc/cpt/geoformat.php:19
+msgid "No geoformat found"
+msgstr "Aucun Géoformat trouvé"
+
+#: ../inc/cpt/geoformat.php:20
+msgid "No geoformat in trash"
+msgstr "Aucun Géoformat dans la corbeille"
+
+#: ../inc/cpt/geoformat.php:21
+msgid "Geoformat (parent) :"
+msgstr "Géoformat (parent) :"
+
+#: ../inc/cpt/geoformat.php:78
+msgid "Note"
+msgstr "Note"
+
+#: ../inc/cpt/geoformat.php:84
+msgid "No field is mandatory: not completed, it will not be displayed. Titles are automatically added to the intrapage menu. To display an image, map or video in full screen, do not fill in the title field. The formatting of titles is taken into account only when it is accompanied by a media (image, card or video)."
+msgstr "Aucun champ n'est obligatoire : non complété, il ne sera pas affiché. Les titres sont automatiquement ajoutés au menu intrapage. Pour afficher une image, une carte ou une vidéo en plein écran, ne remplissez pas le champ de titre. Le formatage des titres n'est pris en compte que lorsqu'il est accompagné d'un média (image, carte ou vidéo)."
+
+#: ../inc/cpt/geoformat.php:121
+msgid "Published geoformats"
+msgstr "Géoformats publiés"
+
+#: ../inc/cpt/geoformat_duplicate.php:46 ../inc/cpt/geoformat_duplicate.php:49 ../inc/cpt/geoformat_duplicate.php:52 ../inc/cpt/geoformat_duplicate.php:55
+msgid "Duplicate"
+msgstr "Dupliquer"
+
+#: ../inc/cpt/geoformat_metabox.php:10 ../inc/cpt/geoformat_metabox.php:13
+msgid "Settings"
+msgstr "Réglages"
+
+#: ../inc/cpt/geoformat_metabox.php:22 ../inc/cpt/geoformat_metabox.php:343
+msgid "Intro"
+msgstr "Intro"
+
+#: ../inc/cpt/geoformat_metabox.php:23
+msgid "Content"
+msgstr "Contenu"
+
+#: ../inc/cpt/geoformat_metabox.php:27 ../inc/cpt/geoformat_metabox.php:211 ../inc/cpt/geoformat_metabox.php:228 ../inc/cpt/geoformat_metabox.php:274
+msgid "Theme color"
+msgstr "Couleur principale"
+
+#: ../inc/cpt/geoformat_metabox.php:42
+msgid "Font (texts)"
+msgstr "Typographie (textes)"
+
+#: ../inc/cpt/geoformat_metabox.php:82
+msgid "Font (titles and captions)"
+msgstr "Typographie (titres et légendes)"
+
+#: ../inc/cpt/geoformat_metabox.php:130
+msgid "Column width"
+msgstr "﻿Largeur de la colonne centrale"
+
+#: ../inc/cpt/geoformat_metabox.php:142
+msgid "Page loading"
+msgstr "Chargement de la page"
+
+#: ../inc/cpt/geoformat_metabox.php:144
+msgid "Display author's name"
+msgstr "Afficher le nom de l'auteur"
+
+#: ../inc/cpt/geoformat_metabox.php:146 ../inc/cpt/geoformat_metabox.php:221 ../inc/cpt/geoformat_metabox.php:246 ../inc/cpt/geoformat_metabox.php:255 ../inc/cpt/geoformat_metabox.php:393 ../inc/functions-admin.php:404 ../inc/mbox/mapbox.php:75
+msgid "Yes"
+msgstr "Oui"
+
+#: ../inc/cpt/geoformat_metabox.php:147 ../inc/cpt/geoformat_metabox.php:220 ../inc/cpt/geoformat_metabox.php:247 ../inc/cpt/geoformat_metabox.php:256 ../inc/cpt/geoformat_metabox.php:394
+msgid "No"
+msgstr "Non"
+
+#: ../inc/cpt/geoformat_metabox.php:152
+msgid "Loading page fade out"
+msgstr "Effet de disparition de l'écran de chargement"
+
+#: ../inc/cpt/geoformat_metabox.php:155
+msgid "Faded"
+msgstr "Fondu"
+
+#: ../inc/cpt/geoformat_metabox.php:156
+msgid "Animated"
+msgstr "Animé"
+
+#: ../inc/cpt/geoformat_metabox.php:161
+msgid "Intro effect"
+msgstr "Effet d'intro"
+
+#: ../inc/cpt/geoformat_metabox.php:164
+msgid "Jump"
+msgstr "Jump"
+
+#: ../inc/cpt/geoformat_metabox.php:165
+msgid "Push"
+msgstr "Push"
+
+#: ../inc/cpt/geoformat_metabox.php:170
+msgid "Trigger button"
+msgstr "Bouton \"trigger\" (déclencheur)"
+
+#: ../inc/cpt/geoformat_metabox.php:173
+msgid "Arrow (small)"
+msgstr "Flèche (petite)"
+
+#: ../inc/cpt/geoformat_metabox.php:174
+msgid "Arrow (small) width border"
+msgstr "Flèche (petite) avec bordure"
+
+#: ../inc/cpt/geoformat_metabox.php:175
+msgid "Arrow (medium)"
+msgstr "Flèche (moyenne)"
+
+#: ../inc/cpt/geoformat_metabox.php:176
+msgid "Arrow (medium) with border"
+msgstr "Flèche (moyenne) avec la bordure"
+
+#: ../inc/cpt/geoformat_metabox.php:177
+msgid "Arrow (full)"
+msgstr "Flèche (complète)"
+
+#: ../inc/cpt/geoformat_metabox.php:184
+msgid "Trigger button text"
+msgstr "Texte du bouton \"trigger\""
+
+#: ../inc/cpt/geoformat_metabox.php:186
+msgid "F.E. : Read more"
+msgstr "Ex. : Lire la suite"
+
+#: ../inc/cpt/geoformat_metabox.php:196
+msgid "Progress bar position"
+msgstr "Position de la barre de progression"
+
+#: ../inc/cpt/geoformat_metabox.php:199
+msgid "Top of the page"
+msgstr "Haut de page"
+
+#: ../inc/cpt/geoformat_metabox.php:200
+msgid "Bottom of the page"
+msgstr "Bas de page"
+
+#: ../inc/cpt/geoformat_metabox.php:201
+msgid "No progress bar"
+msgstr "Pas de barre de progression"
+
+#: ../inc/cpt/geoformat_metabox.php:206
+msgid "Navbar"
+msgstr "Barre de navigation"
+
+#: ../inc/cpt/geoformat_metabox.php:218
+msgid "Add shadow"
+msgstr "Ajouter un ombrage"
+
+#: ../inc/cpt/geoformat_metabox.php:226
+msgid "Social networks icons"
+msgstr "Icônes pour les réseaux sociaux"
+
+#: ../inc/cpt/geoformat_metabox.php:235
+msgid "Intrapage navigation"
+msgstr "Navigation intrapage"
+
+#: ../inc/cpt/geoformat_metabox.php:237 ../inc/cpt/geoformat_metabox.php:509 ../inc/cpt/geoformat_metabox.php:628 ../inc/cpt/geoformat_metabox.php:751 ../inc/cpt/geoformat_metabox.php:875 ../inc/cpt/geoformat_metabox.php:992 ../inc/cpt/geoformat_metabox.php:1109 ../inc/cpt/geoformat_metabox.php:1226
+msgid "Section title"
+msgstr "Titre de la section"
+
+#: ../inc/cpt/geoformat_metabox.php:238
+msgid "Circles"
+msgstr "Cercles"
+
+#: ../inc/cpt/geoformat_metabox.php:239
+msgid "No intrapage navigation"
+msgstr "Pas de navigation intrapage"
+
+#: ../inc/cpt/geoformat_metabox.php:243
+msgid "Display the title"
+msgstr "Afficher le titre"
+
+#: ../inc/cpt/geoformat_metabox.php:252
+msgid "Display the title of the website"
+msgstr "Afficher le titre du site"
+
+#: ../inc/cpt/geoformat_metabox.php:262
+msgid "Blockquote style"
+msgstr "Style des citations"
+
+#: ../inc/cpt/geoformat_metabox.php:264
+msgid "Left border"
+msgstr "Bordure gauche"
+
+#: ../inc/cpt/geoformat_metabox.php:265
+msgid "Right border"
+msgstr "Bordure droite"
+
+#: ../inc/cpt/geoformat_metabox.php:266
+msgid "Bottom border"
+msgstr "Bordure inférieure"
+
+#: ../inc/cpt/geoformat_metabox.php:267
+msgid "Quotes (no border)"
+msgstr "Guillemets"
+
+#: ../inc/cpt/geoformat_metabox.php:272
+msgid "Border type"
+msgstr "Type de bordure"
+
+#: ../inc/cpt/geoformat_metabox.php:275
+msgid "Theme color dotted"
+msgstr "Couleur principale (pointillé)"
+
+#: ../inc/cpt/geoformat_metabox.php:276
+msgid "Light grey"
+msgstr "Gris clair"
+
+#: ../inc/cpt/geoformat_metabox.php:277
+msgid "Light grey dotted"
+msgstr "Gris clair pointillé"
+
+#: ../inc/cpt/geoformat_metabox.php:344
+msgid "Chapter 1"
+msgstr "Chapitre 1"
+
+#: ../inc/cpt/geoformat_metabox.php:345
+msgid "Chapter 2"
+msgstr "Chapitre 2"
+
+#: ../inc/cpt/geoformat_metabox.php:346
+msgid "Chapter 3"
+msgstr "Chapitre 3"
+
+#: ../inc/cpt/geoformat_metabox.php:347
+msgid "Chapter 4"
+msgstr "Chapitre 4"
+
+#: ../inc/cpt/geoformat_metabox.php:348
+msgid "Chapter 5"
+msgstr "Chapitre 5"
+
+#: ../inc/cpt/geoformat_metabox.php:349
+msgid "Chapter 6"
+msgstr "Chapitre 6"
+
+#: ../inc/cpt/geoformat_metabox.php:350
+msgid "Chapter 7"
+msgstr "Chapitre 7"
+
+#: ../inc/cpt/geoformat_metabox.php:360
+msgid "Author(s)"
+msgstr "Auteur(s)"
+
+#: ../inc/cpt/geoformat_metabox.php:364
+msgid "Author(s) of the pictures"
+msgstr "Auteur (s) des photos"
+
+#: ../inc/cpt/geoformat_metabox.php:372
+msgid "Title position"
+msgstr "Position du titre"
+
+#: ../inc/cpt/geoformat_metabox.php:375
+msgid "Centred"
+msgstr "Centré"
+
+#: ../inc/cpt/geoformat_metabox.php:386 ../inc/cpt/geoformat_metabox.php:527 ../inc/cpt/geoformat_metabox.php:646 ../inc/cpt/geoformat_metabox.php:769 ../inc/cpt/geoformat_metabox.php:893 ../inc/cpt/geoformat_metabox.php:1010 ../inc/cpt/geoformat_metabox.php:1127 ../inc/cpt/geoformat_metabox.php:1244
+msgid "White on theme color background"
+msgstr "Blanc sur fond de couleur (couleur principale)"
+
+#: ../inc/cpt/geoformat_metabox.php:390
+msgid "Display date"
+msgstr "Afficher la date de publication"
+
+#: ../inc/cpt/geoformat_metabox.php:398
+msgid "Background image (intro)"
+msgstr "Image de fond (intro)"
+
+#: ../inc/cpt/geoformat_metabox.php:401 ../inc/cpt/geoformat_metabox.php:534 ../inc/cpt/geoformat_metabox.php:653 ../inc/cpt/geoformat_metabox.php:776 ../inc/cpt/geoformat_metabox.php:900 ../inc/cpt/geoformat_metabox.php:1017 ../inc/cpt/geoformat_metabox.php:1134 ../inc/cpt/geoformat_metabox.php:1251 ../inc/functions-admin.php:241 ../inc/mbox/custom-image.php:33
+#: ../inc/mbox/custom-image.php:36
+msgid "Choose your image"
+msgstr "Choisissez votre image"
+
+#: ../inc/cpt/geoformat_metabox.php:408 ../inc/cpt/geoformat_metabox.php:541 ../inc/cpt/geoformat_metabox.php:660 ../inc/cpt/geoformat_metabox.php:783 ../inc/cpt/geoformat_metabox.php:907 ../inc/cpt/geoformat_metabox.php:1024 ../inc/cpt/geoformat_metabox.php:1141 ../inc/cpt/geoformat_metabox.php:1258 ../inc/mbox/custom-image.php:41
+msgid "Remove"
+msgstr "Supprimer"
+
+#: ../inc/cpt/geoformat_metabox.php:414 ../inc/cpt/geoformat_metabox.php:790 ../inc/cpt/geoformat_metabox.php:913 ../inc/cpt/geoformat_metabox.php:1030 ../inc/cpt/geoformat_metabox.php:1147 ../inc/cpt/geoformat_metabox.php:1264
+msgid "OR map in the background (copy-paste the shortcode at the bottom of the map (via admin dashboard)"
+msgstr "OU carte en fond d'écran : copier-coller le code iframe disponible en bas de la carte (via l'admin de WP)"
+
+#: ../inc/cpt/geoformat_metabox.php:419 ../inc/cpt/geoformat_metabox.php:553 ../inc/cpt/geoformat_metabox.php:673 ../inc/cpt/geoformat_metabox.php:796 ../inc/cpt/geoformat_metabox.php:918 ../inc/cpt/geoformat_metabox.php:1035 ../inc/cpt/geoformat_metabox.php:1152 ../inc/cpt/geoformat_metabox.php:1269
+msgid "OR video background (copy-paste the code)"
+msgstr "OU video en fond d'écran (copier-coller votre code embed récupéré via YouTube, Vimeo, etc.)"
+
+#: ../inc/cpt/geoformat_metabox.php:424
+msgid "Intro of the article"
+msgstr "Chapeau"
+
+#: ../inc/cpt/geoformat_metabox.php:436
+msgid "Add text (optional)"
+msgstr "Texte (facultatif)"
+
+#: ../inc/cpt/geoformat_metabox.php:457 ../inc/cpt/geoformat_metabox.php:585 ../inc/cpt/geoformat_metabox.php:707 ../inc/cpt/geoformat_metabox.php:831 ../inc/cpt/geoformat_metabox.php:949 ../inc/cpt/geoformat_metabox.php:1066 ../inc/cpt/geoformat_metabox.php:1183
+msgid "Add new chapter +"
+msgstr "Ajouter un nouveau chapitre"
+
+#: ../inc/cpt/geoformat_metabox.php:513 ../inc/cpt/geoformat_metabox.php:632 ../inc/cpt/geoformat_metabox.php:755 ../inc/cpt/geoformat_metabox.php:879 ../inc/cpt/geoformat_metabox.php:996 ../inc/cpt/geoformat_metabox.php:1113 ../inc/cpt/geoformat_metabox.php:1230
+msgid "Alignement of the title"
+msgstr "Alignement du titre"
+
+#: ../inc/cpt/geoformat_metabox.php:517 ../inc/cpt/geoformat_metabox.php:636 ../inc/cpt/geoformat_metabox.php:759 ../inc/cpt/geoformat_metabox.php:883 ../inc/cpt/geoformat_metabox.php:1000 ../inc/cpt/geoformat_metabox.php:1117 ../inc/cpt/geoformat_metabox.php:1234
+msgid "Centre"
+msgstr "Centre"
+
+#: ../inc/cpt/geoformat_metabox.php:531
+msgid "Background image (intro de la section)"
+msgstr "Image de fond (intro de la section)"
+
+#: ../inc/cpt/geoformat_metabox.php:548 ../inc/cpt/geoformat_metabox.php:667
+msgid "OR map in the background (copy-paste the embed code available at the bottom of the map (share button)"
+msgstr "OU carte en fond d'écran : copier-coller le code iframe disponible en bas de la carte (bouton de partage)"
+
+#: ../inc/cpt/geoformat_metabox.php:559 ../inc/cpt/geoformat_metabox.php:679 ../inc/cpt/geoformat_metabox.php:802 ../inc/cpt/geoformat_metabox.php:923 ../inc/cpt/geoformat_metabox.php:1040 ../inc/cpt/geoformat_metabox.php:1157 ../inc/cpt/geoformat_metabox.php:1274
+msgid "Caption (below image, video or map)"
+msgstr "Légende (sous l'image, la vidéo ou la carte)"
+
+#: ../inc/cpt/geoformat_metabox.php:563 ../inc/cpt/geoformat_metabox.php:685 ../inc/cpt/geoformat_metabox.php:808 ../inc/cpt/geoformat_metabox.php:927 ../inc/cpt/geoformat_metabox.php:1044 ../inc/cpt/geoformat_metabox.php:1161 ../inc/cpt/geoformat_metabox.php:1278
+msgid "Add content"
+msgstr "Ajouter le contenu"
+
+#: ../inc/cpt/geoformat_metabox.php:1328
+msgid "Additional style (advanced user)"
+msgstr "Style additionnel (utilisateur avancé)"
+
+#: ../inc/cpt/geoformat_widget.php:37
+msgid "Title:"
+msgstr "Titre :"
+
+#: ../inc/cpt/geoformat_widget.php:41
+msgid "Longforms to display:"
+msgstr "Nombre de géoformats à afficher :"
+
+#: ../inc/cpt/maps.php:33 ../inc/cpt/markers.php:33 ../inc/cpt/projects.php:33
+msgid "Add"
+msgstr "Ajouter"
+
+#: ../inc/cpt/maps.php:34
+msgid "Add map"
+msgstr "Ajouter une carte"
+
+#: ../inc/cpt/maps.php:35
+msgid "Edit this map"
+msgstr "Modifier la carte"
+
+#: ../inc/cpt/maps.php:36
+msgid "New map"
+msgstr "Nouvelle carte"
+
+#: ../inc/cpt/maps.php:37 ../inc/mbox/marker-infos.php:78
+msgid "See the map"
+msgstr "Voir la carte"
+
+#: ../inc/cpt/maps.php:38
+msgid "Search maps"
+msgstr "Rechercher une carte"
+
+#: ../inc/cpt/maps.php:39
+msgid "No maps found"
+msgstr "Aucune carte trouvée"
+
+#: ../inc/cpt/maps.php:40
+msgid "No maps found in trash"
+msgstr "Aucune carte dans la corbeille"
+
+#: ../inc/cpt/maps.php:41
+msgid "My maps"
+msgstr "Mes cartes"
+
+#: ../inc/cpt/capes.php:34
+msgid "Add cape"
+msgstr "Ajouter un cap"
+
+#: ../inc/cpt/capes.php:35
+msgid "Edit this cape"
+msgstr "Modifier le cap"
+
+#: ../inc/cpt/capes.php:36
+msgid "New cape"
+msgstr "Nouveau cap"
+
+#: ../inc/cpt/capes.php:37
+msgid "See the cape"
+msgstr "Voir le cap"
+
+#: ../inc/cpt/capes.php:38
+msgid "Search capes"
+msgstr "Rechercher une cap"
+
+#: ../inc/cpt/capes.php:39
+msgid "No capes found"
+msgstr "Aucun cap trouvé"
+
+#: ../inc/cpt/capes.php:40
+msgid "No capes found in trash"
+msgstr "Aucun cap dans la corbeille"
+
+#: ../inc/cpt/capes.php:41
+msgid "My capes"
+msgstr "Mes caps"
+
+#: ../inc/cpt/maps.php:79 ../inc/cpt/markers.php:79 ../inc/cpt/projects.php:78
+#, php-format
+msgid "%1$s updated. <a href=\"%2$s\">See the %1$s</a>"
+msgstr "%1$s à jour. <a href=\"%2$s\">Voir la publication</a>"
+
+#: ../inc/cpt/maps.php:80 ../inc/cpt/markers.php:80 ../inc/cpt/projects.php:79
+msgid "Custom field updated."
+msgstr "Champ personnalisé mis à jour."
+
+#: ../inc/cpt/maps.php:81 ../inc/cpt/markers.php:81 ../inc/cpt/projects.php:80
+msgid "Custom field deleted."
+msgstr "Champ personnalisé supprimé."
+
+#: ../inc/cpt/maps.php:82 ../inc/cpt/markers.php:82 ../inc/cpt/projects.php:81
+#, php-format
+msgid "%s updated."
+msgstr "%s mis à jour."
+
+#: ../inc/cpt/maps.php:83 ../inc/cpt/markers.php:83 ../inc/cpt/projects.php:82
+#, php-format
+msgid "%1$s restored at revision %2$s"
+msgstr "%1$s restauré à la révision %2$s"
+
+#: ../inc/cpt/maps.php:84 ../inc/cpt/markers.php:84 ../inc/cpt/projects.php:83
+#, php-format
+msgid "%1$s published. <a href=\"%2$s\">See the %1$s</a>"
+msgstr "%1$s publié. <a href=\"%2$s\">Voir %1$s</a>"
+
+#: ../inc/cpt/maps.php:85 ../inc/cpt/markers.php:85 ../inc/cpt/projects.php:84
+#, php-format
+msgid "%s saved"
+msgstr "%s sauvegardé"
+
+#: ../inc/cpt/maps.php:86 ../inc/cpt/markers.php:86 ../inc/cpt/projects.php:85
+#, php-format
+msgid "%1$s saved. <a target=\"_blank\" href=\"%2$s\">Preview the %1$s</a>"
+msgstr "%1$s enregistré. <a href=\"%2$s\">Aperçu %1$s</a>"
+
+#: ../inc/cpt/maps.php:87 ../inc/cpt/markers.php:87 ../inc/cpt/projects.php:86
+#, php-format
+msgid "%1$s planned for the : <strong>%2$s</strong>. <a target=\"_blank\" href=\"%3$s\">Preview the %1$s</a>"
+msgstr "%1$s prévus pour le <strong>: %2$s</strong>. <a target=\"_blank\" href=\"%3$s\">Aperçu du %1$s</a>"
+
+#: ../inc/cpt/maps.php:87 ../inc/cpt/markers.php:87 ../inc/cpt/projects.php:86
+msgid "M j, Y @ G:i"
+msgstr "M j, Y @ G:i"
+
+#: ../inc/cpt/maps.php:88 ../inc/cpt/markers.php:88 ../inc/cpt/projects.php:87
+#, php-format
+msgid "Draft of %1$s updates. <a target=\"_blank\" href=\"%2$s\">Preview the %1$s</a>"
+msgstr "Brouillon de %1$s mises à jour. <a target=\"_blank\" href=\"%2$s\">Aperçu des %1$s</a>"
+
+#: ../inc/cpt/markers.php:20 ../inc/cpt/markers.php:32
+msgid "Marker"
+msgstr "Marqueur"
+
+#: ../inc/cpt/markers.php:34
+msgid "Add a new marker"
+msgstr "Ajouter un nouveau marqueur"
+
+#: ../inc/cpt/markers.php:35
+msgid "Edit this marker"
+msgstr "Modifier ce marqueur"
+
+#: ../inc/cpt/markers.php:36
+msgid "New marker"
+msgstr "Nouveau marqueur"
+
+#: ../inc/cpt/markers.php:37
+msgid "See the marker"
+msgstr "Voir le marqueur"
+
+#: ../inc/cpt/markers.php:38
+msgid "Search markers"
+msgstr "Recherche des marqueurs"
+
+#: ../inc/cpt/markers.php:39
+msgid "No markers found"
+msgstr "Aucun marqueur trouvé"
+
+#: ../inc/cpt/markers.php:40
+msgid "No markers found in trash"
+msgstr "Aucun marqueur dans la corbeille"
+
+#: ../inc/cpt/markers.php:41
+msgid "My markers"
+msgstr "Mes marqueurs"
+
+#: ../inc/cpt/projects.php:34
+#, php-format
+msgid "Add a new %s"
+msgstr "Ajouter un nouveau %s"
+
+#: ../inc/cpt/projects.php:35
+#, php-format
+msgid "Edit this %s"
+msgstr "Modifier ce %s"
+
+#: ../inc/cpt/projects.php:36
+#, php-format
+msgid "New %s"
+msgstr "Nouveau %s"
+
+#: ../inc/cpt/projects.php:37
+#, php-format
+msgid "See the %s"
+msgstr "Voir %s"
+
+#: ../inc/cpt/projects.php:38
+#, php-format
+msgid "Search %s"
+msgstr "Chercher des %s"
+
+#: ../inc/cpt/projects.php:39
+#, php-format
+msgid "No %s found"
+msgstr "Aucun %s trouvé"
+
+#: ../inc/cpt/projects.php:40
+#, php-format
+msgid "No %s found in trash"
+msgstr "Aucun %s trouvé dans la corbeille"
+
+#: ../inc/cpt/projects.php:41
+#, php-format
+msgid "My %s"
+msgstr "Mes %s"
+
+#: ../inc/functions-admin-utils.php:64
+#, php-format
+msgid "%1$s, no default icons markers found : you must have a problem with the theme."
+msgstr "%1$s, aucune icône de marqueur n'a été trouvée : il est possible que vous ayez un souci dans votre installation."
+
+#: ../inc/functions-admin-utils.php:64
+msgid "Warning"
+msgstr "Attention"
+
+#: ../inc/functions-admin-utils.php:73
+msgid "No custom markers found! You can send your marker images (PNG, transparent background) from the button below \"Load your custom marker\""
+msgstr "Aucun marqueur personnalisé trouvé ! Vous pouvez envoyer vos images de marqueur (PNG, fond transparent) à partir du bouton  \"Chargez votre marqueur personnalisé\""
+
+#: ../inc/functions-admin-utils.php:77
+#, php-format
+msgid "A good list of free markers icons can be found on the %1$s website."
+msgstr "Une excellente liste d'icônes de marqueurs peut être téléchargée sur le site web de %1$s."
+
+#: ../inc/functions-admin.php:222
+msgid "Add to Menu"
+msgstr "Ajouter au menu"
+
+#: ../inc/functions-admin.php:260 ../inc/functions-admin.php:279
+msgid "Add new image"
+msgstr "Ajouter une image"
+
+#: ../inc/functions-admin.php:261
+msgid "Back to marker options"
+msgstr "Retour aux options de marqueurs"
+
+#: ../inc/functions-admin.php:280
+msgid "Back to the edition of the maps"
+msgstr "Retour à l’édition de la carte"
+
+#: ../inc/functions-admin.php:291 ../inc/functions-admin.php:292 ../inc/functions-admin.php:294
+msgid "Mots-clés"
+msgstr "Mots-clés"
+
+#: ../inc/functions-admin.php:293
+msgid "Recherche de mots-clés"
+msgstr "Recherche de mots-clés"
+
+#: ../inc/functions-admin.php:295
+msgid "Séparer les mots-clés par une virgule"
+msgstr "Séparer les mots-clés par une virgule"
+
+#: ../inc/functions-admin.php:296
+msgid "Choisir parmi les mots-clés les plus utilisés"
+msgstr "Choisir parmi les mots-clés les plus utilisés"
+
+#: ../inc/functions-admin.php:297
+msgid "Mots-clés populaires"
+msgstr "Mots-clés populaires"
+
+#: ../inc/functions-admin.php:298
+msgid "Editer le mot-clé"
+msgstr "Editer le mot-clé"
+
+#: ../inc/functions-admin.php:299
+msgid "Voir le mot-clé"
+msgstr "Voir le mot-clé"
+
+#: ../inc/functions-admin.php:300
+msgid "Mettre à jour le mot-clé"
+msgstr "Mettre à jour le mot-clé"
+
+#: ../inc/functions-admin.php:301
+msgid "Ajouter un mot-clé"
+msgstr "Ajouter un mot-clé"
+
+#: ../inc/functions-admin.php:302
+msgid "Nom des nouveaux mots-clés"
+msgstr "Nom des nouveaux mots-clés"
+
+#: ../inc/functions-admin.php:360
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#: ../inc/functions-admin.php:386
+msgid "Display on homepage?"
+msgstr "Afficher en page d’accueil ?"
+
+#: ../inc/functions-admin.php:440
+msgid "Welcome on Geoproject-Geoformat! Add your settings and save the page"
+msgstr "Bienvenue sur Geoproject-Geoformat ! Ajustez  vos paramètres et enregistrez la page"
+
+#: ../inc/functions-admin.php:467
+msgid "ID"
+msgstr "ID"
+
+#: ../inc/functions-admin.php:469
+msgid "This post will be displayed only if it has a featured image."
+msgstr "Ce contenu ne s'affichera que si une image mise en avant a été spécifiée."
+
+#: ../inc/functions-admin.php
+msgid "Featured Image is required for this post type"
+msgstr "Une image est requise pour ce type de contenu"
+
+#: ../inc/functions-common-utils.php:70
+msgid "draft"
+msgstr "brouillon"
+
+#: ../inc/functions-common-utils.php:74
+msgid "private"
+msgstr "privé"
+
+#: ../inc/functions-common.php:33
+msgid "small"
+msgstr "petit"
+
+#: ../inc/functions-common.php:34
+msgid "S"
+msgstr "S"
+
+#: ../inc/functions-common.php:39
+msgid "regular"
+msgstr "moyen"
+
+#: ../inc/functions-common.php:40
+msgid "M"
+msgstr "M"
+
+#: ../inc/functions-common.php:45
+msgid "large"
+msgstr "grand"
+
+#: ../inc/functions-common.php:46
+msgid "L"
+msgstr "L"
+
+#: ../inc/functions-common.php:51
+msgid "larger"
+msgstr "plus grand"
+
+#: ../inc/functions-common.php:52
+msgid "XL"
+msgstr "XL"
+
+#: ../inc/functions-common.php:98
+msgid "Primary Menu"
+msgstr "Menu principal"
+
+#: ../inc/functions-common.php:99
+msgid "Custom menu for the footer"
+msgstr "Menu personnalisable pour le pied de page"
+
+#: ../inc/functions-common.php:242
+msgid "Footer Widgets (8 blocks maximum)"
+msgstr "Widgets pour le bas de page (8 blocs maximum)"
+
+#: ../inc/functions-common.php:332
+msgid "Charger une image"
+msgstr "Ajouter une image"
+
+#: ../inc/functions-common.php:333
+msgid "Utiliser cette image"
+msgstr "Utiliser cette image"
+
+#: ../inc/functions-common.php:346 ../inc/functions-common.php:347 ../inc/functions-common.php:349
+msgid "Keywords"
+msgstr "Mots clés"
+
+#: ../inc/functions-common.php:348
+msgid "Search keywords"
+msgstr "Rechercher des mots-clés"
+
+#: ../inc/functions-common.php:350
+msgid "Separate keywords with a coma"
+msgstr "Séparer les mots-clés par une virgule"
+
+#: ../inc/functions-common.php:351
+msgid "Chose among the most used keywords"
+msgstr "Choisissez parmi les mots clés les plus utilisés"
+
+#: ../inc/functions-common.php:352
+msgid "Popular keywords"
+msgstr "Mots-clés populaires"
+
+#: ../inc/functions-common.php:353
+msgid "Edit keyword"
+msgstr "Modifier le mot-clé"
+
+#: ../inc/functions-common.php:354
+msgid "View keyword"
+msgstr "Voir le mot-clé"
+
+#: ../inc/functions-common.php:355
+msgid "Update keyword"
+msgstr "Mettre à jour le mot-clé"
+
+#: ../inc/functions-common.php:356
+msgid "Add keyword"
+msgstr "Ajouter un mot-clé"
+
+#: ../inc/functions-common.php:357
+msgid "New keyowrds'name"
+msgstr "Nouveau mot-clé"
+
+#: ../inc/functions-frontend.php:241
+msgid "more"
+msgstr "plus"
+
+#: ../inc/mbox/admin-avatar.php:9
+msgid "Profile picture"
+msgstr "Photo de profil"
+
+#: ../inc/mbox/admin-avatar.php:16 ../inc/mbox/marker-infos.php:99
+msgid "Load image"
+msgstr "Chargement"
+
+#: ../inc/mbox/admin-avatar.php:17
+msgid "Image size: 200 x 200px"
+msgstr "Taille de l'image: 200 x 200px"
+
+#: ../inc/mbox/alaune.php:20
+msgid "Display option (index pages)"
+msgstr "Option d'affichage (pages d'index)"
+
+#: ../inc/mbox/alaune.php:35
+msgid "Check this box to display the featured image rather than the map"
+msgstr "Cochez cette case pour afficher l'image mise en avant plutôt que la carte (l'image est utilisée dans tous les cas pour le partage sur les réseaux sociaux)"
+
+#: ../inc/mbox/custom-image.php:16
+msgid "Add a custom image"
+msgstr "Ajouter une image personnalisée"
+
+#: ../inc/mbox/custom-image.php:29
+msgid "If your map uses a custom image, first save it to preview it. Like for any other map, you can add a marker. <strong>For images that replace a map:</strong> if the background image appears pixelated, it is a resolution issue (the map is too small) or a zoom issue (you will heave to decrease it)."
+msgstr ""
+"Si votre carte utilise une image personnalisée, enregistrez-la d’abord pour la prévisualiser. Comme pour n’importe quelle autre carte, vous pouvez ajouter un marqueur. <strong>Pour les images qui remplacent une carte :</strong> si l’image d’arrière-plan apparaît pixelisée, il s’agit d’un problème de résolution (la carte est trop petite) ou d’un problème de zoom (vous devriez le "
+"diminuer)."
+
+#: ../inc/mbox/custom-image.php:47
+msgid "Displaying"
+msgstr "Affichage"
+
+#: ../inc/mbox/custom-image.php:50
+msgid "Replace"
+msgstr "Remplacer"
+
+#: ../inc/mbox/custom-image.php:51
+msgid "Overlay"
+msgstr "Superposer"
+
+#: ../inc/mbox/custom-image.php:56
+msgid "Image copyright"
+msgstr "Copyright de l'image"
+
+#: ../inc/mbox/custom-image.php:61
+msgid "Minimum zoom (only if the image replace the map, it can be a negative value : the object is to find the perfect zoom size to preview the map)"
+msgstr "Zoom minimum (seulement si l’image remplace la carte, cela peut être une valeur négative : l’objet est de trouver la taille de zoom parfaite pour prévisualiser la carte)"
+
+#: ../inc/mbox/custom-image.php:67
+msgid "Do not change these fields if your image replaces the map. However, they are ALL mandatory if you want to embed an image on a map."
+msgstr "Ne complétez pas ces champs si votre image remplace la carte. Toutefois, ils sont TOUS obligatoires si vous souhaitez superposer une image sur la carte."
+
+#: ../inc/mbox/custom-image.php:71
+msgid "Lat 1"
+msgstr "Latitude 1"
+
+#: ../inc/mbox/custom-image.php:74
+msgid "Long 1"
+msgstr "Longitude 1"
+
+#: ../inc/mbox/custom-image.php:78
+msgid "Lat 2"
+msgstr "Latitude 2"
+
+#: ../inc/mbox/custom-image.php:81
+msgid "Long 2"
+msgstr "Longitude 2"
+
+#: ../inc/mbox/custom-image.php:85
+msgid "Opacity (range: from 0 to 1)"
+msgstr "Opacité (de 0 à 1)"
+
+#: ../inc/mbox/custom-image.php:89
+msgid "Z-index (for the layer position, start from 1)"
+msgstr "Z-index (pour la position de la couche, débute à partir de 1)"
+
+#: ../inc/mbox/editor-style.php:17
+msgid "Dropcap"
+msgstr "Lettrine"
+
+#: ../inc/mbox/editor-style.php:22
+msgid "Framed (grey background)"
+msgstr "Encadré (fond gris)"
+
+#: ../inc/mbox/editor-style.php:27
+msgid "Framed (white background)"
+msgstr "Encadré (fond blanc)"
+
+#: ../inc/mbox/editor-style.php:32
+msgid "Framed (main color background)"
+msgstr "Encadré (fond de couleur du thème)"
+
+#: ../inc/mbox/editor-style.php:37
+msgid "Button"
+msgstr "Bouton"
+
+#: ../inc/mbox/format.php:17
+msgid "Format"
+msgstr "Format"
+
+#: ../inc/mbox/format.php:41
+msgid "Picture"
+msgstr "Photo"
+
+#: ../inc/mbox/format.php:44
+msgid "Sound"
+msgstr "Audio"
+
+#: ../inc/mbox/format.php:47 ../inc/mbox/marker-infos.php:166
+msgid "Video"
+msgstr "Vidéo"
+
+#: ../inc/mbox/format.php:53
+msgid "Chart"
+msgstr "Graphique"
+
+#: ../inc/mbox/map-infos.php:13
+msgid "Infos"
+msgstr "Infos"
+
+#: ../inc/mbox/map-infos.php:38
+msgid "Choose a tiles provider :"
+msgstr "Choisir un fournisseur de dalles :"
+
+#: ../inc/mbox/map-infos.php:190
+msgid "(Save this map to update the preview.)"
+msgstr "(Sauvegardez cette carte pour mettre à jour la prévisualisation)"
+
+#: ../inc/mbox/map-infos.php:192 ../inc/mbox/marker-infos.php:404
+msgid "*To use MapBox, don't forget to complete the field \"MapBox access token\" within the setting page."
+msgstr "*Pour utiliser MapBox, n’oubliez pas de compléter le champ \"jeton d’accès MapBox\" (acess token) dans les réglages de Géoproject."
+
+#: ../inc/mbox/map-infos.php:203
+msgid "Export"
+msgstr "Exporter"
+
+#: ../inc/mbox/map-infos.php:209
+msgid "Allow sharing this map (iframe)"
+msgstr "Autoriser le partage de cette carte (iframe)"
+
+#: ../inc/mbox/cape-infos.php:209
+msgid "Allow sharing this cape (iframe)"
+msgstr "Autoriser le partage de ce cap (iframe)"
+
+#: ../inc/mbox/map-infos.php:223
+msgid "Zoom (the value will depend on the map tiles provider)"
+msgstr "Zoom (la valeur dépend du fournisseur de dalles de la carte)"
+
+#: ../inc/mbox/map-preview.php:13
+msgid "Map Preview"
+msgstr "Prévisualisation de la carte"
+
+#: ../inc/mbox/map-preview.php:49
+msgid "Add markers in this map"
+msgstr "Ajouter des marqueurs dans cette carte"
+
+#: ../inc/mbox/map-preview.php:50
+msgid "Save this map before clicking"
+msgstr "Sauvez cette carte avant de cliquer"
+
+#: ../inc/mbox/map-preview.php:57
+msgid "Set Map Bounds"
+msgstr "Définir les contours de la carte"
+
+#: ../inc/mbox/map-preview.php:57
+msgid "Warning: You haven't defined the map bounds yet! <a href=\"#mbox_map_preview\">Define now</a>"
+msgstr "Attention : veuillez définir les contours nord-est et sud-ouest de la carte ! <a href=\"#mbox_map_preview\">Définir les contours</a>"
+
+#: ../inc/mbox/custom-image.php:61
+msgid "Replace map by a custom image"
+msgstr "Remplacer la carte par une image"
+
+#: ../inc/mbox/custom-image.php:61
+msgid "North East"
+msgstr "Nord Est"
+
+#: ../inc/mbox/custom-image.php:65
+msgid "South West"
+msgstr "Sud Ouest"
+
+#: ../inc/mbox/custom-image.php
+msgid "Upload your image"
+msgstr "Téleverser une image"
+
+#: ../inc/mbox/custom-image.php
+msgid "In the Preview Map box above, <a href=\"#mbox_map_preview\">define</a> the bounds of the image"
+msgstr "Dans le bloc Prévisualisation de carte ci-dessus, <a href=\"#mbox_map_preview\">spécifiez</a> les contours de l'image"
+
+#: ../inc/template-tags.php
+msgid "Last Itineraries"
+msgstr "Derniers itinéraires"
+
+
+msgid "All Projects"
+msgstr "Tous les projets"
+
+msgid "All Categories"
+msgstr "Toutes les catégories"
+
+#: ../inc/mbox/map-preview.php:57
+msgid "To display correctly the image as a map, please set manually those 2 points inside the image: North East and South West.<br/>1/ To define the North East, place your mouse at the top right corner of the image and press the right click of your mouse.<br/>2/ To define the South West, place your mouse at the bottom left corner of the image and simply click with your mouse."
+msgstr "Pour afficher de façon optimale votre image, veuillez spécifier ces deux points à l'intérieur de l'image : le nord-est et le sud-ouest.<br/>1/Pour définir le nord-est, placez votre curseur dans le coin en haut à droite de l'image et faîtes un clic-droit.<br/>2/Pour définir le sud-ouest, placez votre curseur dans le coin en bas à gauche de l'image et cliquez avec votre souris."
+
+#: ../inc/mbox/custom-image.php:37
+msgid "High resolution required! Make sure your image height or width is <b>at least 3000 pixels</b> and in <strong>300dpi</strong>."
+msgstr "Haute résolution requise ! Votre image doit avoir une largeur ou une hauteur d'<strong>au moins 3000 pixels</strong> et une <strong>résolution de 300dpi</strong>."
+
+#: ../inc/mbox/custom-image.php:39
+msgid "Once the image is uploaded, save the map to preview it. When saving the map, custom tiles will be generated. Please be patient, as the processus can take up to several minutes if your image resolution is important."
+msgstr "Une fois que l'image a été téléversée, enregistrez la carte pour la prévisualiser. Au moment de l'enregistrement, des tiles seront générées, cette étape peut prendre jusqu'à plusieurs minutes, selon la résolution de votre image. Merci de patienter."
+
+#: ../inc/mbox/map-preview.php:68
+msgid "Shortocde to copy-paste within posts or geoformats"
+msgstr "Shortocde à copier-coller dans les articles ou les géoformats"
+
+#: ../inc/mbox/map-preview.php:76
+msgid "If necessary, you can change the height of the map (height=\"XXXpx\")"
+msgstr "Si nécessaire, vous pouvez modifier la hauteur de la carte (par exemple : height=\"600px\")."
+
+#: ../inc/mbox/mapbox.php:16 ../inc/mbox/mapbox.php:24 ../inc/mbox/mapbox.php:32 ../inc/mbox/mapbox.php:40 ../inc/mbox/mapbox.php:48 ../inc/mbox/mapbox.php:56
+msgid "Add MapBox map?"
+msgstr "Ajouter une carte MapBox  ?"
+
+#: ../inc/mbox/mapbox.php:71
+msgid "I am using an embedded MapBox map in this post"
+msgstr "J'intègre une carte MapBox dans cette publication"
+
+#: ../inc/mbox/mapbox.php:77
+msgid "Recommended size : style=\"width: 100%; height: 500px;\", paste your MapBox code in a HTML container (Gutenberg editor) or in text mode (classic editor)."
+msgstr "Style  recommandé : style=\"width: 100%; height : 500px; », collez votre code MapBox dans un conteneur HTML (éditeur Gutenberg) ou en mode texte (éditeur classique)."
+
+#: ../inc/mbox/marker-infos.php:14
+msgid "Marker Informations"
+msgstr "Informations du marqueur"
+
+#: ../inc/mbox/marker-infos.php:77 ../inc/mbox/marker-infos.php:375
+msgid "Edit the map"
+msgstr "Modifier la carte"
+
+#: ../inc/mbox/marker-infos.php:83
+#, php-format
+msgid "No map found. If you want to add this marker to a map, <a href=\"%1$s\">you must create one first</a> (don't forget to save this content before clicking on this link)."
+msgstr "Aucune carte trouvée. Si vous voulez ajouter ce marqueur à une carte, vous devez d'abord <a href=\"%1$s\">en créer une </a> (n'oubliez pas de sauver ce contenu avant de cliquer sur ce lien pour ajouter un marqueur)."
+
+#: ../inc/mbox/marker-infos.php:98
+msgid "Load your custom marker"
+msgstr "Chargez votre marqueur personnalisé"
+
+#: ../inc/mbox/marker-infos.php:102
+msgid "Maximum recommended size: 60 pixels high. To prevent multiple image size generated by WordPress, please go to \"Settings/Media\" and then set the different image size to 0"
+msgstr "Taille maximale recommandée : 60 pixels de haut. Pour éviter les images multiples générées automatiquement par WordPress, rendez-vous dans le menu \"Paramètres / Médias\" et ensuite régler les tailles des différents formats d'image sur 0"
+
+#: ../inc/mbox/marker-infos.php:105
+msgid "Marker preview"
+msgstr "Aperçu du marqueur"
+
+#: ../inc/mbox/marker-infos.php:116
+msgid "change"
+msgstr "modifier"
+
+#: ../inc/mbox/marker-infos.php:125
+msgid "Default icons"
+msgstr "Icônes par défaut"
+
+#: ../inc/mbox/marker-infos.php:129
+msgid "Custom icons"
+msgstr "Icônes personnalisés"
+
+#: ../inc/mbox/marker-infos.php:140
+msgid "Loading"
+msgstr "Chargement"
+
+#: ../inc/mbox/marker-infos.php:148
+msgid "In the Popup"
+msgstr "Insérer un média dans l'infobulle (pop-up)"
+
+#: ../inc/mbox/marker-infos.php:151
+#, php-format
+msgid "%1$s Note %2$s you can drag an drop created contents for changing display order in the popup. Contents are displayed one above the others in the popup, starting with the created content at left."
+msgstr "%1$s Note %2$s vous pouvez déplacer les contenus créés pour changer l'ordre d'apparition dans l'infobulle : ils seront affichés les uns au-dessus des autres, en partant de celui de gauche."
+
+#: ../inc/mbox/marker-infos.php:167
+msgid "Audio"
+msgstr "Audio"
+
+#: ../inc/mbox/marker-infos.php:182 ../inc/mbox/marker-infos.php:200
+msgid "Delete"
+msgstr "Supprimer"
+
+#: ../inc/mbox/marker-infos.php:216
+msgid "Add a Text"
+msgstr "Ajouter un texte"
+
+#: ../inc/mbox/marker-infos.php:217
+msgid "Add a <strong>Text</strong>"
+msgstr "Ajouter un <strong>texte</strong>"
+
+#: ../inc/mbox/marker-infos.php:222
+msgid "Add an Image"
+msgstr "Ajouter une image"
+
+#: ../inc/mbox/marker-infos.php:223
+msgid "Add an <strong>Image</strong>"
+msgstr "Ajouter une <strong>image</strong>"
+
+#: ../inc/mbox/marker-infos.php:228
+msgid "Add a Video"
+msgstr "Ajouter une vidéo"
+
+#: ../inc/mbox/marker-infos.php:229
+msgid "Add a <strong>Video</strong>"
+msgstr "Ajouter une <strong>vidéo</strong>"
+
+#: ../inc/mbox/marker-infos.php:234
+msgid "Add an Audio"
+msgstr "Ajouter un fichier audio"
+
+#: ../inc/mbox/marker-infos.php:235
+msgid "Add an <strong>Audio</strong>"
+msgstr "Ajouter de un <strong>fichier audio</strong>"
+
+#: ../inc/mbox/marker-infos.php:283
+msgid "Choose an Image"
+msgstr "Choisir une image"
+
+#: ../inc/mbox/marker-infos.php:295
+msgid "URL of the video"
+msgstr "URL de la vidéo"
+
+#: ../inc/mbox/marker-infos.php:309
+msgid "Remove video"
+msgstr "Supprimer la vidéo"
+
+#: ../inc/mbox/marker-infos.php:343
+msgid "Choose a MP3 file"
+msgstr "Choisir un fichier MP3"
+
+#: ../inc/mbox/marker-infos.php:346
+msgid "Remove audio file"
+msgstr "Supprimer le fichier audio"
+
+#: ../inc/mbox/marker-infos.php:359
+msgid "Read more link"
+msgstr "Bouton \"En savoir plus\""
+
+#: ../inc/mbox/marker-infos.php:359
+msgid "Optional"
+msgstr "Optionel"
+
+#: ../inc/mbox/marker-infos.php:366
+msgid "By default, the Read more link goes to the Marker page. To redirect to a different url, type it here."
+msgstr "Par défaut, le lien \"En savoir plus\" dans le pop-up conduit à la page du marqueur. Pour rediriger vers une url différente, remplissez le champ ci-dessous."
+
+#: ../inc/mbox/marker-infos.php:369
+msgid "Redirect Read More Link"
+msgstr "Saisissez une url"
+
+#: ../inc/mbox/marker-infos.php:381
+msgid "Geolocation"
+msgstr "Géolocalisation"
+
+#: ../inc/mbox/marker-infos.php:383
+msgid "Tiles Provider"
+msgstr "Fournisseur de dalles"
+
+#: ../inc/mbox/marker-infos.php:386
+msgid "Drag the marker to the desired position."
+msgstr "Déplacer le marqueur jusqu'à la position souhaitée."
+
+#: ../inc/mbox/marker-infos.php:387
+msgid "You can zoom and pan to the desired location and bring back the marker there by clicking the button \"center marker here\"."
+msgstr "Vous pouvez zoomer et déplacer la carte à la position souhaitée et ramener le marqueur au centre en cliquant sur le bouton \"Centrer le marqueur ici\"."
+
+#: ../inc/mbox/marker-infos.php:388
+msgid "You can search for a postal address (powered by <a href=\"http://nominatim.openstreetmap.org/\" target=\"_blank\">OpenStreetMap Nominatim</a>). If you can't find an address, try to be more precise or test other keywords."
+msgstr "Vous pouvez chercher une adresse postale (propulsé par <a href=\"http://nominatim.openstreetmap.org/\" target=\"_blank\">OpenStreetMap Nominatim</a>). Si vous ne trouvez pas l'adresse, essayez d'être plus précis en utilisant d'autres mots-clés."
+
+#: ../inc/mbox/marker-infos.php:396
+msgid "Select the background with which you want to preview. Please, save it to view the change. It will only affect the markers' preview, not the original map. To do so, you have to edit the original map that you have created."
+msgstr "Sélectionnez l’arrière-plan avec lequel vous souhaitez afficher l’aperçu de la carte. Enregistrez le marqueur pour voir le changement. Cela n’affectera que l’aperçu des marqueurs et non pas la carte originale. Pour ce faire, vous devez éditer la carte originale que vous avez créée."
+
+#: ../inc/mbox/marker-infos.php:578
+msgid "To preview a map where an image replaces the tiles on a map, give that marker a title, link it to the map, and save your marker. If the marker does not appear on the image, click on the'center the marker' button to display it."
+msgstr "Pour prévisualiser une carte où une image remplace les dalles d’une carte (option 'remplacer'), donnez-lui un titre, reliez-le à la carte et enregistrez votre marqueur. <br/>Si le marqueur n’apparaît pas sur l’image, cliquez sur le bouton « Centrer le marqueur ici » pour l’afficher."
+
+#: ../inc/mbox/project-infos.php:14
+msgid "Additionnal Informations"
+msgstr "Informations complémentaires"
+
+#: ../inc/mbox/project-infos.php:44
+msgid "Field name"
+msgstr "Nom du champ"
+
+#: ../inc/mbox/project-infos.php:48
+msgid "Field value"
+msgstr "Valeur du champ"
+
+#: ../inc/mbox/project-infos.php:56
+msgid "Project initiator"
+msgstr "Initiateur du projet"
+
+#: ../inc/mbox/project-infos.php:64
+msgid "Initiator website URL"
+msgstr "Site web de l'initiateur du projet"
+
+#: ../inc/mbox/project-infos.php:72
+msgid "Project start date"
+msgstr "Date de début du projet"
+
+#: ../inc/mbox/project-infos.php:76
+msgid "Day"
+msgstr "Jour"
+
+#: ../inc/mbox/project-infos.php:112
+msgid "Month"
+msgstr "Mois"
+
+#: ../inc/mbox/project-infos.php:129
+msgid "Year "
+msgstr "Année "
+
+#: ../inc/mbox/projects-list.php:37
+msgid "this map"
+msgstr "cette carte"
+
+#: ../inc/mbox/projects-list.php:37
+msgid "this post"
+msgstr "cet article"
+
+#: ../inc/mbox/projects-list.php:42
+#, php-format
+msgid "Attach %1$s to a project (optionnal)"
+msgstr "Attacher %1$s à un projet (optionnel)"
+
+#: ../inc/mbox/projects-list.php:56
+#, php-format
+msgid "No project found. You can optionnaly <a href=\"%1$s\">create a new project</a> to put %2$s in (don't forget to save this content before clicking on this link)"
+msgstr "Aucun projet n'a été trouvé. Vous pouvez optionnellement <a href=\"%1$s\">créer un nouveau projet</a> pour y mettre votre %2$s (n'oubliez pas de sauvegarder ce contenu avant de cliquer sur ce lien)"
+
+#: ../inc/mbox/shortcodes.php:30 ../inc/mbox/shortcodes.php:31 ../inc/mbox/shortcodes.php:65
+msgid "Toolbox"
+msgstr "Boîte à outils"
+
+#: ../inc/mbox/shortcodes.php:55
+msgid "Additional tools"
+msgstr "Outils additionnels"
+
+#: ../inc/mbox/shortcodes.php:68
+msgid "Tools"
+msgstr "Outils"
+
+#: ../inc/mbox/shortcodes.php:69
+msgid "Icon generator"
+msgstr "Générateur d'icônes"
+
+#: ../inc/mbox/shortcodes.php:70
+msgid "Embed contents"
+msgstr "Contenus d'intégration"
+
+#: ../inc/mbox/shortcodes.php:71
+msgid "Knight Lab"
+msgstr "Knight Lab"
+
+#: ../inc/mbox/shortcodes.php:75
+msgid "Additional tools to enhance your stories"
+msgstr "Des outils supplémentaires pour raconter vos histoires"
+
+#: ../inc/metadata.php:134 ../inc/metadata.php:226 ../inc/metadata.php:307 ../search.php:13
+msgid "Search results for:"
+msgstr "Résultat de la recherche pour :"
+
+#: ../inc/template-tags.php:62
+msgid "Pingback:"
+msgstr "Rétrolien :"
+
+#: ../inc/template-tags.php:62 ../inc/template-tags.php:84
+msgid "(Edit)"
+msgstr "(Modifier)"
+
+#: ../inc/template-tags.php:72
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">a dit :</span>"
+
+#: ../inc/template-tags.php:75
+msgid "Your comment is awaiting moderation."
+msgstr "Votre commentaire est en attente de modération."
+
+#: ../inc/template-tags.php:82
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s à %2$s"
+
+#: ../inc/template-tags.php:210
+msgid "Last Maps"
+msgstr "Dernières cartes"
+
+#: ../inc/template-tags.php:357
+msgid "Last Capes"
+msgstr "Derniers caps"
+
+#: ../inc/template-tags.php:251
+msgid "Last Markers"
+msgstr "Derniers marqueurs"
+
+#: ../inc/template-tags.php:298
+msgid "Last Geoformats"
+msgstr "Derniers Géoformats"
+
+#: ../inc/template-tags.php:337
+msgid "Last posts"
+msgstr "Derniers articles"
+
+#: ../modale.php:13
+msgid "Close"
+msgstr "Fermer"
+
+#: ../navtop.php:38
+msgid "Instagram"
+msgstr "Instagram"
+
+#: ../navtop.php:45
+msgid "YouTube"
+msgstr "YouTube"
+
+#: ../navtop.php:52
+msgid "Soundcloud"
+msgstr "SoundCloud"
+
+#: ../navtop.php:97 ../navtop.php:119 ../searchform.php:7
+msgid "Enter your search term..."
+msgstr "Terme de recherche..."
+
+#: ../networks.php:14
+msgid "Share by e-mail"
+msgstr "Partager par mail"
+
+#: ../networks.php:14
+msgid "A friend wants to share this article with you:"
+msgstr "Un ami veut partager un lien avec vous :"
+
+#: ../networks.php:14
+msgid "Read:"
+msgstr "Découvrez :"
+
+#: ../networks.php:32
+msgid "Share on LinkedIn"
+msgstr "Partagez sur LinkedIn"
+
+#: ../print-geoformat.php:222 ../single-geoformat.php:242
+msgid "Photos: "
+msgstr "Photos : "
+
+#: ../print-geoformat.php:227 ../single-geoformat.php:248
+msgid "j F Y"
+msgstr "j F Y"
+
+#: ../search.php:36
+msgid "Nothing found for: "
+msgstr "Aucun résultat trouvé pour : "
+
+#: ../search.php:39
+msgid "Sorry, but nothing matched your search terms. <br/> Please try again with some different keywords."
+msgstr "Désolé, mais aucun résultat ne correspond à vos critères de recherche. <br/> Essayez de nouveau avec des mots clés différents."
+
+#: ../sidebar-single-map.php:2
+msgid "In the same project"
+msgstr "Dans le même projet"
+
+#: ../single-geoformat.php:778
+msgid "This post is password protected:"
+msgstr "Cette page est protégée par mot de passe :"
+
+#: ../footer.php:71
+msgid "This site is licensed under a <a target=\"_blank\" href=\"%s\">Creative Commons Attribution BY-NC-ND.</a>"
+msgstr "Ce site est publié sous la licence <a target=\"_blank\" href=\"%s\">Creative Commons Attribution BY-NC-ND.</a>"
+
+#: ../footer.php:81
+msgid "Proudly edited by <a target=\"_blank\" href=\"%1$s\">Bibliothèque Carré d'Art</a> and its <a target=\"_blank\" href=\"%2$s\">laboratoire des usages Labo<sup>2</sup></a>"
+msgstr "Fièrement édité par <a target=\"_blank\" href=\"%1$s\">la Bibliothèque Carré d’Art</a> et <a target=\"_blank\" href=\"%2$s\">son laboratoire des usages Labo<sup>2</sup> </a>"
+
+#~ msgid "Bordure"
+#~ msgstr "Bordure"
+
+#~ msgid "Overlay image"
+#~ msgstr "Superposition d'image"
+
+#~ msgid ""
+#~ "If your map uses a custom image, first save the marker to preview it. To display the marker on this map, click on the \"center the marker\" button. If the background image appears pixelated, it is a resolution issue (the card is too small and too low resolution. If the personalized image appears superimposed (and therefore does not cover the entire card), add a marker to "
+#~ "optimize its visualization and / or adjust in the theme options the default center of maps (assuming you are working around the same region)."
+#~ msgstr ""
+#~ "Si votre carte utilise une image personnalisée, enregistrez d'abord le marqueur pour la prévisualiser. Pour faire apparaître le marqueur sur cette carte, cliquer sur le bouton \"centrer le marqueur\". Si l'image de fond apparaît pixellisée, il s'agit d'un problème de résolution (la carte est trop petite et de trop petite résolution. Si l'image personnalisée apparaît en "
+#~ "surimpression (et ne couvre donc pas l'entièreté de la carte), ajouter un marqueur pour optimiser sa visualisation et/ou réglez dans les options du thème le centre par défaut des cartes (supposant que vous travaillez autour d'une même région."
+
+#~ msgid "Use this file"
+#~ msgstr "Utiliser ce fichier"
+
+#~ msgid "Search address"
+#~ msgstr "Chercher l'adresse"
+
+#~ msgid "Type something..."
+#~ msgstr "Recherche..."
+
+#~ msgid "Results for your search"
+#~ msgstr "Résultats de votre recherche"
+
+#~ msgid "No results found. Try to be more precise or try different keywords."
+#~ msgstr "Aucun résultat trouvé. Essayez d'être plus précis dans votre requête et essayez avec d'autres mots-clés."
+
+#~ msgid "Center marker here"
+#~ msgstr "Centrer le marqueur ici"
+
+#~ msgid "More"
+#~ msgstr "Voir"
+
+#~ msgid "Marker icon"
+#~ msgstr "Icône du marqueur"
+
+#~ msgid "Markers Index"
+#~ msgstr "Index des marqueurs"
+
+#~ msgid "Click to open it on map"
+#~ msgstr "Cliquer pour l'ouvrir sur la carte"
+
+#~ msgid "Share"
+#~ msgstr "Intégrer"
+
+#~ msgid "Embed map (iframe)"
+#~ msgstr "Intégrer la carte (iframe)"
+
+#~ msgid "Map's height (pixels)"
+#~ msgstr "Hauteur de la carte (pixels)"
+
+#~ msgid "Cape's height (pixels)"
+#~ msgstr "Hauteur du cap (pixels)"
+
+#~ msgid "Copy / Paste this HTML code"
+#~ msgstr "Copier-coller ce code HTML"
+
+#~ msgid "Content alignment "
+#~ msgstr "Alignement du contenu"
+
+#~ msgid "Maps width"
+#~ msgstr "Largeur des cartes"
+
+#~ msgid "Capes width"
+#~ msgstr "Largeur des caps"
+
+#~ msgid "Attributes of the geoformat"
+#~ msgstr "Attributs du geoformat"
+
+#~ msgid "Embedded geoformats"
+#~ msgstr "Géoformats intégrés"
+
+#~ msgid "Print icons"
+#~ msgstr "Imprimer les icônes"
+
+#~ msgid "Print maps"
+#~ msgstr "Imprimer les cartes"
+
+#~ msgid "Print capes"
+#~ msgstr "Imprimer les caps"
+
+#~ msgid "Width"
+#~ msgstr "Largeur"
+
+#~ msgid "geoformat width"
+#~ msgstr "Largeur des geoformats"
+
+#~ msgid "geoformat columns "
+#~ msgstr "colonnes geoformat"
+
+#~ msgid "Print embed geoformat"
+#~ msgstr "Imprimer la géoformat embed"
+
+#~ msgid "Customize Geoformats"
+#~ msgstr "Personnaliser les géoformats"
+
+#~ msgid "Font family (chapter title)"
+#~ msgstr "Typographie (titre du chapitre)"
+
+#~ msgid "Chapter color"
+#~ msgstr "Couleur du titre de chapitre"
+
+#~ msgid "Il s'agit du texte qui figure tout en bas du pied de page et qui est commun à toutes les pages. Si ce champ est vide, il ne s'affiche pas."
+#~ msgstr "Il s’agit du texte qui figure tout en bas du pied de page et qui est commun à toutes les pages. Si ce champion est vide, il ne s’affiche pas."
+
+#~ msgid ""
+#~ "ID des catégories affichés dans la première ligne (3 vignettes). Entrez les ID des rubriques, séparés par une virgule. Cet ID peut être trouvé via l'onglet \"Articles / Catégories\". \n"
+#~ "Exemple : \"Social\" = 251 \")"
+#~ msgstr ""
+#~ "ID des catégories dans la première ligne (3 vignettes). Entrez les ID des rubriques, séparés par une virgule. Cet ID peut être trouvé via l’onglet « Articles / Catégories ». \n"
+#~ "Exemple : « Social » = 251 « )"
+
+#~ msgid "Envoyer votre image"
+#~ msgstr "Envoyer votre image"
+
+#, fuzzy
+#~| msgid "Choose your image"
+#~ msgid "Choisir votre image"
+#~ msgstr "Choisissez votre image"
+
+#~ msgid "Enable PDF printing"
+#~ msgstr "Activer l’impression PDF"
+
+#~ msgid "Help"
+#~ msgstr "Aide"
+
+#~ msgid "Adjust your settings for PDF prints"
+#~ msgstr "Ajuster vos paramètres pour les impressions PDF"
+
+#~ msgid "PDF"
+#~ msgstr "PDF"
+
+#~ msgid "Homepage"
+#~ msgstr "Page d'accueil"
+
+#~ msgid "Option des pages"
+#~ msgstr "Option des pages"
+
+#, fuzzy
+#~| msgid "Audience measurements"
+#~ msgid "Audiences"
+#~ msgstr "Mesure des audiences"
+
+#, fuzzy
+#~| msgid "Organization of Contents"
+#~ msgid "Personnalisation de contenus"
+#~ msgstr "Organisation des Contenus"
+
+#, fuzzy
+#~| msgid "Google Analytics code"
+#~ msgid "Code Gooogle Analytics"
+#~ msgstr "Code Google Analytics"
+
+#, fuzzy
+#~| msgid "Keywords"
+#~ msgid "HTML Keywords"
+#~ msgstr "Mots clés"
+
+#~ msgid "Affichage en homepage"
+#~ msgstr "Affichage en page d’accueil"
+
+#~ msgid "Dismiss"
+#~ msgstr "Ignorer"
+
+#~ msgid "Dynamic side menu"
+#~ msgstr "Menu latéral dynamique"
+
+#~ msgid "Dynamic side menu links"
+#~ msgstr "Liens du menu latéral dynamique"
+
+#~ msgid "Projects menu background(medium gray by default)"
+#~ msgstr "Fond de la liste des projets"
+
+#~ msgid "Main color"
+#~ msgstr "Couleur principale"
+
+#~ msgid "Link color (primary)"
+#~ msgstr "Liens"
+
+#~ msgid "Navbar background color"
+#~ msgstr "Couleur d'arrière-plan de la navbar en tête de page"
+
+#~ msgid "Navbar burger color"
+#~ msgstr "Couleur du burger en tête de page (menu)"
+
+#~ msgid "Side menu background color"
+#~ msgstr "Couleur d'arrière-plan du menu latéral"
+
+#~ msgid "Hover background color (index)"
+#~ msgstr "Couleur d'arrière-plan au survol (pages d'index)"
+
+#~ msgid "Hover link color (index)"
+#~ msgstr "Couleur du texte au survol (pages d'index)"
+
+#~ msgid "Exergues (gray background by default)"
+#~ msgstr "Exergues (fond grisé par défaut)"
+
+#~ msgid "Section 1"
+#~ msgstr "Section 1"
+
+#~ msgid "Section 2"
+#~ msgstr "Section 2"
+
+#~ msgid "Section 3"
+#~ msgstr "Section 3"
+
+#~ msgid "Section 4"
+#~ msgstr "Section 4"
+
+#~ msgid "Section 5"
+#~ msgstr "Section 5"
+
+#~ msgid "Section 6"
+#~ msgstr "Section 6"
+
+#~ msgid "Section 7"
+#~ msgstr "Section 7"
+
+#~ msgid "Sorry but this map is no more shareable"
+#~ msgstr "Désolé mais cette carte n'est plus exportable"
+
+#~ msgid "Sorry but this cape is no more shareable"
+#~ msgstr "Désolé mais ce cap n'est plus exportable"
+
+#~ msgid "Arial, Helvetica, sans-serif"
+#~ msgstr "Arial, Helvetica, sans-serif"
+
+#~ msgid "Georgia, serif"
+#~ msgstr "Géorgie, serif"
+
+#~ msgid "Tahoma, Geneva, sans-serif"
+#~ msgstr "Tahoma, Geneva, sans-serif"
+
+#~ msgid "Times New Roman, Times, serif"
+#~ msgstr "Times New Roman, Times, serif"
+
+#~ msgid "Verdana, Geneva, sans-serif"
+#~ msgstr "Verdana, Geneva, sans-serif"
+
+#~ msgid "Arvo, serif"
+#~ msgstr "Arvo, serif"
+
+#~ msgid "Droid Sans, sans-serif"
+#~ msgstr "Droid Sans, sans-serif"
+
+#~ msgid "Open Sans, sans-serif"
+#~ msgstr "Open Sans, sans-serif"
+
+#~ msgid "Roboto, sans-serif"
+#~ msgstr "Roboto, sans-serif"
+
+#~ msgid "Roboto Slab, serif"
+#~ msgstr "Roboto Slab,serif"
+
+#~ msgid "Lato, sans-serif"
+#~ msgstr "Lato, sans-serif"
+
+#~ msgid "Ubuntu Condensed, sans-serif"
+#~ msgstr "Ubuntu Condensé, sans-serif"
+
+#~ msgid "Inconsolata, cursive"
+#~ msgstr "Inconsolata, cursive"
+
+#~ msgid "Playfair Display, serif"
+#~ msgstr "Playfair Display, serif"
+
+#~ msgid "Roboto Light, sans-serif"
+#~ msgstr "Roboto Light, sans-serif"
+
+#~ msgid "Bree, serif"
+#~ msgstr "Bree, serif"
+
+#~ msgid "Oswald regular, sans-serif"
+#~ msgstr "Oswald regular, sans-serif"
+
+#~ msgid "Oswal bold, sans-serif"
+#~ msgstr "Oswal bold, sans-serif"
+
+#~ msgid "Lobster, cursive"
+#~ msgstr "Lobster, cursive"
+
+#~ msgid "Lobster Two, cursive"
+#~ msgstr "Lobster Two, cursive"
+
+#~ msgid "Montserrat, sans-serif"
+#~ msgstr "Montserrat, sans-serif"
+
+#~ msgid "Montserrat Alternate, sans-serif"
+#~ msgstr "Montserrat Alternate, sans-serif"
+
+#~ msgid "Raleway, sans-serif"
+#~ msgstr "Raleway, sans-serif"
+
+#~ msgid "Default"
+#~ msgstr "Par défaut"
+
+#~ msgid "Roboto Slab,serif"
+#~ msgstr "Roboto Slab,serif"
+
+#~ msgid "Loader"
+#~ msgstr "Loader (chargeur)"
+
+#~ msgid "Circle"
+#~ msgstr "Cercle"
+
+#~ msgid "Bar"
+#~ msgstr "Barre"
+
+#~ msgid "Theme color (positive)"
+#~ msgstr "Couleur principale (positif)"
+
+#~ msgid "Theme color (négative)"
+#~ msgstr "Couleur principale (négatif)"
+
+#~ msgid "Footer"
+#~ msgstr "Pied de page"
+
+#~ msgid "Home"
+#~ msgstr "Accueil"
+
+#~ msgid "<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+#~ msgstr "<a class=\"comment-link\" href=\"#respond\" title=\"Ajouter un commentaire\">Ajouter un commentaire</a> ou laisser un trackback : <a class=\"trackback-link\" href=\"%s\" title=\"URL de Trackback de votre article\" rel=\"trackback\">URL pour un rétrolien</a>."
+
+#~ msgid "Comments are closed, but you can leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+#~ msgstr "Les commentaires sont fermés mais vous pouvez ajouter un rétrolien : <a class=\"trackback-link\" href=\"%s\" title=\"URL de Trackback de votre article\" rel=\"trackback\">URL de trackback</a>."
+
+#~ msgid "Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">post a comment</a>."
+#~ msgstr "Les rétroliens sont fermés, mais vous pouvez <a class=\"comment-link\" href=\"#respond\" title=\"Ajouter un commentaire\">ajouter un commentaire</a>."
+
+#~ msgid "Both comments and trackbacks are currently closed."
+#~ msgstr "Les commentaires et les rétroliens sont actuellement fermés."
+
+#~ msgid "Permalink to %s"
+#~ msgstr "Permalien vers %s"
+
+#~ msgid "markers"
+#~ msgstr "marqueurs"
+
+#~ msgid "Réglages"
+#~ msgstr "Réglages"
+
+#~ msgid "Loader animation"
+#~ msgstr "Animation du loader"
+
+#~ msgid "Arrow (regular)"
+#~ msgstr "Flèche (regular)"
+
+#~ msgid "Arrow (regular) with border"
+#~ msgstr "Flèche (regular) avec bordure"
+
+#~ msgid "Fixed navbar"
+#~ msgstr "Barre de navigation fixe"
+
+#~ msgid "Navigation inside the page"
+#~ msgstr "Navigation intrapage"
+
+#~ msgid "White on secondary color"
+#~ msgstr "Blanc sur couleur secondaire"
+
+#~ msgid "White on black"
+#~ msgstr "Blanc sur noir"
+
+#~ msgid "Select your image"
+#~ msgstr "Choisir votre image"
+
+#~ msgid "Add content (lead)"
+#~ msgstr "Ajouter le contenu (chapeau/lead)"
+
+#~ msgid "Ad a new section +"
+#~ msgstr "Nouvelle section +"
+
+#~ msgid "Background image (section's intro)"
+#~ msgstr "Image de fond (section intro)"
+
+#~ msgid "Framed (primary color)"
+#~ msgstr "Encadré (couleur principale)"
+
+#~ msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+#~ msgstr "Prêt à publier votre 1er article ? <a href=\"%1$s\">C'est par ici !</a>."
+
+#~ msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+#~ msgstr "Il semble que ce que vous cherchez ne peut pas être trouvé. Essayez d'effectuer une nouvelle recherche."
+
+#~ msgid "Search &hellip;"
+#~ msgstr "Rechercher &hellip;"
+
+#~ msgid "Oops! That page can&rsquo;t be found."
+#~ msgstr "Cette page n'a pas pu être trouvée."
+
+#~ msgid "It looks like nothing was found at this location."
+#~ msgstr "Aucun résultat n'a été trouvé."
+
+#~ msgid "This keyword was used in "
+#~ msgstr "Ce mot clé a été utilisé dans "
+
+#~ msgid "Click to see all projects"
+#~ msgstr "Cliquer ici pour voir tous les projets"
+
+#~ msgid "%1$d more projects"
+#~ msgstr "%1$d projets supplémentaires"
+
+#~ msgid "<span class=\"fa fa-angle-left\"></span> Previous"
+#~ msgstr "<span class=\"fa fa-angle-left\"></span> Précédents"
+
+#~ msgid "Next <span class=\"fa fa-angle-right\"></span>"
+#~ msgstr "Suivants <span class=\"fa fa-angle-right\"></span>"
+
+#~ msgid "<span class=\"meta-nav\"><span class=\"fa fa-angle-left\"></span></span> Older posts"
+#~ msgstr "<span class=\"meta-nav\"><span class=\"fa fa-angle-left\"></span></span> Anciens articles"
+
+#~ msgid "Newer posts <span class=\"meta-nav\"><span class=\"fa fa-angle-right\"></span></span>"
+#~ msgstr "Nouveaux articles <span class=\"meta-nav\"><span class=\"fa fa-angle-right\"></span></span>"
+
+#~ msgid "Last Geoformat"
+#~ msgstr "Derniers Géoformats"
+
+#~ msgid "See the geoformat"
+#~ msgstr "Voir le Géoformat"
+
+#~ msgid "Share on Facebook"
+#~ msgstr "Partager sur Facebook"
+
+#~ msgid "Ajouter une nouvelle section +"
+#~ msgstr "Nouvelle section +"
+
+#~ msgid "résultat de recherche pour : %s"
+#~ msgstr "Search Results for: %s"
+
+#~ msgid "Site Tagline Color"
+#~ msgstr "Couleur du slogan du site"
+
+#~ msgid "Background color (secondary, if you don't use native background customization from WordPress)"
+#~ msgstr "Couleur d’arrière-plan (secondaire, si vous n’utilisez pas l'outil de personnalisation natif de WordPress, disponible dans \"Affichage / Arrière-plan\")"
+
+#~ msgid "Couleur du texte de la navbar de bas de page"
+#~ msgstr "Couleur du texte de la barre de navigation de bas de page"
+
+#~ msgid "Lien vers le Géoformat suivant-précédent"
+#~ msgstr "Lien vers le Géoformat suivant-précédent"
+
+#~ msgid "GooglePlus"
+#~ msgstr "Google +"
+
+#~ msgid "Share on Google+"
+#~ msgstr "Partager sur Google+"
+
+#~ msgid "Background color (secondary)"
+#~ msgstr "Couleur d'arrière-plan (couleur secondaire)"
+
+#~ msgid "by"
+#~ msgstr "par"
+
+#~ msgid "In"
+#~ msgstr "Dans"
+
+#~ msgid "Follow this project on"
+#~ msgstr "Suivre ce projet sur"
+
+#~ msgid "Go to the Twitter account dedicated to this project"
+#~ msgstr "Voir le compte Twitter de ce projet"
+
+#~ msgid "Go to the Facebook page dedicated to this project"
+#~ msgstr "Voir la page Facebook de ce projet"
+
+#~ msgid "Attached file"
+#~ msgstr "Fichier attaché"
+
+#~ msgid "Project's Twitter URL"
+#~ msgstr "URL Twitter du projet"
+
+#~ msgid "Project's Facebook URL"
+#~ msgstr "URL Facebook du projet"
+
+#~ msgid "Choose a file"
+#~ msgstr "Choisir un fichier"
+
+#~ msgid "Remove file"
+#~ msgstr "Supprimer le fichier"
+
+#~ msgid "cloudmade API key"
+#~ msgstr "Clef d'API cloudmade"
+
+#~ msgid "You can choose a cloudmade Style ID in <a href=\"http://maps.cloudmade.com/editor\" target=\"_blank\">the cloudmade style Editor</a> : this is the number under each map style."
+#~ msgstr "Vous pouvez choisir un ID cloudmade Style dans <a href=\"http://maps.cloudmade.com/editor\" target=\"_blank\">l'éditeur cloudmade</a> : c'est le nombre en bas à droite de chaque style de carte."
+
+#~ msgid "You can also create your own style by choosing a style in the list and click the \"Clone Style\" button at the bottom right."
+#~ msgstr "Vous pouvez aussi créer votre propre style en choisissant l'un des styles existants, puis en cliquant sur le bouton \"Clone Style\" en bas à droite de l'écran."
+
+#~ msgid "See above for explanation about Style ID."
+#~ msgstr "Voir ci-dessus pour les explications à propos du Style ID."
+
+#~ msgid "Drag and zoom to the desired default position."
+#~ msgstr "Déplacer le marqueur à la position souhaitée."
+
+#~ msgid "The default tiles provider was weird. It has been reset to the default value."
+#~ msgstr "Le fournisseur de dalles par défaut des cartes était bizarre. Il a été réinitialisé."
+
+#~ msgid "The default tiles provider for Big map was weird. It has been reset to the default value."
+#~ msgstr "Le fournisseur de dalles par défaut de la grande carte était bizarre. Il a été réinitialisé."
+
+#~ msgid "Settings saved."
+#~ msgstr "Paramètres sauvegardés."
+
+#~ msgid "Important note"
+#~ msgstr "Note importante"
+
+#~ msgid "Some of your maps were using cloudmade as tiles provider, and you choose to delete your cloudmade API key. In consequence, these maps has been reset to the default tiles provider."
+#~ msgstr "Certaines de vos cartes utilisent cloudmade en tant que fournisseur de dalles, mais vous avez choisi de supprimer votre clef d'API. En conséquence, ces cartes utiliseront désormais le fournisseur de cartes par défaut."
+
+#~ msgid "The cloudmade API key is not valid. It must contain only alphanumeric characters. The value has been reset to the default value."
+#~ msgstr "La clef d'API cloudmade est invalide. Elle ne doit contenir que des caractères alphanumériques, elle a donc été réinitialisée."
+
+#~ msgid "The cloudmade API key is not valid. It must contain at least 32 characters. The value has been reset to the default value."
+#~ msgstr "La clef d'API cloudmade est invalide. Elle doit être constituée de 32 caractères, elle  a donc été réinitialisée."
+
+#~ msgid "If you want to set the tiles provider to cloudmade for maps, you must give a cloudmade API Key. The tiles provider has been reset to the default value."
+#~ msgstr "Si vous souhaitez utiliser cloudmade comme fournisseur de dalles par défaut pour vos cartes, vous devez fournir une clef d'API."
+
+#~ msgid "If you want to set the tiles provider for the big map to cloudmade, you must give a cloudmade API Key. The tiles provider has been reset to the default value."
+#~ msgstr "Si vous souhaitez utiliser cloudmade comme fournisseur de dalles par défaut pour la grande carte, vous devez fournir une clef d'API."
+
+#~ msgid "The default cloudmade Style for maps must be an integer. It has been reset to the default value."
+#~ msgstr "Le style cloudmade par défaut de vos cartes doit être un entier. Il a été réinitialisé."
+
+#~ msgid "The default cloudmade Style for the Big map must be an integer. It has been reset to the default value."
+#~ msgstr "Le style cloudmade par défaut de la grande carte doit être un entier. Il a été réinitialisé."
+
+#, fuzzy
+#~| msgid "Navbar font color"
+#~ msgid "Bottom navbar font color"
+#~ msgstr "Couleur du texte de la navbar"
+
+#~ msgid "Ajouter le Géoformat aux pages de catégories et mots-clés"
+#~ msgstr "Ajouter les Géoformats aux pages des catégories et mots-clés"
+
+#~ msgid "Ajouter le Géoformat aux résultats de recherche"
+#~ msgstr "Ajouter les Géoformats aux résultats de recherche, cette action ajoutera également les marqueurs, cartes et projets aux résultats de recherche"
+
+#~ msgid "Theme created by Labomedia"
+#~ msgstr "Thème créé par Labomedia"
+
+#~ msgid "Skip to content"
+#~ msgstr "Aller au contenu"
+
+#~ msgid "Primary Color"
+#~ msgstr "Couleur Primaire"
+
+#~ msgid "Secondary Color"
+#~ msgstr "Couleur Secondaire"
+
+#~ msgid "Youtube"
+#~ msgstr "Youtube"
+
+#~ msgid "See our Youtube"
+#~ msgstr "Voir notre chaine Youtube"
+
+#~ msgid "See our Facebook page"
+#~ msgstr "Voir notre page Facebook"
+
+#~ msgid "See our Twitter feed"
+#~ msgstr "Voir notre flux Twitter"
+
+#~ msgid "RSS Feed"
+#~ msgstr "FLux RSS"
+
+#~ msgid "Share on Twitter"
+#~ msgstr "Partager sur Twitter"
+
+#~ msgid "Share Pinterest"
+#~ msgstr "Partager sur Pinterest"
+
+#~ msgid "Share on WhatsApp+"
+#~ msgstr "Partager sur WhatsApp"
+
+#~ msgid "F j, Y"
+#~ msgstr "j F Y"
+
+#~ msgid "White on primary color"
+#~ msgstr "Blanc sur fond de couleur (couleur primaire)"
+
+#~ msgid "No custom icons found !"
+#~ msgstr "Aucun icône personnalisé n'a été trouvé !"
+
+#~ msgid "To add your own markers icons, you should create a directory called %1$s in your directory <em>wp-content</em> and put your markers images files in it. They should be PNG 24 bits with transparency."
+#~ msgstr "Pour ajouter vos propres icônes de markers, vous devez créer un dossier nommé %1$s dans votre <em>wp-content</em> répertoire et y ajouter vos images. Elles doivent impérativement être au format PNG 24 bits avec transparence."
+
+#~ msgid "GeoProjects"
+#~ msgstr "GeoProjects"
+
+#~ msgid "Help - Credits"
+#~ msgstr "Aide - Crédits"
+
+#~ msgid "Geoformat: guidelines"
+#~ msgstr "Géoformat : repères pour l'édition"
+
+#~ msgid "Help and Credits"
+#~ msgstr "Aide et Crédits"
+
+#~ msgid "Big Map Page"
+#~ msgstr "Page Grande Carte"
+
+#~ msgid "Widgets"
+#~ msgstr "Widgets"
+
+#~ msgid "This Wordpress theme has been developped by %1$s and funded by the %2$s. The 2.0 version, which includes the Geoformat post type, is developed by Laurence Dierickx (%3$s), from the original plugin Simple Long Form, developed as an open source software for WordPress."
+#~ msgstr "Ce thème Wordpress a été développé par%1$s et financé par le%2$s. La version 2.0, qui inclut Géoformat, est développé par Laurence Dierickx (%3$s), à partir du plugin original Simple Long Form, développé en open source pour WordPress."
+
+#~ msgid "Sharing Buttons"
+#~ msgstr "Boutons de partage"
+
+#~ msgid "You can convert your favicon to the right format, .ico, with using a free online generator for jpg or png images."
+#~ msgstr "Vous pouvez convertir votre favicon au bon format, Ico, avec l'aide d'un générateur en ligne gratuit pour des images jpg ou png au format carré."
+
+#~ msgid "search results for: %s"
+#~ msgstr "résultats de la recherche pour : %s"
+
+#~ msgid "Search Results for: %s"
+#~ msgstr "Résultats de la recherche pour : %s"
+
+#~ msgid "Search"
+#~ msgstr "Chercher"
+
+#~ msgid "Add a new project"
+#~ msgstr "Ajoutez un nouveau projet"
+
+#~ msgid "Edit this project"
+#~ msgstr "Modifier ce projet"
+
+#~ msgid "See the project"
+#~ msgstr "Voir le projet"
+
+#~ msgid "Search projects"
+#~ msgstr "Rechercher un projet"
+
+#~ msgid "No projects found"
+#~ msgstr "Aucun projet trouvé"
+
+#~ msgid "No projects found in trash"
+#~ msgstr "Pas de projet trouvé dans la corbeille"
+
+#~ msgid "My projects"
+#~ msgstr "Mes projets"
+
+#~ msgid "The GeoProjects Wordpress theme adds 3 content types : Projects, Maps, Capes and Markers."
+#~ msgstr "Le thème Wordpress GeoProjects ajoute 3 nouveaux types de contenu : Projets, Cartes, Caps et Marqueurs."
+
+#~ msgid "A Map contain markers and can be associated to a Project. You can also associate the traditionnals Wordpress posts to Projects."
+#~ msgstr "Une carte contient des marqueurs et peut être associée à un Projet. Vous pouvez aussi associés les articles classiques à un Projet."
+
+#~ msgid "You can set your Home page to show the list of lasts created maps instead of the last posts. Follow this instructions to do so :"
+#~ msgstr "Vous pouvez afficher la liste des projets ainsi que les dernières cartes créées sur votre page d'accueil. Pour se faire, suivez ces instructions :"
+
+#~ msgid "Create a page named \"Home\" (for exemple), and set its \"Model\" as \"Home Page\" in the right \"Page Attributes\" bloc"
+#~ msgstr "Créer une page nommée \"Accueil\" (par exemple), and choisissez le modèle \"Home Page\" dans le bloc de droite \"Attributs de la page\""
+
+#~ msgid "Create another page which will display your blog posts"
+#~ msgstr "Créer une autre page qui affichera vos articles"
+
+#~ msgid "Go to Settings > Reading, and in the \"Front page displays\" option, choose \"A static page\" with your Home page as \"Front page\" and your blog page as \"Posts page\""
+#~ msgstr "Aller dans Paramètres > Lecture, et pour l'option \"La page d'accueil affiche\", choisir \"Une page statique\" en sélectionnant la page d'accueil nouvellement crée, et sélectionner la page concernant les articles pour la \"Page des articles\""
+
+#~ msgid "This theme has a Widgets zone in the footer, where you can add any of them."
+#~ msgstr "Ce thème possède une zone de Widgets dans le pied de page, dans laquelle vous pouvez en ajouter autant que souhaité."
+
+#~ msgid "This Wordpress theme has been developped by %1$s and funded by the %2$s."
+#~ msgstr "Ce thème Wordpress a été développé par %1$s et financé par %2$s."
+
+#~ msgid "Background image (section intro)"
+#~ msgstr "Image de fond (section intro)"
+
+#~ msgid "Last maps"
+#~ msgstr "Dernières cartes"
+
+#~ msgid "You should create at least 1 map for seeing it here."
+#~ msgstr "Vous devriez créer au moins 1 carte pour la voir ici."
+
+#~ msgid ""
+#~ "Select the background with which you want to preview. \n"
+#~ "\t\tPlease, save it to view the change. I will only affect the markers' preview, not the original map. To do so, you have to edit the original map that you have created."
+#~ msgstr "Sélectionnez l'arrière-plan avec lequel vous souhaitez afficher l'aperçu de la carte. Enregistrez le marqueur pour voir le changement. Cela n'affectera que l'aperçu des marqueurs, et non pas la carte originale. Pour ce faire, vous devez éditer la carte originale que vous avez créée."
+
+#~ msgid "A friend wants to share a link with you:"
+#~ msgstr "Un ami veut partager un lien avec vous :"
+
+#~ msgid "See %s"
+#~ msgstr "Voir %s"
+
+#~ msgid "Animation"
+#~ msgstr "Animation"
+
+#~ msgid "Social"
+#~ msgstr "Social"
+

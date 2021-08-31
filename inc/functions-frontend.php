@@ -28,7 +28,9 @@ function geoformat_styles() {
 	if ( basename( $template ) == 'home-map.php' ) {
 	} elseif ( basename( $template ) == 'export-map.php'  ) {
 	} elseif ( basename( $template ) == 'export-marker.php'  ) {
+	} elseif ( basename( $template ) == 'export-cape.php'  ) {
 	} elseif ( basename( $template ) == 'print-map.php'  ) {
+	} elseif ( basename( $template ) == 'print-cape.php'  ) {
 	} elseif ( basename( $template ) == 'print-marker.php'  ) {
 	} elseif ( basename( $template ) == 'print-project.php'  ) {
 	} elseif ( basename( $template ) == 'print-page.php'  ) {
@@ -57,7 +59,7 @@ function geoformat_styles() {
 	wp_enqueue_script ('jquery');
 	
 	
-	if (is_post_type('maps') || is_post_type('markers') || is_page_template('tpl-big-map.php') || is_page_template('print-page')  ) :
+	if (is_post_type('maps') || is_post_type('markers') || is_page_template('tpl-big-map.php') || is_page_template('print-page') || is_front_page() ) :
 		wp_register_style('gp_leaflet_css', get_template_directory_uri() . '/libs/leaflet/leaflet.css',  array(), ' ', 'all' );
 		wp_enqueue_style('gp_leaflet_css');
 		wp_register_style('gp_leaflet_markercluster', get_template_directory_uri() . '/libs/leaflet/markercluster.css',  array(), ' ', 'all' );
@@ -81,6 +83,14 @@ function geoformat_styles() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) :
 		wp_enqueue_script( 'comment-reply' );
 	endif;
+
+	if (is_post_type('maps') || is_post_type('markers') && is_single()    ) :
+		wp_register_style('leaflet_compass', get_template_directory_uri() . '/libs/leaflet/plugins/compass/leaflet-compass.css',  array(), ' ', 'all' );
+		wp_enqueue_style('leaflet_compass');	
+	endif;
+
+
+
 }
 add_action( 'wp_enqueue_scripts', 'geoformat_styles',7 );
 
@@ -135,7 +145,7 @@ function gp_enqueue_scripts() {
 	endif;
 	
 		
-	if (is_post_type('maps') || is_post_type('markers') || is_page_template('tpl-big-map.php') || is_page_template('print-page')  ) : 
+	if (is_post_type('maps') || is_post_type('markers') || is_page_template('tpl-big-map.php') || is_page_template('print-page')   || is_front_page() ) : 
 		wp_register_script('gp_leaflet_js', get_template_directory_uri() . '/libs/leaflet/leaflet.js','','1.0',false);
 		wp_enqueue_script( 'gp_leaflet_js' );
 		wp_register_script('gp_leaflet_wrapper_js', get_template_directory_uri() . '/js/leaflet-wrapper.js', '','1.0', true);
@@ -147,7 +157,43 @@ function gp_enqueue_scripts() {
 		wp_register_script('gp_leaflet_fullscreen_js', get_template_directory_uri() . '/libs/leaflet/leaflet.fullscreen.min.js', '','1.0', false);
 		wp_enqueue_script( 'gp_leaflet_fullscreen_js' );
 	endif;
-	
+
+
+
+    if ( is_post_type('capes')) {
+        // Leaflet JS
+        wp_register_script( 'gp_leaflet_js', get_template_directory_uri() . '/libs/leaflet/leaflet.js', array( 'jquery' ), GP_THEME_VERSION, false );
+        wp_enqueue_script( 'gp_leaflet_js' );
+         // Leaflet CSS
+        wp_enqueue_style( 'gp_leaflet_css', get_template_directory_uri() . '/libs/leaflet/leaflet.css', array(), GP_THEME_VERSION, 'all' );
+        
+        // Polyline Measure Plugin JS
+        wp_register_script('gp_polyline_measure_js', get_template_directory_uri() . '/libs/leaflet/plugins/polyline-measure/leaflet.polylinemeasure.js', '','', false);
+        wp_enqueue_script( 'gp_polyline_measure_js' );        
+        // Polyline Measure Plugin CSS
+        wp_register_style( 'gp_polylinemeasure_css', get_template_directory_uri() . '/libs/leaflet/plugins/polyline-measure/leaflet.polylinemeasure.css', array(), GP_THEME_VERSION, 'all' );
+        wp_enqueue_style('gp_polylinemeasure_css');
+
+
+        include(get_template_directory() . '/inc/data_map_js.php' );
+
+        // Custom JS
+        wp_register_script('gp_cape_js', get_template_directory_uri() . '/js/cape.js', '','1.0', false);
+        wp_enqueue_script( 'gp_cape_js' );
+        wp_localize_script('gp_cape_js', 'my_options', $scriptData);
+
+		wp_register_script('gp_leaflet_fullscreen_js', get_template_directory_uri() . '/libs/leaflet/leaflet.fullscreen.min.js', '','1.0', false);
+		wp_enqueue_script( 'gp_leaflet_fullscreen_js' );
+		wp_register_style('leaflet_fullscreen', get_template_directory_uri() . '/libs/leaflet/leaflet.fullscreen.css',  array(), ' ', 'all' );
+		wp_enqueue_style('leaflet_fullscreen');
+
+		// Lat and Lng Graticule
+        wp_register_script('gp_latlng_graticule_js', get_template_directory_uri() . '/libs/leaflet/plugins/latlng-graticule/leaflet.latlng-graticule.js', '','', false);
+        wp_enqueue_script( 'gp_latlng_graticule_js' );
+
+    }       
+
+
 	if (is_post_type_archive('geoformat') || is_archive('geoformat') ) :
 		wp_register_script('frontend_js', get_template_directory_uri() . '/js/frontend.js','','1.0',true);
 		wp_enqueue_script( 'frontend_js' );
@@ -157,16 +203,36 @@ function gp_enqueue_scripts() {
 		wp_register_script('modal', get_template_directory_uri() . '/js/geoformat/modal.js','','1.0',true);
 		wp_enqueue_script( 'modal' );
 	endif;
-	
+
+	if (is_post_type('maps') || is_post_type('markers') && is_single()    ) :
+		wp_register_script('gp_leaflet_compass_js', get_template_directory_uri() . '/libs/leaflet/plugins/compass/leaflet-compass.js', '','', false);
+		wp_enqueue_script( 'gp_leaflet_compass_js' );	
+	endif;
+
+
+
 	$get_meta = get_option( 'print_settings' );	
 	$printjs = $get_meta['print_js'];
 	
-	if (!empty($printjs) && ( basename( $template ) == 'print-map.php'  ||  basename( $template ) == 'print-marker.php' ||  basename( $template ) == 'print-project.php' ||  basename( $template ) == 'print-geoformat.php' ||	  basename( $template ) == 'print-page.php' ||  basename( $template ) == 'print-single.php' ) ) :
+	if (!empty($printjs) && ( basename( $template ) == 'print-map.php'  ||  basename( $template ) == 'print-marker.php' ||  basename( $template ) == 'print-project.php' ||  basename( $template ) == 'print-geoformat.php' ||	  basename( $template ) == 'print-page.php' ||  basename( $template ) == 'print-single.php' ||  basename( $template ) == 'print-cape.php') ) :
 		wp_register_script('printjs', get_template_directory_uri() . '/js/paged.polyfill.js','','1.0',false);
 		wp_enqueue_script( 'printjs' );
 	endif;
 }
 add_action( 'wp_enqueue_scripts', 'gp_enqueue_scripts' );
+
+
+add_action( 'wp_enqueue_scripts', 'waymark_dequeue', 11 );
+function waymark_dequeue() {
+	if ( ! is_post_type('waymark_map') ) {
+		wp_dequeue_style( 'waymark-js' );
+		wp_dequeue_script( 'waymark-js' );
+		wp_dequeue_script( 'waymark_front_js' );
+
+    }
+}
+
+
 
 /**
  * Add necessary Leaflet JS for displaying a map
@@ -274,7 +340,7 @@ function gp_get_custom_excerpt( $type = 'default', $with_more_link = true ) {
 		if ( !is_admin() ) {
 		
 			if   ( is_category() || is_tag() || is_search() && $query->is_main_query() ) {
-				$query->set( 'post_type', array( 'post', 'nav_menu_item', 'geoformat', 'markers', 'maps', 'projects') );
+				$query->set( 'post_type', array( 'post', 'nav_menu_item', 'geoformat', 'markers', 'maps', 'projects', 'capes', 'waymark_map') );
 			return $query; }
 			if( is_author() && $query->is_main_query() ) {
 				$query->set( 'post_type', array(
@@ -287,7 +353,7 @@ function gp_get_custom_excerpt( $type = 'default', $with_more_link = true ) {
 	add_action( 'pre_get_posts', 'add_geoformat_query');
 	function add_geoformat_query ( $query ) {
 		if ( !is_admin() && is_search() && $query->is_main_query() ) {
-			$query->set( 'post_type', array( 'post', 'page', 'geoformat', 'markers', 'maps', 'projects') );
+			$query->set( 'post_type', array( 'post', 'page', 'geoformat', 'markers', 'maps', 'projects', 'capes', 'waymark_map') );
 		return $query; }		
 	}
 	
@@ -309,5 +375,42 @@ function admin_bar_render() {
     ));
 }
 add_action( 'wp_before_admin_bar_render', 'admin_bar_render' );
+
+
+
+
+add_action('save_post', 'wpds_check_thumbnail');
+add_action('admin_notices', 'wpds_thumbnail_error');
+ 
+function wpds_check_thumbnail($post_id) {
+ 
+    // change to any custom post type 
+    if(get_post_type($post_id) != 'waymark_map')
+        return;
+     
+    if ( !has_post_thumbnail( $post_id ) ) {
+        // set a transient to show the users an admin message
+        set_transient( "has_post_thumbnail", "no" );
+        // unhook this function so it doesn't loop infinitely
+        remove_action('save_post', 'wpds_check_thumbnail');
+        // update the post set it to draft
+        wp_update_post(array('ID' => $post_id, 'post_status' => 'draft'));
+ 
+        add_action('save_post', 'wpds_check_thumbnail');
+    } else {
+        delete_transient( "has_post_thumbnail" );
+    }
+}
+ 
+function wpds_thumbnail_error()
+{
+    // check if the transient is set, and display the error message
+    if ( get_transient( "has_post_thumbnail" ) == "no" ) {
+        echo "&lt;div id='message' class='error'&gt;&lt;p&gt;&lt;strong&gt;You must select Featured Image. Your Post is saved but it can not be published.&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;";
+        delete_transient( "has_post_thumbnail" );
+    }
+ 
+}
+
 
 ?>

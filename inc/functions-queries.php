@@ -90,7 +90,7 @@ function gp_query_get_project_contents( $project_id = 0, $params = array() ) {
 		$params = array_merge( $defaults_params, $params );
 
 		return get_posts( array(
-			'post_type'			=> array( 'post', 'geoformat', 'maps' ),
+			'post_type'			=> array( 'post', 'geoformat', 'maps', 'capes', 'waymark_map' ),
 			'post_status'		=> $params['post_status'],
 			'meta_query'		=> array(
 									array(
@@ -170,6 +170,9 @@ function gp_query_get_maps( $params = array() ) {
 }
 
 
+
+
+
 /**
  * Get Map Markers
  * @param  int 		$map_id  	Map ID
@@ -212,6 +215,37 @@ function gp_query_get_map_markers( $map_id = 0, $params = array() ) {
 	return array();
 
 }
+
+
+
+
+/**
+ * Get Markers Project
+ * @param  int 		$marker_id  	Marker ID
+ * @return project ID
+ */
+function gp_query_get_markers_project( $marker_id = 0, $params = array() ) {
+			
+		$marker_map_project_ID ="";
+		    
+		    //get marker map ID
+			if ( !empty(get_post_meta( $marker_id, 'gp_map', true ))) :
+				$marker_map_ID = get_post_meta( $marker_id, 'gp_map', true );
+		    
+				if ( $marker_map_ID != 0 ) :
+
+					$marker_map = gp_query_get_map( $marker_map_ID );
+
+					if ( !empty(get_post_meta( $marker_map->ID, 'gp_project', true ))) :
+						$marker_map_project_ID = get_post_meta( $marker_map->ID, 'gp_project', true );
+					endif;
+
+				endif;
+
+			endif;
+		return $marker_map_project_ID;
+}
+
 
 
 /**
@@ -308,6 +342,35 @@ function gp_query_get_posts_in_category( $category_ID = 0, $params = array() ) {
 
 
 
+
+function wp_get_categories_for_post_type($post_type, $args = '') {
+    $exclude = array();
+
+    // Check ALL categories for posts of given post type
+    foreach (get_categories() as $category) {
+        $posts = get_posts(array('post_type' => $post_type, 'category' => $category->cat_ID));
+
+        // If no posts found, ...
+        if (empty($posts))
+            // ...add category to exclude list
+            $exclude[] = $category->cat_ID;
+    }
+
+    // Set up args
+    if (! empty($exclude)) {
+        $args .= ('' === $args) ? '' : '&';
+        $args .= 'exclude='.implode(',', $exclude);
+    }
+
+    // List categories
+    get_the_category($args);
+}
+
+
+
+
+
+
 /**********************
  ****** EXISTORS ******
  **********************/
@@ -344,10 +407,30 @@ function gp_query_exists_map( $map_ID = 0 ) {
 }
 
 
+/**
+ * Are there Markers in categories
+ */
+function markers_in_categories() {
+
+		$markers = get_posts( array(
+            'post_type'     	=> 'markers',
+            'post_status'   	=> 'publish'
+    	));
+
+	    foreach ($markers as $marker ){
+	    	if( has_category( '', $marker->ID ) ):
+	    		return true;
+	    	endif;
+	    }
+
+
+}
+
 
 /**********************
  ****** COUNTERS ******
  **********************/
+
 
 
 /**

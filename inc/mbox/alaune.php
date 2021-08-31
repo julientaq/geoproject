@@ -30,12 +30,10 @@ add_action( 'add_meta_boxes', 'display_image_add_meta_box' );
 function display_image_html( $post) {
 	wp_nonce_field( '_display_image_nonce', 'display_image_nonce' ); 
 	
-	$checkboxMeta = get_post_meta( $post->ID ); ?>
-
-	<p><?php _e('Check this box to display the featured image rather than the map','geoformat'); ?></p>
-	
+	$checkboxMeta = get_post_meta( $post->ID ); 
+	echo '<p>'._e('Check this box to display the featured image rather than the map','geoformat').'</p>';
+	?>
 	<p>
-
 		<input type="checkbox" name="display_image_une" id="display_image_une" value="yes" <?php if ( isset ( $checkboxMeta['display_image_une'] ) ) checked( $checkboxMeta['display_image_une'][0], 'yes' ); ?> />
 	</p>
 	

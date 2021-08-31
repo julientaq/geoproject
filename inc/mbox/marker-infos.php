@@ -35,6 +35,16 @@ function gp_mbox_marker_infos_content( $post ) {
     $marker_lat = get_post_meta( $post->ID, 'gp_lat', true );
     $marker_lng = get_post_meta( $post->ID, 'gp_lng', true );
 	$gp_tiles_provider = get_post_meta( $post->ID, 'gp_tiles_provider', true );
+
+    if (!empty ( wp_get_post_categories( $post->ID) ) )
+    {
+    $marker_categories = wp_get_post_categories( $post->ID);
+    }
+    else{
+       $marker_categories =""; 
+    }
+
+
 	
 		if (  empty ($gp_tiles_provider) ) :
             $gp_tiles_provider = $gp_options['map_tiles_provider'];
@@ -294,6 +304,7 @@ function gp_mbox_marker_infos_content( $post ) {
 
         </div>
 
+
         <div class="mbox-marker-content-edit-video-wrap mbox-marker-content-edit-pan" <?php echo ( $first_content_type == 'video' ) ? '' : 'style="display:none"'; ?>>
             
             <p>
@@ -317,6 +328,7 @@ function gp_mbox_marker_infos_content( $post ) {
 
         </div>
 
+
         <div class="mbox-marker-content-edit-audio-wrap mbox-marker-content-edit-pan" <?php echo ( $first_content_type == 'audio' ) ? '' : 'style="display:none"'; ?>>
 
             <?php
@@ -329,7 +341,6 @@ function gp_mbox_marker_infos_content( $post ) {
                 if ( $audioAttachment == '' ) {
                     $marker_popup_audio = '';
                 }
-
             }
             ?>
 
@@ -464,46 +475,6 @@ function gp_mbox_marker_infos_content( $post ) {
 		<div class="gp-leaflet-map-container">
 		
 		
-		<?php 
-			
-			$overlaymap = get_post_meta( $marker_map, 'custom_image_displaying', true ); 
-			
-			if (empty ($overlaymap) ) :
-				$overlaymap = '';
-			else: 
-				$overlaymap = get_post_meta( $marker_map, 'custom_image_displaying', true ); 
-			endif;
-			
-			$custombgmap = get_post_meta( $marker_map, 'custom_image_download', true );
-
-			if (empty ($custombgmap) ) :
-				$custombgmap = '';
-			else: 
-				$custombgmap = get_post_meta( $marker_map, 'custom_image_download', true );
-			endif;
-			
-			$zoom = get_post_meta( get_the_ID(), 'gp_tiles_zoom', true );
-			
-			if (empty ($zoom) ) :
-				$zoom =  GP_DEFAULT_MAP_ZOOM;
-			else: 
-				$zoom = get_post_meta( get_the_ID(), 'gp_tiles_zoom', true );
-			endif;	
-			
-			$custominzoom = get_post_meta( $marker_map, 'custom_image_minzoom', true ); 
-			
-			if ( empty ($custominzoom) ) :
-				$custominzoom = '';
-			else: 
-				$custominzoom = get_post_meta( $marker_map, 'custom_image_minzoom', true );
-			endif;	
-		?>
-		
-		<input type="hidden" name="gp-overlay-map" value="<?php echo $overlaymap; ?>">
-		<input type="hidden" name="gp-custombg-map" value="<?php echo $custombgmap; ?>">
-		<input type="hidden" name="gp-custombg-minzoom" value="<?php echo $custominzoom; ?>">
-
-
 
 		<div class="d-flex pt-2">
             <div class="dashicons-before dashicons-move" aria-hidden="true"></div>
@@ -517,7 +488,7 @@ function gp_mbox_marker_infos_content( $post ) {
 
             <div class="gp-leaflet-map-wrap">
                 <div id="mbox-marker-map" class="gp-leaflet-map"
-                    <?php if ( $overlaymap !='replace') : ?>data-map-tiles="<?php echo $gp_tiles_provider; ?>"<?php endif; ?>
+                    data-map-tiles="<?php echo $gp_tiles_provider; ?>"
                     data-map-center-lat="<?php echo $marker_lat; ?>"
                     data-map-center-lng="<?php echo $marker_lng; ?>"
                     <?php if ( $overlaymap !='replace') : ?>data-map-zoom="<?php echo $zoom; ?>" <?php endif; ?>
@@ -527,6 +498,8 @@ function gp_mbox_marker_infos_content( $post ) {
                     data-map-center-here="1"
                     data-map-lat-field="mbox-marker-geo-lat"
                     data-map-lng-field="mbox-marker-geo-lng"
+                    data-map-cat-field="<?php echo $marker_categories; ?>"
+                    data-map-admin="1"
                     data-map-search-box="1"></div>
             </div>
 		</div>
@@ -603,11 +576,6 @@ function gp_save_mbox_marker_infos( $post_id ) {
 		//Save map tiles provider
         update_post_meta( $post_id, 'gp_tiles_provider',  sanitize_text_field($_POST['gp-tiles-provider'] ));
 		
-		//Save hidden metadata from map
-		
-		update_post_meta( $post_id, 'gp-overlay-map', trim( $_POST['gp-overlay-map'] ) );
-		update_post_meta( $post_id, 'gp-custombg-map', trim( $_POST['gp-custombg-map'] ) );
-		update_post_meta( $post_id, 'gp-custombg-minzoom', trim( $_POST['gp-custombg-minzoom'] ) );
 
     }
 

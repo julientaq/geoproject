@@ -205,7 +205,7 @@ function gp_save_mbox_project_infos( $post_id ) {
     }
 
 	if ( isset( $_POST['gp_hide_date'] ) ) {
-	    add_post_meta( $post_id, 'gp_hide_date', 'on', true );
+	    update_post_meta( $post_id, 'gp_hide_date', 'on', true );
 	} else {
 	    delete_post_meta( $post_id, 'gp_hide_date' );
 	}

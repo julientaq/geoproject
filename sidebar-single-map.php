@@ -30,7 +30,9 @@
 								$post_types = array(
 									'post' 		=> 'post',
 									'maps' 		=> 'map',
-									'geoformat' => 'geoformat'
+									'capes' 	=> 'cape',
+									'geoformat' => 'geoformat',
+									'waymark_map' => 'waymark_map'
 								);
 
 								$content_permalink = get_permalink( $post );
@@ -56,7 +58,44 @@
 				<?php endif; ?>
 		</aside>
 	<?php endif; 
+
 	
+// Content type Waymark Map
+	if ( $post->post_type == 'waymark_map' && get_post_meta($post->ID, 'display_image_une', true) == 'yes' ) : 
+		$maps_in_this_project[] = get_the_ID(); ?>
+		<aside class="side">
+			<h3>
+				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+			</h3>
+			<?php the_post_thumbnail(); ?>
+		</aside>
+	<?php endif; 
+
+
+// Content type Capes
+	if ( $post->post_type == 'capes' ) : 
+		$maps_in_this_project[] = get_the_ID(); ?>
+		<aside class="side">
+			<h3>
+				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+			</h3>
+			
+				<?php 
+				if(get_post_meta($post->ID, 'display_image_une', true) == 'yes') : 
+					the_post_thumbnail();
+				else :
+					$link = get_the_permalink();
+					$cape = str_replace('capes', 'capes/home', $link);		
+				?>
+					<div class="gp-leaflet-map-container">
+						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><iframe src="<?php echo $cape; ?>" width="100%" height="400"></iframe></a>
+					</div>
+				<?php endif; ?>
+		</aside>
+	<?php endif; 
+	
+
+
 // Content type Geoformat
 	if ( $post->post_type == 'geoformat' ) : 
 		$maps_in_this_project[] = get_the_ID(); ?>

@@ -114,6 +114,10 @@ $nodisplay_map = $get_meta['nodisplay_map'];
 $nodisplay_title_map = $get_meta['nodisplay_title_map'];
 $map_title = $get_meta['map_list'];
 $map_id = $get_meta['map_id'];
+$nodisplay_cape = $get_meta['nodisplay_cape'];
+$nodisplay_title_cape = $get_meta['nodisplay_title_cape'];
+$cape_title = $get_meta['cape_list'];
+$cape_id = $get_meta['cape_id'];
 $nodisplay_marker = $get_meta['nodisplay_marker'];
 $nodisplay_title_marker = $get_meta['nodisplay_title_marker'];
 $marker_title = $get_meta['marker_list'];
@@ -692,6 +696,44 @@ elseif ($text_style == 3 ) { ?>
 		
 			</section>
 		<?php endif; ?>
+
+
+		<?php if ( empty ($nodisplay_cape) ) :
+		
+	if (empty($nodisplay_title_cape) ) : ?>
+	<h2 class="chapter_title"><?php echo $cape_title; ?></h2>
+	<?php endif; ?>	
+			<section>	
+			<?php 
+				
+				if ($text_style == 4 ) : ?><ol><?php else: ?><ul class="pix"><?php endif;
+				$capes = array_map('intval', explode(',', $cape_id));
+				$args = array(
+					'post_type' => array('capes'),
+					'post_status' => array('publish'),
+					'posts_per_page' => 500,
+					'order' => $tri, 
+					'orderby' => 'date',
+					'post__not_in' => $capes
+				);
+			
+			$the_query = new WP_Query( $args );
+				
+			if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) :
+					  $the_query->the_post(); ?>
+				
+				<li><?php the_title(); ?></li>
+			<?php 
+				endwhile;
+				endif;
+				wp_reset_postdata();
+				
+				if ($text_style == 4 ) : ?></ol><?php else: ?></ul><?php endif;?>
+		
+			</section>
+		<?php endif; ?>
+
+
 		
 		<?php if ( empty ($nodisplay_marker) ) :
 		

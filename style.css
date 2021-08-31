@@ -2,7 +2,7 @@
 Theme Name: GeoProject with Geoformat
 Author: Laurence Dierickx from the version 1 by Nicolas Derambure (Labomedia)
 Author URI: https://journodev.tech
-Version: 4.7
+Version: 4.7c
 Text Domain: geoformat
 Description: Créer des récits cartographique dans des formats courts ou long.
 License: GNU General Public License
@@ -14,7 +14,7 @@ body,html{overflow-x:hidden;font-family: 'Raleway', sans-serif;overflow-x:hidden
 body.custom-background #sousmenu {background:transparent!important;margin-top:40px;}
 h1, h2, h3, h4, h5, .navbar-brand{font-weight:bold!important;}
 .clear{clear:both;}
-a,li,.submit,.comment-reply-link,#bbp_search_submit,#bbp_reply_submit,.definition_trigger,#up,.form-submit #submit,#button,#reset,button,#choix1,#choix2,.btn,li,span,.login-submit input,.networks li,.btn,.wikiroll h3,#alphabet span,figcaption{-webkit-transition: all 0.5s linear 0s; -moz-transition: all 0.5s linear 0s; transition: all 0.5s linear 0s !important;}
+a,li,.submit,.comment-reply-link,#bbp_search_submit,#bbp_reply_submit,.definition_trigger,#up,.form-submit #submit,#button,#reset,button,#choix1,#choix2,.btn,li,span,.login-submit input,.networks li,.btn,.wikiroll h3,#alphabet span,figcaption{-webkit-transition: all 0.2s linear 0s; -moz-transition: all 0.2s linear 0s; transition: all 0.2s linear 0s !important;}
 .btn:focus {outline: none;box-shadow: none;}
 button:hover{opacity:0.5;}
 ::-moz-selection {background: #DCDCDC;text-shadow: none;color:#000000;}
@@ -158,14 +158,17 @@ h3#search-result{font-weight:normal!important;font-size:1.4em;margin:20px 0 40px
 #networks a{color:#FFFFFF!important;}
 #networks li:hover{opacity:0.6;}
 
-/**Project list**/
+/**Projects and Categories list**/
 .col-lg-2{padding:0 15px 0 10px;margin-right:-5px;}
 .col-lg-10{padding-left:20px;}
-#liste{padding:0!important;margin:0!important;list-style-type:none;max-width:100%;}
-#liste li{padding:10px;border-bottom:1px dotted white;color:#FFFFFF;cursor:pointer;font-size:15px;}
-#liste li:last-child{border:none!important;}
-#liste #pj-title{font-size:17px;font-weight:700;color:#FFFFFF;cursor:auto;}
-#liste li a{color:#FFFFFF;text-decoration:none;}
+.nav-list, .nav-list ul{padding:0!important;margin:0!important;list-style-type:none;max-width:100%;}
+.nav-list  > li {padding: 10px;}
+.nav-list  > li li a{padding: 10px;}
+.nav-list li {border-bottom:1px dotted white;color:#FFFFFF;cursor:pointer;font-size:15px;}
+.nav-list li:last-child{border:none!important;}
+.nav-list .nav-title{font-size:17px;font-weight:700;color:#FFFFFF;cursor:auto;}
+.nav-list li a{color:#FFFFFF;text-decoration:none; display: block;}
+.nav-list .categories {padding:0;}
 
 /**Home**/
 .col-lg-9{margin-left:-10px;}
@@ -249,7 +252,9 @@ h3#search-result{font-weight:normal!important;font-size:1.4em;margin:20px 0 40px
 
 /**Thumbs**/
 .home .col-lg-4 figure{height:230px;margin:0 0;}
-.home iframe, .home figure, .home .col-lg-4 img{height:230px;width:100%;border:none;margin:0;}
+.home iframe, .home figure, .home .col-lg-4 img {height:230px;width:100%;border:none;margin:0;}
+ .home .waymark-shortcode .waymark-map{height:230px;!important;}
+
 .home .abstract{height:230px;}
 .tagpage .abstract{height:205px;}
 .tagpage iframe, .tagpage img{height:205px;width:100%;}
@@ -301,6 +306,9 @@ h3#search-result{font-weight:normal!important;font-size:1.4em;margin:20px 0 40px
 #big-map-page .gp-leaflet-map {height:300px; background:#eee url(img/loading.gif) 50% 50% no-repeat !important}
 #bigmap-header h1{margin-top:0;font-size:2.1em;}
 #bigmap-footer{margin:30px 0 40px 0;text-align:center;}
+#big-map-page #filters .btn{cursor: pointer!important; border-left: 1px solid; border-right:1px solid;}
+#big-map-page #filters .btn.focus{outline: none !important; box-shadow: none;}
+
 
 /**Maps**/
 .gp-leaflet-map-wrap {position:relative;}
@@ -325,6 +333,27 @@ h3#search-result{font-weight:normal!important;font-size:1.4em;margin:20px 0 40px
 .gp-leaflet-map-container .gp-map-markers-index ul{padding:0;margin-top:10px;list-style-type:none;display: grid;
     grid-template-columns: repeat(auto-fit,minmax(230px, 1fr));
 }
+
+
+/**Capes**/
+.gp-leaflet-cape {height:460px;}
+.capes-template-default #polyline-measure-control,
+#exportcape .gp-leaflet-cape #polyline-measure-control,
+#homecape .gp-leaflet-cape #polyline-measure-control{display: none;}
+
+.capes-template-default  .leaflet-bar a,
+#exportcape .gp-leaflet-cape .leaflet-bar a,
+#homecape .gp-leaflet-cape .leaflet-bar a{border-radius: 4px!important;}
+
+.capes-template-default .gp-map-actions-toggles,
+#exportcape .gp-leaflet-cape .leaflet-bar a,
+#homecape .gp-leaflet-cape .leaflet-bar a{margin-top: -2px;}
+
+.cape-content{font-size:1.2em;margin:50px 0 0 0;}
+#exportcape .gp-leaflet-cape,
+#homecape .gp-leaflet-cape {height: 100vh!important}
+#gpcapes_print{height: 400px;}
+
 .gp-leaflet-map-container .gp-map-markers-index li {padding-bottom:6px; padding-right: 8px;}
 .gp-leaflet-map-container .gp-map-markers-index li:last-child {margin-bottom:0;}
 .gp-leaflet-map-container .gp-map-markers-index li img{height:40px;width:auto;float:left;margin-right:5px;}
@@ -351,6 +380,7 @@ aside h3{padding:6px;font-size:1.2em;margin:30px 0 0 0;}
 .side a:hover{text-decoration:none!important;}
 .text-post,.side img,.side iframe{height:229px;}
 .side .gp-leaflet-map-container iframe {pointer-events: none;}
+.sidebar .side{margin-bottom: 50px;}
 
 /**Project page**/
 .top-project img{width:100%;height:auto!important;}
@@ -580,6 +610,7 @@ h1.widget-title{margin:0; font-size:1.7em; line-height:1.8;margin-top:0;}
 }
 @media only screen and (max-width: 1260px) {
 	.home iframe, .home figure, .home .col-lg-4 img {height:210px;}
+     .home .waymark-shortcode .waymark-map{height:210px;!important;}
 	.main-project figure, .main-project figure img, .main-project iframe, .main-project .abstract{height:213px;}
 }
 @media only screen and (max-width: 1250px) {
@@ -592,13 +623,15 @@ h1.widget-title{margin:0; font-size:1.7em; line-height:1.8;margin-top:0;}
 }
 @media only screen and (max-width: 1200px) {
 	.main-project figure, .main-project figure img, .main-project iframe, .main-project .abstract{height:201px;}
-	.home iframe, .home figure, .home .col-lg-4 img, 
+	.home iframe, .home figure, .home .col-lg-4 img
 	.text-post,.side img,.side iframe{height:202px;}
+    .home .waymark-shortcode .waymark-map{height:202px!important;}
 }
 @media only screen and (max-width: 1150px) {
 	.main-project figure, .main-project figure img, .main-project iframe, .main-project .abstract{height:192px;}
 	.text-post,.side img,.side iframe{height:193px;}
-	.home iframe, .home figure, .home .col-lg-4 img,.home .abstract{height:184px;}
+	.home iframe, .home figure, .home .col-lg-4 img, .home .abstract{height:184px;}
+    .home .waymark-shortcode .waymark-map{height:184px!important;}
 	.tagpage .abstract,.tagpage iframe, .tagpage img,.tagpage figure{height:160px;}
 }
 
@@ -610,14 +643,16 @@ h1.widget-title{margin:0; font-size:1.7em; line-height:1.8;margin-top:0;}
 @media only screen and (max-width: 1050px) {
 	.home iframe, .home figure, .home .col-lg-4 img,.home .abstract,
 	.text-post,.side img,.side iframe{height:174px;}
-	.main-project figure, .main-project figure img, .main-project iframe, .main-project .abstract{height:174px;}
+    .home .waymark-shortcode .waymark-map{height:174px!important;}
+ 	.main-project figure, .main-project figure img, .main-project iframe, .main-project .abstract{height:174px;}
 }
 @media only screen and (max-width: 991px) {	
 	.col-lg-2 {padding: 0 15px 0 15px;}
 	.col-lg-8{margin: 0 15px !important;}
 	.projects-sidebar{margin:0!important;}
 	.text-post,.side img,.side iframe{height:640px;}
-	.home iframe, .home figure, .home .col-lg-4 img,.home .abstract {height:300px;}
+	.home iframe, .home figure, .home .col-lg-4 img, .home .abstract {height:300px;}
+    .home .waymark-shortcode .waymark-map{height:300px!important;}
 	.tagpage .abstract,.tagpage iframe, .tagpage img,.tagpage figure{height:180px;}
 	.main-project figure, .main-project figure img, .main-project iframe, .main-project .abstract{height:172px;}
 	.gris{margin-right:5px;padding-right:0;}
@@ -644,6 +679,7 @@ h1.widget-title{margin:0; font-size:1.7em; line-height:1.8;margin-top:0;}
 	.search-results iframe,.search-results .gp-leaflet-map{height:270px!important;}
 	.text-post,.side img,.side iframe{height:579px;}
 	.home iframe, .home figure, .home .col-lg-4 img,.home .abstract{height:270px;}
+    .home .waymark-shortcode .waymark-map{height:270px!important;}
 	.tagpage .abstract,.tagpage iframe, .tagpage img,.tagpage figure{height:178px;}
 	.main-project figure, .main-project figure img, .main-project iframe, .main-project .abstract{height:155px;}
 }
@@ -653,7 +689,8 @@ h1.widget-title{margin:0; font-size:1.7em; line-height:1.8;margin-top:0;}
 	#sousmenu h2 {font-size: 1.6em;}
 	.entry-title {font-size: 2.2em;}
 	.text-post,.side img,.side iframe{height:546px;}
-	.home iframe, .home figure, .home .col-lg-4 img,.home .abstract {height:240px;}
+	.home iframe, .home figure, .home .col-lg-4 img, .home .abstract {height:240px;}
+    .home .waymark-shortcode .waymark-map{height:240px!important;}
 	.tagpage .abstract,.tagpage iframe, .tagpage img,.tagpage figure{height:170px;}
 	.main-project figure, .main-project figure img, .main-project iframe, .main-project .abstract{height:146px;}
 }
@@ -674,7 +711,8 @@ h1.widget-title{margin:0; font-size:1.7em; line-height:1.8;margin-top:0;}
 	.wp-block-columns.has-3-columns {display: block;}
 	.has-3-columns .wp-block-column:first-child {flex-basis: 100%;}
 	.search iframe, .search img,
-	.home iframe, .home figure, .home .col-lg-4 img,.home .abstract {height:490px;}
+	.home iframe, .home figure, .home .col-lg-4 img, .home .abstract {height:490px;}
+    .home .waymark-shortcode .waymark-map{height:490px!important;}
 	.tagpage .abstract,.tagpage iframe, .tagpage img,.tagpage figure{height:220px;}
 	.main-project figure, .main-project figure img, .main-project iframe, .main-project .abstract{height:236px;}
 	#gp-big-map{height:500px!important;}
@@ -700,7 +738,8 @@ h1.widget-title{margin:0; font-size:1.7em; line-height:1.8;margin-top:0;}
 }
 @media only screen and (max-width: 650px) {
 	.text-post,.side img,.side iframe,
-	.home iframe, .home figure, .home .col-lg-4 img,.home .abstract{height:360px}
+	.home iframe, .home figure, .home .col-lg-4 img, .home .abstract{height:360px}
+    .home .waymark-shortcode .waymark-map{height:360px!important;}
 	.tagpage .abstract,.tagpage iframe, .tagpage img,.tagpage figure{height:180px;}
 	.main-project figure, .main-project figure img, .main-project iframe, .main-project .abstract{height:196px;}
 	#sousmenu h1 {font-size: 2.2em;}
@@ -714,7 +753,8 @@ h1.widget-title{margin:0; font-size:1.7em; line-height:1.8;margin-top:0;}
 	#archives{float:none;margin-top:15px;}
 	#bigmap-header h1 {font-size: 1.9em;}
 	.header-archives{margin-bottom:80px;}
-	.home iframe, .home figure, .home .col-lg-4 img,.home .abstract{height:350px;}
+	.home iframe, .home figure, .home .col-lg-4 img, .home .abstract{height:350px;}
+    .home .waymark-shortcode .waymark-map{height:350px!important;}
 	.tagpage .abstract,.tagpage iframe, .tagpage img,.tagpage figure{height:170px;}
 	.main-project figure, .main-project figure img, .main-project iframe, .main-project .abstract{height:179px;}
 }
@@ -770,9 +810,14 @@ h1.widget-title{margin:0; font-size:1.7em; line-height:1.8;margin-top:0;}
 @media only screen and (max-width: 390px) {
 	search-resp-ext .btn {margin-left: 86%;}
 }
+@media only screen and (min-width: 1280px) {
+    .leaflet-compass {display: none;}
+}
+
+
 @media only screen and (max-width: 380px) {
 	.main-project figure, .main-project figure img, .main-project iframe, .main-project .abstract,
-	.text-post,.side img,.side iframe, 	.home iframe, .home figure, .home .col-lg-4 img,.home .abstract,
+	.text-post,.side img,.side iframe, 	.home iframe, .home figure, .home .col-lg-4 img,.home .abstract, 
 	.tagpage .abstract,.tagpage iframe, .tagpage img,.tagpage figure{height:231px;}
 	#social-top{top: 50px;text-align: center;margin-left:-10px;}
 	#sousmenu h1{margin-top:40px;}
@@ -785,12 +830,14 @@ h1.widget-title{margin:0; font-size:1.7em; line-height:1.8;margin-top:0;}
 	.main-project figure, .main-project figure img, .main-project iframe, .main-project .abstract,
 	.text-post,.side img,.side iframe, 	.home iframe, .home figure, .home .col-lg-4 img,.home .abstract,
 	.tagpage .abstract,.tagpage iframe, .tagpage img,.tagpage figure{height:218px;}
+    .home .waymark-shortcode .waymark-map{height:218px!important;}
 	#footer #s {min-width: 100%;margin-bottom: 10px;}
 }
 @media only screen and (max-width: 300px) {
 	.main-project figure, .main-project figure img, .main-project iframe, .main-project .abstract,
 	.text-post,.side img,.side iframe, 	.home iframe, .home figure, .home .col-lg-4 img,.home .abstract,
 	.tagpage .abstract,.tagpage iframe, .tagpage img,.tagpage figure{height:178px;}
+    .home .waymark-shortcode .waymark-map{height:178px!important;}
 	#burger, #close, .navbar-brand {margin-left: -15px;}
 	.ml-auto, .mx-auto {margin-right: -15px;}
 }
@@ -798,11 +845,11 @@ h1.widget-title{margin:0; font-size:1.7em; line-height:1.8;margin-top:0;}
 	.main-project figure, .main-project figure img, .main-project iframe, .main-project .abstract,
 	.text-post,.side img,.side iframe, 	.home iframe, .home figure, .home .col-lg-4 img,.home .abstract,
 	.tagpage .abstract,.tagpage iframe, .tagpage img,.tagpage figure{height:165px;}
+    .home .waymark-shortcode .waymark-map{height:165px!important;}
 }
 
 /**Print**/
 #printpdf{margin-top:30px;}
-
 
 
 /**Menu "Notes de terrainé dans Admin Bar**/

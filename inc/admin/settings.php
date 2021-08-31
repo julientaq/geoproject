@@ -84,6 +84,12 @@ function gp_register_settings() {
 	add_settings_field( 'gp_settings_field_mentions', __( 'Mentions', 'geoformat' ), 'gp_settings_field_mentions_content', 'gp_theme_settings_footer', 'gp_settings_section_footer' );
 	add_settings_field( 'gp_settings_field_custom_text', __( 'Custom text', 'geoformat' ), 'gp_settings_field_custom_text_content', 'gp_theme_settings_footer', 'gp_settings_section_footer' );
 	add_settings_field( 'gp_settings_field_logo_footer', __( 'Add logo', 'geoformat' ), 'gp_settings_field_logo_footer_content', 'gp_theme_settings_footer', 'gp_settings_section_footer' );
+
+
+	//Homepage
+	add_settings_section( 'gp_settings_section_homepage', __( 'Homepage', 'geoformat' ), 'gp_settings_section_homepage_text', 'gp_theme_settings_homepage' );
+	add_settings_field( 'gp_settings_field_bigmap', __( 'Big Map', 'geoformat' ), 'gp_settings_field_bigmap_content', 'gp_theme_settings_homepage', 'gp_settings_section_homepage' );
+
 }
 
 //Display fields
@@ -1125,6 +1131,35 @@ function gp_settings_field_map_trash_keep_markers_content() {
 	<?php
 }
 
+
+
+
+
+
+//Field display : gp_settings_bigmap
+function gp_settings_field_bigmap_content() {
+	$options = get_option( 'gp_options' );
+	
+	if (!empty ($options['bigmap_on_hp']) ) :
+		$bigmap_on_hp = $options['bigmap_on_hp']; 
+		else : $bigmap_on_hp = "";
+	endif;
+	?>
+	
+	<p>
+
+		<input type="checkbox" class="bdn"  name="gp_options[bigmap_on_hp]" id="bigmap_on_hp" value="<?php echo GP_DEFAULT_BIGMAP_ON_HP; ?>" <?php if ( $bigmap_on_hp == GP_DEFAULT_BIGMAP_ON_HP ) { echo 'checked="checked"'; } ?>>
+		<?php _e('Display Big Map on the Website\'s Homepage', 'geoformat'); ?>
+	</p>
+
+	<?php
+}
+
+
+
+
+
+
 // Nothing usefull to display for now but do not delete as it is required.
 function gp_settings_section_metadata_settings_text() {
 }
@@ -1136,7 +1171,8 @@ function  gp_settings_section_card_settings_text() {
 }
 function  gp_settings_section_footer_text() {
 }
-
+function  gp_settings_section_homepage_text() {
+}
 //Validate User inputs
 //@param  array $user_input  Input data submitted by the user ($_POST)
 //@return array Sanitized user input data
@@ -1349,6 +1385,10 @@ function gp_validate_options( $user_input ) {
 
 
 //General
+
+	//Display Big Map on frontpage
+	$valid['bigmap_on_hp'] = $user_input['bigmap_on_hp'];
+
 
 	//Number of maps on front page
 

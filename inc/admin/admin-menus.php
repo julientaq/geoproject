@@ -43,7 +43,8 @@ function gp_geoprojects_page_content() {
 
 		<h2 class="nav-tab-wrapper">
 			 <a href="#" class="nav-tab navtab1 active1"><?php _e( 'Storytelling and maps', 'geoformat' ); ?></a>	 
-			 <a href="#" class="nav-tab navtab2 active2"><?php _e( 'Design', 'geoformat' ); ?></a> 	 
+			 <a href="#" class="nav-tab navtab2 active2"><?php _e( 'Design', 'geoformat' ); ?></a>
+			 <a href="#" class="nav-tab navtab7 active7"><?php _e( 'Homepage', 'geoformat' ); ?></a> 	 
 			 <a href="#" class="nav-tab navtab4 active4"><?php _e( 'Geoformat', 'geoformat' ); ?></a>
 			 <a href="#" class="nav-tab navtab3 active3"><?php _e( 'Social Networks', 'geoformat' ); ?></a>
 			 <a href="#" class="nav-tab navtab5 active5"><?php _e( 'Metadata & analytics', 'geoformat' ); ?></a>
@@ -118,7 +119,12 @@ function gp_geoprojects_page_content() {
 			?>
 		</div>
 		
-			
+		<div id="tab7" class="ui-sortable meta-box-sortables">
+			<?php
+				settings_fields( 'gp_options' );
+				do_settings_sections( 'gp_theme_settings_homepage' );
+			?>
+		</div>			
 				<p class="submit">
 					<input type="submit" name="Submit" value="<?php _e( 'Save changes', 'geoformat' ); ?>" class="button-primary">
 				</p>

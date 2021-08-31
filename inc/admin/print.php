@@ -17,7 +17,7 @@ function print_add_admin_menu(){
 	$menu_slug= 'print-settings'; 
 	$function = 'print_options_page';
 	$icon_url = 'dashicons-editor-rtl'; 
-	$position = 25;
+	$position = 36;
 	 add_menu_page( 
 		 $page_title,
 		 $menu_title,
@@ -105,6 +105,7 @@ function print_global_fields() {
 	add_settings_field( 'print_table_text_options', __( 'List attributes', 'geoformat' ), 'print_table_text_options_function', 'print_global_options5', 'print_global_each_section' );
 	add_settings_field( 'project_list', __( 'Projects list', 'geoformat' ), 'print_project_list_function', 'print_global_options5', 'print_global_each_section' );
 	add_settings_field( 'map_list', __( 'Maps list', 'geoformat' ), 'print_map_list_function', 'print_global_options5', 'print_global_each_section' );
+	add_settings_field( 'cape_list', __( 'Capes list', 'geoformat' ), 'print_cap_list_function', 'print_global_options5', 'print_global_each_section' );
 	add_settings_field( 'marker_list', __( 'Markers list', 'geoformat' ), 'print_marker_list_function', 'print_global_options5', 'print_global_each_section' );
 	add_settings_field( 'gf_list', __( 'Geoformats list', 'geoformat' ), 'print_gf_list_function', 'print_global_options5', 'print_global_each_section' );
 	add_settings_field( 'post_list', __( 'Posts list', 'geoformat' ), 'print_post_list_function', 'print_global_options5', 'print_global_each_section' );
@@ -3842,6 +3843,54 @@ function print_map_list_function() {
 	<input type='text' class="bdn" name='print_settings[map_id]' value='<?php echo $map_id; ?>'>
 	<p><?php echo __('ID can be found on the admin maps page', 'geoformat'); ?></p>
 <?php }
+
+
+function print_cape_list_function() { 
+	$get_meta = get_option( 'print_settings' );
+		
+		if ( empty ( $get_meta['nodisplay_title_cape'] ) ) : 
+			$nodisplay_title_cape = ''; 
+		else : 
+			$nodisplay_title_cape = $get_meta['nodisplay_title_cape'];
+		endif;
+		
+		if ( empty ( $get_meta['nodisplay_cape'] ) ) : 
+			$nodisplay_cape = ''; 
+		else : 
+			$nodisplay_cape = $get_meta['nodisplay_cape'];
+		endif;
+		
+		if ( empty ( $get_meta['cape_list'] ) ) : 
+			$cap_title = 'II. Cartes'; 
+		else : 
+			$cap_title = $get_meta['cape_list'];
+		endif;
+		
+		if ( empty ( $get_meta['cape_id'] ) ) : 
+			$cape_id = ' '; 
+		else : 
+			$cape_id = $get_meta['cape_id'];
+		endif;
+?>
+	<p>
+	<?php echo __('Do not display the capes', 'geoformat'); ?>
+	<input name='print_settings[nodisplay_cape]' value='0' type='hidden'>
+	<input type='checkbox' name='print_settings[nodisplay_capee]' <?php checked( $nodisplay_cape, 1 ); ?> value='1'>
+	</p>
+	<p><?php echo __('Title', 'geoformat'); ?></p>
+	<input type='text' class="bdn" name='print_settings[cape_list]' value='<?php echo $cape_title; ?>'>	
+	<p>
+	<?php echo __('Do not display the title', 'geoformat'); ?>
+	<input name='print_settings[nodisplay_title_cape]' value='0' type='hidden'>
+	<input type='checkbox' name='print_settings[nodisplay_title_cape]' <?php checked( $nodisplay_title_cape, 1 ); ?> value='1'>
+	</p>
+	<br/>
+	<p><?php echo __('ID to exclude (separated with a comma)', 'geoformat'); ?></p>
+	<input type='text' class="bdn" name='print_settings[cape_id]' value='<?php echo $cape_id; ?>'>
+	<p><?php echo __('ID can be found on the admin capes page', 'geoformat'); ?></p>
+<?php }
+
+
 
 function print_marker_list_function() { 
 	$get_meta = get_option( 'print_settings' );

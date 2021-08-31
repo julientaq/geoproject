@@ -51,7 +51,6 @@
             <div id="gp-map-<?php the_ID(); ?>" class="gp-leaflet-map"
             	data-map-id="<?php the_ID(); ?>"
             	<?php if ( $overlay != 'replace' ) : ?>data-map-tiles="<?php echo $map_tiles_provider; ?>"<?php endif; ?>
-            	<?php if ( empty($image) || $overlay != 'replace') : ?>data-map-clusterize="1"<?php endif; ?>
                 data-map-markers-index="1"
 				data-map-controls="1"
 				data-map-drag="1"

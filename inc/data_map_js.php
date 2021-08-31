@@ -30,81 +30,45 @@
 			$zoom = GP_DEFAULT_MAP_ZOOM;
 		endif;
 		
-		if ( $post_type == 'maps' ) :
+
+		$download = '';
+		$displaying = '';
+		$custom_tiles_path = '';
+		$custom_image_northeast = '';
+		$custom_image_southwest = '';
+		$downloadmap   = '';
+		$displayingmap = '';	
+		$downloadmap = '';	
+
+		if ( $post_type == 'maps') :
+
 			$download =	get_post_meta( get_the_ID(), 'custom_image_download', true );
-		else :
-			$download = '';
-		endif;
-		
-		if ( $post_type == 'markers' ) :
-			$downloadmap =	get_post_meta( get_the_ID(), 'gp-custombg-map', true );
-		else :
-			$downloadmap = '';
-		endif;
-		
-		if ( $post_type == 'maps' ) :
 			$displaying = get_post_meta( get_the_ID(), 'custom_image_displaying', true );
-		else : 
-			$displaying = 'overlay';
+			if ( $download != "" && $displaying == "replace" ) :
+				$custom_tiles_path = wp_get_upload_dir()['baseurl'].'/maps/'.get_the_ID().'/tiles';
+				$custom_image_northeast = json_decode(get_post_meta( get_the_ID(), 'custom_image_northeast', true ));
+				$custom_image_southwest = json_decode(get_post_meta( get_the_ID(), 'custom_image_southwest', true ));
+				$copyright = get_post_meta( get_the_ID(), 'custom_image_copyright', true );
+			else :
+				$displaying = 'overlay';
+
+			endif;
+		
+
+		elseif ( $post_type == 'markers') :
+			$mapID = get_post_meta( get_the_ID(), 'gp_map', true );	
+			$downloadmap =	get_post_meta( $mapID, 'custom_image_download', true );
+			$displayingmap = get_post_meta( $mapID, 'custom_image_displaying', true );
+
+			if($downloadmap != "" && $displayingmap == "replace"):
+				
+				$custom_tiles_path = wp_get_upload_dir()['baseurl'].'/maps/'.$mapID.'/tiles';
+			else:
+				$displayingmap = 'overlay';
+			endif;
 		endif;
 		
-		if ( $post_type == 'markers' ) :
-			$displayingmap = get_post_meta(  get_the_ID(), 'gp-overlay-map', true );
-		else : 
-			$displayingmap = 'overlay';
-		endif;
-		
-		if ( $post_type == 'maps' ) :
-			$lat1 =	get_post_meta( get_the_ID(), 'custom_image_lat1', true );;
-		else :
-			$lat1 = '';
-		endif;
-		
-		if ( $post_type == 'maps' ) :
-			$long1 =	get_post_meta( get_the_ID(), 'custom_image_long1', true );
-		else :
-			$long1 = '';
-		endif;
-		
-		if ( $post_type == 'maps' ) :
-			$lat2 =	get_post_meta( get_the_ID(), 'custom_image_lat2', true );
-		else :
-			$lat2 = '';
-		endif;
-		
-		if ( $post_type == 'maps' ) :
-			$long2 = get_post_meta( get_the_ID(), 'custom_image_long2', true );
-		else :
-			$long2 = '';
-		endif;
-		
-		if ( $post_type == 'maps' ) :
-			$opacity =	get_post_meta( get_the_ID(), 'custom_image_opacity', true );
-		else :
-			$opacity = '';
-		endif;
-		
-		if ( $post_type == 'maps' ) :
-			$zindex =	get_post_meta( get_the_ID(), 'custom_image_zindex', true );
-		else :
-			$zindex = '';
-		endif;
-		
-		if ( $post_type == 'maps' ) :
-			$copyright = get_post_meta( get_the_ID(), 'custom_image_copyright', true );
-		else :
-			$copyright = '';
-		endif;
-		
-		
-		if ( $post_type == 'maps' ) {
-			$minzoom = get_post_meta( get_the_ID(), 'custom_image_minzoom', true );
-		} elseif ( $post_type == 'markers' ) {
-			$minzoom = get_post_meta( get_the_ID(), 'gp-custombg-minzoom', true );
-		} else {
-			$minzoom = "0";
-		} 
-		
+
 		
 		$scriptData = array(
 			'token' 					=> $token,
@@ -121,15 +85,14 @@
 			'defaultExportMapHeight'    => GP_DEFAULT_EXPORT_MAP_HEIGHT,
 			'customBG' 					=> $download,
 			'customBGMap' 				=> $downloadmap,
-			'customLat1' 				=> $lat1,
-			'customLong1' 				=> $long1,
-			'customLat2' 				=> $lat2,
-			'customLong2' 				=> $long2,
-			'customOpacity' 			=> $opacity,
-			'customZindex' 				=> $zindex,
+			'customTilesPath'			=> $custom_tiles_path,
 			'customCopyright' 			=> $copyright,
 			'customDisplaying' 			=> $displaying,
 			'customDisplayingMap' 		=> $displayingmap,
-			'customMinZoom' 			=> $minzoom,
+			'customImageNorthEast' 		=> $custom_image_northeast,
+			'customImageSouthWest' 		=> $custom_image_southwest,
+
+
+
 		);
 ?>

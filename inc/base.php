@@ -99,6 +99,8 @@ define( 'GP_DEFAULT_MAP_TRASH_KEEP_MARKERS', 1 );
 define( 'GP_DEFAULT_BLOG_TITLE', 1 );
 define( 'GP_DEFAULT_COPYRIGHT', 1 );
 define( 'GP_DEFAULT_YEAR', 1 );
+define( 'GP_DEFAULT_BIGMAP_ON_HP', '1' );
+
 
 /* PATHS */
 
